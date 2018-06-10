@@ -19,11 +19,10 @@ public class TestApp {;
 		/*
 		 * Loop through all the transaction files from 2002 to 2018 and load the records in MySQL
 		 * trading_investing.ameritrade_transactions
-		 */
+		 */		
 		
+		//AmeritradeTransactionService ameritradeTransactionService = context.getBean("ameritradeTransactionService", AmeritradeTransactionService.class);
 		
-		AmeritradeTransactionService ameritradeTransactionService = 
-				context.getBean("ameritradeTransactionService", AmeritradeTransactionService.class);
 		/*
 		// Load ameritradeTransactionService.loadAmeritradeTransactionsFromCSV()
 		startTime = System.currentTimeMillis();
@@ -38,8 +37,8 @@ public class TestApp {;
 		HistoricalStockPriceService historicalStockPriceService = 
 				context.getBean("historicalStockPriceService", HistoricalStockPriceService.class);
 
-		/*
-		// Load historicalStockPriceService.loadHistoricalStockPricesFromYahooFinanceCSV()
+		
+		// Step 1: Load historicalStockPriceService.loadHistoricalStockPricesFromYahooFinanceCSV()
 		startTime = System.currentTimeMillis();
 		System.out.println("Start Time: " + startTime);
 		processedRecords = historicalStockPriceService.loadHistoricalStockPricesFromYahooFinanceCSV();
@@ -47,8 +46,10 @@ public class TestApp {;
 		endTime = System.currentTimeMillis();
 		System.out.println("End Time: " + endTime + "\nTotal Time: " + (endTime - startTime));
 		System.out.println("historicalStockPriceService.loadHistoricalStockPricesFromYahooFinanceCSV() : Records Processed = " + processedRecords);
-		*/
 		
+		
+		// Step 2: Not NEEDED
+		/*
 		System.out.println("=====> historicalStockPriceService.populateDateDimensions()");
 		startTime = System.currentTimeMillis();
 		System.out.println("Start Time: " + startTime);
@@ -64,7 +65,7 @@ public class TestApp {;
 		endTime = System.currentTimeMillis();
 		System.out.println("End Time: " + endTime + "\nTotal Time: " + (endTime - startTime));
 		System.out.println("historicalStockPriceService.populateUpAndDownFields(): Records Processed = " + processedRecords);
-		
+		*/
 		//historicalStockPriceService.test();
 		
 		context.close();

@@ -27,7 +27,7 @@ public class HistoricalStockPrice {
 		@Column(name="symbol")
 		private String symbol;
 		
-		@Column(name="date")
+		@Column(name="txn_date")
 		private Date date;
 
 		public String getSymbol() {
@@ -74,27 +74,6 @@ public class HistoricalStockPrice {
 	@Column(name="volume")
 	private double volume;
 		
-	@Column(name="d1_up_down")
-	private int upDownD1;
-	
-	@Column(name="d5_up_down")
-	private int upDownD5;
-	
-	@Column(name="d10_up_down")
-	private int upDownD10;
-	
-	@Column(name="d15_up_down")
-	private int upDownD15;
-	
-	@Column(name="d20_up_down")
-	private int upDownD20;
-	
-	@Column(name="d25_up_down")
-	private int upDownD25;
-	
-	@Column(name="d30_up_down")
-	private int upDownD30;
-
 	@Column(name="day_of_week")
 	private int dayOfWeek;
 	
@@ -107,6 +86,12 @@ public class HistoricalStockPrice {
 	@Column(name="year")
 	private int year;
 
+	@Column(name="up_down")
+	private double upDown;
+	
+	@Column(name="up_down_direction")
+	private int upDownDirection;
+	
 	public Key getKey() {
 		return key;
 	}
@@ -163,62 +148,6 @@ public class HistoricalStockPrice {
 		this.volume = volume;
 	}
 
-	public int getUpDownD1() {
-		return upDownD1;
-	}
-
-	public void setUpDownD1(int upDownD1) {
-		this.upDownD1 = upDownD1;
-	}
-
-	public int getUpDownD5() {
-		return upDownD5;
-	}
-
-	public void setUpDownD5(int upDownD5) {
-		this.upDownD5 = upDownD5;
-	}
-
-	public int getUpDownD10() {
-		return upDownD10;
-	}
-
-	public void setUpDownD10(int upDownD10) {
-		this.upDownD10 = upDownD10;
-	}
-
-	public int getUpDownD15() {
-		return upDownD15;
-	}
-
-	public void setUpDownD15(int upDownD15) {
-		this.upDownD15 = upDownD15;
-	}
-
-	public int getUpDownD20() {
-		return upDownD20;
-	}
-
-	public void setUpDownD20(int upDownD20) {
-		this.upDownD20 = upDownD20;
-	}
-
-	public int getUpDownD25() {
-		return upDownD25;
-	}
-
-	public void setUpDownD25(int upDownD25) {
-		this.upDownD25 = upDownD25;
-	}
-
-	public int getUpDownD30() {
-		return upDownD30;
-	}
-
-	public void setUpDownD30(int upDownD30) {
-		this.upDownD30 = upDownD30;
-	}
-
 	public int getDayOfWeek() {
 		return dayOfWeek;
 	}
@@ -251,13 +180,28 @@ public class HistoricalStockPrice {
 		this.year = year;
 	}
 
+	public double getUpDown() {
+		return upDown;
+	}
+
+	public void setUpDown(double upDdown) {
+		this.upDown = upDdown;
+	}
+
+	public int getUpDownDirection() {
+		return upDownDirection;
+	}
+
+	public void setUpDownDirection(int upDownDirection) {
+		this.upDownDirection = upDownDirection;
+	}
+
 	@Override
 	public String toString() {
 		return "HistoricalStockPrice [key=" + key + ", open=" + open + ", close=" + close + ", low=" + low + ", high="
-				+ high + ", adjClose=" + adjClose + ", volume=" + volume + ", upDownD1=" + upDownD1 + ", upDownD5="
-				+ upDownD5 + ", upDownD10=" + upDownD10 + ", upDownD15=" + upDownD15 + ", upDownD20=" + upDownD20
-				+ ", upDownD25=" + upDownD25 + ", upDownD30=" + upDownD30 + ", dayOfWeek=" + dayOfWeek + ", dayOfMonth="
-				+ dayOfMonth + ", month=" + month + ", year=" + year + "]";
+				+ high + ", adjClose=" + adjClose + ", volume=" + volume + ", dayOfWeek=" + dayOfWeek + ", dayOfMonth="
+				+ dayOfMonth + ", month=" + month + ", year=" + year + ", upDdown=" + upDown + ", upDownDirection="
+				+ upDownDirection + "]";
 	}
 
 	public String toCSV() {

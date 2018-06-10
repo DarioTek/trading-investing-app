@@ -31,6 +31,14 @@ public class HistoricalStockPricessDAOImpl extends DAOAbstractClass implements H
 	}
 
 	@Override
+	public void saveOrUpdateHistoricalStockPrices(HistoricalStockPrice historicalStockPrices) {
+		Session session = getCurrentSession();
+		session.beginTransaction();
+		session.saveOrUpdate(historicalStockPrices);
+		session.getTransaction().commit();
+	}
+
+	@Override
 	public void deleteHistoricalStockPricess(String symbol, Date date) {
 		Session session = getCurrentSession();
 		session.beginTransaction();
@@ -83,7 +91,7 @@ public class HistoricalStockPricessDAOImpl extends DAOAbstractClass implements H
 	public List<HistoricalStockPrice> getAllHistoricalStockPrices(String symbol) {
 		Session session = getCurrentSession();
 		session.beginTransaction();		
-		List<HistoricalStockPrice> historicalStockPrices = session.createQuery("from HistoricalStockPrice where symbol = '" +  symbol + "' order by date desc").getResultList();
+		List<HistoricalStockPrice> historicalStockPrices = session.createQuery("from HistoricalStockPrice where symbol = '" +  symbol + "' order by txn_date desc").getResultList();
 		session.getTransaction().commit();
 		
 		return historicalStockPrices;

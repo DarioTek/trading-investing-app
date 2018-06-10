@@ -40,9 +40,11 @@ public class HistoricalStockPriceServiceImpl implements HistoricalStockPriceServ
 	public int loadHistoricalStockPricesFromYahooFinanceCSV() {
 		// Initialize processed records counter
 		int processedRecords = 0;
+		ZoneId defaultZoneId = ZoneId.systemDefault();
 		
 		// read the data from Yahoo Finance CSV file
-		String[] historicalStockPrices = {"C", "JPM", "V"};
+		//String[] historicalStockPrices = {"C", "JPM", "V", "MSFT", "VZ"};
+		String[] historicalStockPrices = {"VZ"};
 		String filePath = this.filePath;
 		
 		// load the data in the database
@@ -106,9 +108,24 @@ public class HistoricalStockPriceServiceImpl implements HistoricalStockPriceServ
 				// Set Volume
 				historicalStockPrice.setVolume(csvLine[6].length() == 0 ?  0 : Double.parseDouble(csvLine[6]));
 
+				// Set Date Dimension
+				Date historicalStockPriceDate = historicalStockPrice.getKey().getDate();
+				Instant historicalStockPriceInstant = historicalStockPriceDate.toInstant();
+				LocalDate historicalStockPriceLocalDate = historicalStockPriceInstant.atZone(defaultZoneId).toLocalDate();
+				
+				historicalStockPrice.setDayOfWeek(historicalStockPriceLocalDate.getDayOfWeek().getValue());
+				historicalStockPrice.setDayOfMonth(historicalStockPriceLocalDate.getDayOfMonth());
+				historicalStockPrice.setMonth(historicalStockPriceLocalDate.getMonthValue());
+				historicalStockPrice.setYear(historicalStockPriceLocalDate.getYear());
+				
+				// Setup Up and Down Fields
+				historicalStockPrice.setUpDown(historicalStockPrice.getClose() - historicalStockPrice.getOpen());
+				historicalStockPrice.setUpDownDirection(historicalStockPrice.getUpDown() <= 0 ? 0 : 1);
+				
 				try {
 					System.out.println("historicalStockPrice = " + historicalStockPrice);
-					historicalStockPricesDAO.addHistoricalStockPrices(historicalStockPrice);
+					//historicalStockPricesDAO.addHistoricalStockPrices(historicalStockPrice);
+					historicalStockPricesDAO.saveOrUpdateHistoricalStockPrices(historicalStockPrice);
 				}catch(org.hibernate.exception.ConstraintViolationException e) {
 					System.out.println("DUPLICATE RECORD: " + historicalStockPrice);
 					continue;
@@ -142,16 +159,9 @@ public class HistoricalStockPriceServiceImpl implements HistoricalStockPriceServ
 					
 					HistoricalStockPrice currentRecord = (HistoricalStockPrice)historicalStockPrices.get(i);
 					
-					// Set d1
-					HistoricalStockPrice d1Record = null;				
-					int d1 = i+1;
-					if (d1 <= historicalStockPrices.size() - 1) {
-						d1Record = (HistoricalStockPrice)historicalStockPrices.get(d1);
-					}else{
-						d1Record = (HistoricalStockPrice)historicalStockPrices.get(historicalStockPrices.size()-1);
-					}
-					currentRecord.setUpDownD1((currentRecord.getClose() - d1Record.getClose() > 0) ? 1 : 0);
-
+					currentRecord.setUpDown(currentRecord.getClose() - currentRecord.getOpen());
+					currentRecord.setUpDownDirection(currentRecord.getUpDown() <= 0 ? 0 : 1);
+					
 					historicalStockPricesDAO.updateHistoricalStockPrices(currentRecord);
 					counter++;
 				}

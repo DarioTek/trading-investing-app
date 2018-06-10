@@ -11,6 +11,8 @@ public interface HistoricalStockPricesDAO {
 	
 	public void updateHistoricalStockPrices(HistoricalStockPrice HistoricalStockPrices);
 	
+	public void saveOrUpdateHistoricalStockPrices(HistoricalStockPrice HistoricalStockPrices);
+	
 	public void deleteHistoricalStockPricess(String symbol, Date date);
 	
 	public HistoricalStockPrice getHistoricalStockPrice(String symbol, Date date);
