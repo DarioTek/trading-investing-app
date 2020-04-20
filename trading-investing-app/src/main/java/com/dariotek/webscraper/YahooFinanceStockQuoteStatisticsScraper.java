@@ -4,6 +4,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import com.dariotek.webscraper.entity.YahooFinanceStockQuoteStatistics;
 
@@ -14,6 +15,7 @@ import java.util.Date;
  * This maps to URL = https://finance.yahoo.com/quote/[symbol]/key-statistics
  * This is the contents of the Summary tab
  */
+@Component
 public class YahooFinanceStockQuoteStatisticsScraper {
 
     private Logger logger = LoggerFactory.getLogger(YahooFinanceStockQuoteStatisticsScraper.class);
@@ -47,39 +49,39 @@ public class YahooFinanceStockQuoteStatisticsScraper {
              */
             
             // Fiscal Year
-            quoteStatistics.getFinancialHighlight().getFiscalYear().setFiscalYearEnd(YahooFinanceWebScraperUtils.stringToDateMMMDDYYYY(doc.select(cssQuery).get(9).text()));
-            quoteStatistics.getFinancialHighlight().getFiscalYear().setMostRecentQuarter(YahooFinanceWebScraperUtils.stringToDateMMMDDYYYY(doc.select(cssQuery).get(10).text()));
+            quoteStatistics.getFinancialHighlights().getFiscalYear().setFiscalYearEnd(YahooFinanceWebScraperUtils.stringToDateMMMDDYYYY(doc.select(cssQuery).get(9).text()));
+            quoteStatistics.getFinancialHighlights().getFiscalYear().setMostRecentQuarter(YahooFinanceWebScraperUtils.stringToDateMMMDDYYYY(doc.select(cssQuery).get(10).text()));
             
             // Profitability
-            quoteStatistics.getFinancialHighlight().getProfitability().setProfitMargin(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(11).text()));
-            quoteStatistics.getFinancialHighlight().getProfitability().setOperatingMargin(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(12).text()));
+            quoteStatistics.getFinancialHighlights().getProfitability().setProfitMargin(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(11).text()));
+            quoteStatistics.getFinancialHighlights().getProfitability().setOperatingMargin(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(12).text()));
             
             // Management Effectiveness
-            quoteStatistics.getFinancialHighlight().getManagementEffectiveness().setReturnOnAssets(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(13).text()));
-            quoteStatistics.getFinancialHighlight().getManagementEffectiveness().setReturnOnEquity(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(14).text()));
+            quoteStatistics.getFinancialHighlights().getManagementEffectiveness().setReturnOnAssets(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(13).text()));
+            quoteStatistics.getFinancialHighlights().getManagementEffectiveness().setReturnOnEquity(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(14).text()));
             
             // Income Statement
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setRevenue(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(15).text()));
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setRevenuePerShare(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(16).text()));
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setQuarterlyRevenueGrowthYoy(YahooFinanceWebScraperUtils.stringPercentToBigDecimal(doc.select(cssQuery).get(17).text()));
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setGrossProfit(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(18).text()));
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setEbitda(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(19).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setRevenue(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(15).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setRevenuePerShare(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(16).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setQuarterlyRevenueGrowthYoy(YahooFinanceWebScraperUtils.stringPercentToBigDecimal(doc.select(cssQuery).get(17).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setGrossProfit(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(18).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setEbitda(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(19).text()));
             
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setNetIncomeAviToCommon(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(20).text()));
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setDillutedEPS(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(21).text()));
-            quoteStatistics.getFinancialHighlight().getIncomeStatement().setQuarterlyEarningsGrowthYoy(YahooFinanceWebScraperUtils.stringPercentToBigDecimal(doc.select(cssQuery).get(22).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setNetIncomeAviToCommon(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(20).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setDillutedEPS(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(21).text()));
+            quoteStatistics.getFinancialHighlights().getIncomeStatement().setQuarterlyEarningsGrowthYoy(YahooFinanceWebScraperUtils.stringPercentToBigDecimal(doc.select(cssQuery).get(22).text()));
             
             // Balance Sheet
-            quoteStatistics.getFinancialHighlight().getBalanceSheet().setTotalCash(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(23).text()));
-            quoteStatistics.getFinancialHighlight().getBalanceSheet().setTotalCashPerShare(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(24).text()));
-            quoteStatistics.getFinancialHighlight().getBalanceSheet().setTotalDebt(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(25).text()));
-            quoteStatistics.getFinancialHighlight().getBalanceSheet().setTotalDebtToEquity(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(26).text()));
-            quoteStatistics.getFinancialHighlight().getBalanceSheet().setCurrentRatio(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(27).text()));
-            quoteStatistics.getFinancialHighlight().getBalanceSheet().setBookValuePerShare(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(28).text()));
+            quoteStatistics.getFinancialHighlights().getBalanceSheet().setTotalCash(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(23).text()));
+            quoteStatistics.getFinancialHighlights().getBalanceSheet().setTotalCashPerShare(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(24).text()));
+            quoteStatistics.getFinancialHighlights().getBalanceSheet().setTotalDebt(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(25).text()));
+            quoteStatistics.getFinancialHighlights().getBalanceSheet().setTotalDebtToEquity(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(26).text()));
+            quoteStatistics.getFinancialHighlights().getBalanceSheet().setCurrentRatio(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(27).text()));
+            quoteStatistics.getFinancialHighlights().getBalanceSheet().setBookValuePerShare(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(28).text()));
             
             // Cash Flow Statement
-            quoteStatistics.getFinancialHighlight().getCashFlowStatement().setOperatingCashFlow(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(29).text()));
-            quoteStatistics.getFinancialHighlight().getCashFlowStatement().setLeveredFreeCashFlow(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(30).text()));
+            quoteStatistics.getFinancialHighlights().getCashFlowStatement().setOperatingCashFlow(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(29).text()));
+            quoteStatistics.getFinancialHighlights().getCashFlowStatement().setLeveredFreeCashFlow(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(30).text()));
             
             /*
              * Trading Information

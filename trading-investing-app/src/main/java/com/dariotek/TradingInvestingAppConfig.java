@@ -38,7 +38,7 @@ public class TradingInvestingAppConfig {
 		// sessionFactory.setDataSource(restDataSource());
 		sessionFactory.setDataSource(pooledDataSource()); // uses C3P0 pooled data source
 		sessionFactory.setPackagesToScan(
-				new String[] { "com.dariotek.entity" }); //We don't need to register each entity objects one by one
+				new String[] { "com.dariotek.entity", "com.dariotek.webscraper.entity"}); //We don't need to register each entity objects one by one
 		sessionFactory.setHibernateProperties(hibernateProperties());
 		return sessionFactory;
 	}
@@ -85,7 +85,7 @@ public class TradingInvestingAppConfig {
 	}
 	
 	@Bean
-	Properties hibernateProperties() {
+	public Properties hibernateProperties() {
 		Properties props = new Properties();
 		//props.setProperty("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
 		props.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
@@ -96,12 +96,12 @@ public class TradingInvestingAppConfig {
 	}
 	
 	@Bean
-	AmeritradeTransactionService ameritradeTransactionService() {
+	public AmeritradeTransactionService ameritradeTransactionService() {
 		return new AmeritradeTransactionServiceImpl(env.getProperty("ameritrade.filePath"));
 	}
 	
 	@Bean
-	HistoricalStockPriceService historicalStockPriceService() {
+	public HistoricalStockPriceService historicalStockPriceService() {
 		return new HistoricalStockPriceServiceImpl(env.getProperty("yahooFinance.filePath"));
 	}
 	

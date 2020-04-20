@@ -15,6 +15,7 @@ import java.util.regex.Pattern;
 /**
  * Created by Seth on 4/1/2017.
  */
+
 public class YahooFinanceWebScraperUtils {
 
     private static final String[] schemes = {"http", "https"};
@@ -231,10 +232,10 @@ public class YahooFinanceWebScraperUtils {
     /*
      * MMM dd, yyyy format
      */
-    public static DateTime stringToDateMMMDDYYYY(String dateStr) {
+    public static Date stringToDateMMMDDYYYY(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
             DateTimeFormatter formatter = DateTimeFormat.forPattern("MMM dd, yyyy");
-            return formatter.parseDateTime(dateStr);
+            return formatter.parseDateTime(dateStr).toDate();
         }
         return null;
     }
@@ -242,15 +243,15 @@ public class YahooFinanceWebScraperUtils {
     /*
      * yyyy-MM-dd format
      */
-    public static DateTime stringToDateYYYYMMDD(String dateStr) {
+    public static Date stringToDateYYYYMMDD(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
             DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd");
-            return formatter.parseDateTime(dateStr);
+            return formatter.parseDateTime(dateStr).toDate();
         }
         return null;
     }
 
-    public static DateTime getEarningsStartDate(String dateStr) {
+    public static Date getEarningsStartDate(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
             String[] dateArray = dateStr.split("-");
             logger.info("Start Date Str: " + dateArray[0]);
@@ -259,7 +260,7 @@ public class YahooFinanceWebScraperUtils {
         return null;
     }
 
-    public static DateTime getEarningsEndDate(String dateStr) {
+    public static Date getEarningsEndDate(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
             String[] dateArray = dateStr.split("-");
             logger.info("End Date Str: " + dateArray[1]);

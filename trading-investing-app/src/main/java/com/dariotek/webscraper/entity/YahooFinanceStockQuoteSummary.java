@@ -2,51 +2,155 @@ package com.dariotek.webscraper.entity;
 
 import org.joda.time.DateTime;
 
+import com.dariotek.entity.HistoricalStockPrice.Key;
+
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="trading_investing.stock_quote_summary")
 public class YahooFinanceStockQuoteSummary {
 
-    private String tickerSymbol;
+	@Column(name="live_price")	
     private Double livePrice;
+	
+	@Column(name="live_price_change")
     private Double livePriceChange;
+	
+	@Column(name="live_price_change_percentage")
     private Double livePricePercentChange;
+	
+	@Column(name="previous_closing_price")
     private Double previousClosingPrice;
+	
+	@Column(name="opening_price")
     private Double openingPrice;
+	
+	@Column(name="bid_offer")
     private Double bidOffer;
+	
+	@Column(name="bid_quantity")
     private Integer bidQuantity;
+	
+	@Column(name="asking_price")
     private Double askingPrice;
+	
+	@Column(name="asking_quantity")
     private Integer askingQuantity;
-    private Double daysRangeStart;
+	
+	@Column(name="days_range_start")
+	private Double daysRangeStart;
+	
+	@Column(name="days_range_end")
     private Double daysRangeEnd;
-    private Double fiftyWeekRangeStart;
-    private Double fiftyWeekRangeEnd;
+	
+	@Column(name="fiftytwo_range_start")
+    private Double fiftyTwoWeekRangeStart;
+	
+	@Column(name="fiftytwo_range_end")
+    private Double fiftyTwoWeekRangeEnd;
+	
+	@Column(name="volume")
     private Integer volume;
+	
+	@Column(name="average_volume")
     private Integer avgVolume;
+	
+	@Column(name="market_cap")
     private BigDecimal marketCap;
+	
+	@Column(name="beta")
     private Double beta;
+	
+	@Column(name="pe_ratio_ttm")
     private Double peRatioTtm;
+	
+	@Column(name="eps_ttm")
     private Double epsTtm;
-    private DateTime earningsDateStart;
-    private DateTime earningsDateEnd;
+	
+	@Column(name="earnings_date_start")
+    private Date earningsDateStart;
+	
+	@Column(name="earnings_date_end")
+    private Date earningsDateEnd;
+	
+	@Column(name="dividend")
     private Double dividend;
+	
+	@Column(name="yield")
     private Double yield;
-    private DateTime exDividendDate;
-    private Double firstYearEstimate;
-    private Date dateEntered;
+	
+	@Column(name="ex_dividend_date")
+    private Date exDividendDate;
+	
+	@Column(name="one_year_targe_estimate")
+    private Double oneYearTargetEstimate;
+    
+	@Column(name="potential_earning")
+    private Double potentialEarning;
 
+	@Column(name="potential_earning_percent")
+    private Double potentialEarningPercent;
+	
     public YahooFinanceStockQuoteSummary() {
         super();
     }
-
     
-    public String getTickerSymbol() {
-		return tickerSymbol;
+	@Embeddable
+	public static class Key implements Serializable{
+		
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+		@Column(name="symbol")
+	    private String tickerSymbol;
+		
+		@Column(name="scrape_date")
+	    private Date dateTimeScraped;    
+
+	    public String getTickerSymbol() {
+			return tickerSymbol;
+		}
+
+
+		public void setTickerSymbol(String tickerSymbol) {
+			this.tickerSymbol = tickerSymbol;
+		}
+
+		public Date getDateTimeScraped() {
+			return dateTimeScraped;
+		}
+
+		public void setDateTimeScraped(Date dateTimeScraped) {
+			this.dateTimeScraped = dateTimeScraped;
+		}
+		
+		public String toString() {
+			String key = "[" + tickerSymbol + "|" + dateTimeScraped + "]";
+			return key;
+		}
+
+	}
+
+	@EmbeddedId
+	private Key key;
+	
+	public Key getKey() {
+		return key;
 	}
 
 
-	public void setTickerSymbol(String tickerSymbol) {
-		this.tickerSymbol = tickerSymbol;
+	public void setKey(Key key) {
+		this.key = key;
 	}
 
 
@@ -160,23 +264,23 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public Double getFiftyWeekRangeStart() {
-		return fiftyWeekRangeStart;
+	public Double getFiftyTwoWeekRangeStart() {
+		return fiftyTwoWeekRangeStart;
 	}
 
 
-	public void setFiftyWeekRangeStart(Double fiftyWeekRangeStart) {
-		this.fiftyWeekRangeStart = fiftyWeekRangeStart;
+	public void setFiftyTwoWeekRangeStart(Double fiftyWeekRangeStart) {
+		this.fiftyTwoWeekRangeStart = fiftyWeekRangeStart;
 	}
 
 
-	public Double getFiftyWeekRangeEnd() {
-		return fiftyWeekRangeEnd;
+	public Double getFiftyTwoWeekRangeEnd() {
+		return fiftyTwoWeekRangeEnd;
 	}
 
 
-	public void setFiftyWeekRangeEnd(Double fiftyWeekRangeEnd) {
-		this.fiftyWeekRangeEnd = fiftyWeekRangeEnd;
+	public void setFiftyTwoWeekRangeEnd(Double fiftyWeekRangeEnd) {
+		this.fiftyTwoWeekRangeEnd = fiftyWeekRangeEnd;
 	}
 
 
@@ -240,22 +344,22 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public DateTime getEarningsDateStart() {
+	public Date getEarningsDateStart() {
 		return earningsDateStart;
 	}
 
 
-	public void setEarningsDateStart(DateTime earningsDateStart) {
+	public void setEarningsDateStart(Date earningsDateStart) {
 		this.earningsDateStart = earningsDateStart;
 	}
 
 
-	public DateTime getEarningsDateEnd() {
+	public Date getEarningsDateEnd() {
 		return earningsDateEnd;
 	}
 
 
-	public void setEarningsDateEnd(DateTime earningsDateEnd) {
+	public void setEarningsDateEnd(Date earningsDateEnd) {
 		this.earningsDateEnd = earningsDateEnd;
 	}
 
@@ -280,51 +384,62 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public DateTime getExDividendDate() {
+	public Date getExDividendDate() {
 		return exDividendDate;
 	}
 
 
-	public void setExDividendDate(DateTime exDividendDate) {
+	public void setExDividendDate(Date exDividendDate) {
 		this.exDividendDate = exDividendDate;
 	}
 
 
-	public Double getFirstYearEstimate() {
-		return firstYearEstimate;
+	public Double getOneYearTargetEstimate() {
+		return oneYearTargetEstimate;
 	}
 
 
-	public void setFirstYearEstimate(Double firstYearEstimate) {
-		this.firstYearEstimate = firstYearEstimate;
-	}
-
-
-	public Date getDateEntered() {
-		return dateEntered;
-	}
-
-
-	public void setDateEntered(Date dateEntered) {
-		this.dateEntered = dateEntered;
+	public void setOneYearTargetEstimate(Double oneYearTargetEstimate) {
+		this.oneYearTargetEstimate = oneYearTargetEstimate;
 	}
 	
-	@Override
-	public String toString() {
-		return "YahooFinanceStockQuoteSummary [tickerSymbol=" + tickerSymbol + ", livePrice=" + livePrice
-				+ ", livePriceChange=" + livePriceChange + ", livePricePercentChange=" + livePricePercentChange
-				+ ", previousClosingPrice=" + previousClosingPrice + ", openingPrice=" + openingPrice + ", bidOffer="
-				+ bidOffer + ", bidQuantity=" + bidQuantity + ", askingPrice=" + askingPrice + ", askingQuantity="
-				+ askingQuantity + ", daysRangeStart=" + daysRangeStart + ", daysRangeEnd=" + daysRangeEnd
-				+ ", fiftyWeekRangeStart=" + fiftyWeekRangeStart + ", fiftyWeekRangeEnd=" + fiftyWeekRangeEnd
-				+ ", volume=" + volume + ", avgVolume=" + avgVolume + ", marketCap=" + marketCap + ", beta=" + beta
-				+ ", peRatioTtm=" + peRatioTtm + ", epsTtm=" + epsTtm + ", earningsDateStart=" + earningsDateStart
-				+ ", earningsDateEnd=" + earningsDateEnd + ", dividend=" + dividend + ", yield=" + yield
-				+ ", exDividendDate=" + exDividendDate + ", firstYearEstimate=" + firstYearEstimate + ", dateEntered="
-				+ dateEntered + "]";
+	public Double getPotentialEarning() {
+		return potentialEarning;
 	}
 
 
+	public void setPotentialEarning(Double potentialEarning) {
+		this.potentialEarning = potentialEarning;
+	}
+
+
+	public Double getPotentialEarningPercent() {
+		return potentialEarningPercent;
+	}
+
+
+	public void setPotentialEarningPercent(Double potentialEarningPercent) {
+		this.potentialEarningPercent = potentialEarningPercent;
+	}
+
+
+	@Override
+	public String toString() {
+		return "YahooFinanceStockQuoteSummary [key=" + key  
+				+ ", livePrice=" + livePrice + ", livePriceChange=" + livePriceChange + ", livePricePercentChange="
+				+ livePricePercentChange + ", previousClosingPrice=" + previousClosingPrice + ", openingPrice="
+				+ openingPrice + ", bidOffer=" + bidOffer + ", bidQuantity=" + bidQuantity + ", askingPrice="
+				+ askingPrice + ", askingQuantity=" + askingQuantity + ", daysRangeStart=" + daysRangeStart
+				+ ", daysRangeEnd=" + daysRangeEnd + ", fiftyWeekRangeStart=" + fiftyTwoWeekRangeStart
+				+ ", fiftyWeekRangeEnd=" + fiftyTwoWeekRangeEnd + ", volume=" + volume + ", avgVolume=" + avgVolume
+				+ ", marketCap=" + marketCap + ", beta=" + beta + ", peRatioTtm=" + peRatioTtm + ", epsTtm=" + epsTtm
+				+ ", earningsDateStart=" + earningsDateStart + ", earningsDateEnd=" + earningsDateEnd + ", dividend="
+				+ dividend + ", yield=" + yield + ", exDividendDate=" + exDividendDate + ", firstYearEstimate="
+				+ oneYearTargetEstimate + "]";
+	}
+
+
+	/*
 	@Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -350,9 +465,9 @@ public class YahooFinanceStockQuoteSummary {
             return false;
         if (getDaysRangeEnd() != null ? !getDaysRangeEnd().equals(that.getDaysRangeEnd()) : that.getDaysRangeEnd() != null)
             return false;
-        if (getFiftyWeekRangeStart() != null ? !getFiftyWeekRangeStart().equals(that.getFiftyWeekRangeStart()) : that.getFiftyWeekRangeStart() != null)
+        if (getFiftyTwoWeekRangeStart() != null ? !getFiftyTwoWeekRangeStart().equals(that.getFiftyTwoWeekRangeStart()) : that.getFiftyTwoWeekRangeStart() != null)
             return false;
-        if (getFiftyWeekRangeEnd() != null ? !getFiftyWeekRangeEnd().equals(that.getFiftyWeekRangeEnd()) : that.getFiftyWeekRangeEnd() != null)
+        if (getFiftyTwoWeekRangeEnd() != null ? !getFiftyTwoWeekRangeEnd().equals(that.getFiftyTwoWeekRangeEnd()) : that.getFiftyTwoWeekRangeEnd() != null)
             return false;
         if (getVolume() != null ? !getVolume().equals(that.getVolume()) : that.getVolume() != null) return false;
         if (getAvgVolume() != null ? !getAvgVolume().equals(that.getAvgVolume()) : that.getAvgVolume() != null)
@@ -374,9 +489,11 @@ public class YahooFinanceStockQuoteSummary {
             return false;
         if (getFirstYearEstimate() != null ? !getFirstYearEstimate().equals(that.getFirstYearEstimate()) : that.getFirstYearEstimate() != null)
             return false;
-        return getDateEntered() != null ? getDateEntered().equals(that.getDateEntered()) : that.getDateEntered() == null;
+        //return getDateEntered() != null ? getDateEntered().equals(that.getDateEntered()) : that.getDateEntered() == null;
     }
+    */
 
+	/*
     @Override
     public int hashCode() {
         int result = getTickerSymbol() != null ? getTickerSymbol().hashCode() : 0;
@@ -388,8 +505,8 @@ public class YahooFinanceStockQuoteSummary {
         result = 31 * result + (getAskingQuantity() != null ? getAskingQuantity().hashCode() : 0);
         result = 31 * result + (getDaysRangeStart() != null ? getDaysRangeStart().hashCode() : 0);
         result = 31 * result + (getDaysRangeEnd() != null ? getDaysRangeEnd().hashCode() : 0);
-        result = 31 * result + (getFiftyWeekRangeStart() != null ? getFiftyWeekRangeStart().hashCode() : 0);
-        result = 31 * result + (getFiftyWeekRangeEnd() != null ? getFiftyWeekRangeEnd().hashCode() : 0);
+        result = 31 * result + (getFiftyTwoWeekRangeStart() != null ? getFiftyTwoWeekRangeStart().hashCode() : 0);
+        result = 31 * result + (getFiftyTwoWeekRangeEnd() != null ? getFiftyTwoWeekRangeEnd().hashCode() : 0);
         result = 31 * result + (getVolume() != null ? getVolume().hashCode() : 0);
         result = 31 * result + (getAvgVolume() != null ? getAvgVolume().hashCode() : 0);
         result = 31 * result + (getMarketCap() != null ? getMarketCap().hashCode() : 0);
@@ -405,4 +522,5 @@ public class YahooFinanceStockQuoteSummary {
         result = 31 * result + (getDateEntered() != null ? getDateEntered().hashCode() : 0);
         return result;
     }
+    */
 }

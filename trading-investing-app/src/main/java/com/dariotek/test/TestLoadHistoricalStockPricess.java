@@ -6,7 +6,7 @@ import com.dariotek.TradingInvestingAppConfig;
 import com.dariotek.service.AmeritradeTransactionService;
 import com.dariotek.service.HistoricalStockPriceService;
 
-public class TestApp {;
+public class TestLoadHistoricalStockPricess {;
 
 	public static void main(String[] args) {
 		

@@ -13,10 +13,10 @@ public class DividendsAndSplits {
 	private BigDecimal trailingAnnualDividendYieldPercent;
 	private BigDecimal average5YearDividendYield;
 	private BigDecimal payoutRatioPercent;
-	private DateTime dividendDate;
-	private DateTime exDividendDate;
+	private Date dividendDate;
+	private Date exDividendDate;
 	private BigDecimal lastSplitFactor;
-	private DateTime lastSplitDate;
+	private Date lastSplitDate;
 	
 	public BigDecimal getForwardAnnualDividendRate() {
 		return forwardAnnualDividendRate;
@@ -54,16 +54,16 @@ public class DividendsAndSplits {
 	public void setPayoutRatioPercent(BigDecimal payoutRatioPercent) {
 		this.payoutRatioPercent = payoutRatioPercent;
 	}
-	public DateTime getDividendDate() {
+	public Date getDividendDate() {
 		return dividendDate;
 	}
-	public void setDividendDate(DateTime dividendDate) {
+	public void setDividendDate(Date dividendDate) {
 		this.dividendDate = dividendDate;
 	}
-	public DateTime getExDividendDate() {
+	public Date getExDividendDate() {
 		return exDividendDate;
 	}
-	public void setExDividendDate(DateTime exDividendDate) {
+	public void setExDividendDate(Date exDividendDate) {
 		this.exDividendDate = exDividendDate;
 	}
 	public BigDecimal getLastSplitFactor() {
@@ -72,10 +72,10 @@ public class DividendsAndSplits {
 	public void setLastSplitFactor(BigDecimal lastSplitFactor) {
 		this.lastSplitFactor = lastSplitFactor;
 	}
-	public DateTime getLastSplitDate() {
+	public Date getLastSplitDate() {
 		return lastSplitDate;
 	}
-	public void setLastSplitDate(DateTime lastSplitDate) {
+	public void setLastSplitDate(Date lastSplitDate) {
 		this.lastSplitDate = lastSplitDate;
 	}
 	

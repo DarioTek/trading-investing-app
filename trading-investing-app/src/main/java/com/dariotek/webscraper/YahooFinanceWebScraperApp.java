@@ -13,9 +13,10 @@ public class YahooFinanceWebScraperApp {
 
     private static Logger logger = LoggerFactory.getLogger(YahooFinanceWebScraperApp.class);
 
+    
     public static void main(String[] args) {
 
-    	String[] stockList = {"AAPL", "JPM", "C", "FB", "MSFT", "KO", "DIS", "V"};
+    	String[] stockList = {"AAPL", "JPM", "C", "FB", "MSFT", "KO", "DIS", "V","WBA"};
     	
     	// Yahoo Finance Summary
     	for (String stock: stockList) {
@@ -24,13 +25,14 @@ public class YahooFinanceWebScraperApp {
     		if (YahooFinanceWebScraperUtils.isYahooUrlValid(stock)) {
     	        logger.info("Start scraping Yahoo Finance for " + stock);    	       
     	        YahooFinanceStockQuoteSummaryScraper getQuoteSummary = new YahooFinanceStockQuoteSummaryScraper();    	        
-    	        YahooFinanceStockQuoteSummary quote = getQuoteSummary.getQuoteSummary(stock);    	        
-    	        logger.info(quote.toString());
+    	        YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = getQuoteSummary.getQuoteSummary(stock);    	        
+    	        logger.info(yahooFinanceStockQuoteSummary.toString());
     		}
     	}
     	
-    	/*
+    	
     	// Yahoo Finance Statistics
+    	/*
     	for (String stock: stockList) {
     		String url = "https://finance.yahoo.com/quote/" + stock;
     		

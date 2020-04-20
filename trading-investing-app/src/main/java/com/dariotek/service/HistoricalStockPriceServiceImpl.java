@@ -120,7 +120,7 @@ public class HistoricalStockPriceServiceImpl implements HistoricalStockPriceServ
 				
 				// Setup Up and Down Fields
 				historicalStockPrice.setUpDown(historicalStockPrice.getClose() - historicalStockPrice.getOpen());
-				historicalStockPrice.setUpDownDirection(historicalStockPrice.getUpDown() <= 0 ? 0 : 1);
+				historicalStockPrice.setUpDownDirection(historicalStockPrice.getUpDown() <= 0 ? 0 : 1); // <= 0 means down, > 0 means up
 				
 				try {
 					System.out.println("historicalStockPrice = " + historicalStockPrice);

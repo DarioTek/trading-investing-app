@@ -1,25 +1,27 @@
 package com.dariotek.webscraper.entity;
 
+import java.util.Date;
+
 import org.joda.time.DateTime;
 
 public class FiscalYear {
 	
-	private DateTime fiscalYearEnd;
-	private DateTime mostRecentQuarter;
+	private Date fiscalYearEnd;
+	private Date mostRecentQuarter;
 
 	public FiscalYear() {		
 	}
 	
-	public DateTime getFiscalYearEnd() {
+	public Date getFiscalYearEnd() {
 		return fiscalYearEnd;
 	}
-	public void setFiscalYearEnd(DateTime fiscalYearEnd) {
+	public void setFiscalYearEnd(Date fiscalYearEnd) {
 		this.fiscalYearEnd = fiscalYearEnd;
 	}
-	public DateTime getMostRecentQuarter() {
+	public Date getMostRecentQuarter() {
 		return mostRecentQuarter;
 	}
-	public void setMostRecentQuarter(DateTime mostRecentQuarter) {
+	public void setMostRecentQuarter(Date mostRecentQuarter) {
 		this.mostRecentQuarter = mostRecentQuarter;
 	}
 

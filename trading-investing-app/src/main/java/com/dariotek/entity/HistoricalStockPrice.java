@@ -91,6 +91,24 @@ public class HistoricalStockPrice {
 	
 	@Column(name="up_down_direction")
 	private int upDownDirection;
+
+	// TODO: Added on 2/27/2018
+	/*
+	 * 1. Add 3rd Friday of the month (monthly expiration)
+	 * 
+	 */
+	@Column(name="up_down_45days")
+	private double upDown45Days;
+	
+	@Column(name="up_down_direction_45days")
+	private int upDownDirection45Days;
+	
+	@Column(name="up_down_60days")
+	private double upDown60Days;
+	
+	@Column(name="up_down_direction_60days")
+	private int upDownDirection60Days;
+	
 	
 	public Key getKey() {
 		return key;

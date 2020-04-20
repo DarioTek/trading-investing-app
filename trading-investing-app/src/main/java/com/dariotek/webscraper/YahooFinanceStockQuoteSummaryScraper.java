@@ -1,12 +1,17 @@
 package com.dariotek.webscraper;
 
+import org.joda.time.DateTime;
 //import com.yahoofinance.webscrape.beans.QuoteSummary;
 //import com.yahoofinance.webscrape.utils.WebScrapeUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+import com.dariotek.dao.YahooFinanceStockQuoteSummaryDAO;
+import com.dariotek.entity.HistoricalStockPrice;
 import com.dariotek.webscraper.entity.YahooFinanceStockQuoteSummary;
 
 import java.io.IOException;
@@ -16,14 +21,31 @@ import java.util.Date;
  * This maps to URL = https://finance.yahoo.com/quote/[symbol]
  * This is the contents of the Summary tab
  */
+@Component
 public class YahooFinanceStockQuoteSummaryScraper {
 
     private Logger logger = LoggerFactory.getLogger(YahooFinanceStockQuoteSummaryScraper.class);
-    private String cssQuery = "td[class=\"Ta(end) Fw(b) Lh(14px)\"]";
+    
+    // Class for the Previous Close and other data points
+    // Sample Value : <td class="Ta(end) Fw(600) Lh(14px)" data-test="OPEN-value" data-reactid="48"><span class="Trsdu(0.3s) " data-reactid="49">311.85</span></td>
+    //private String cssQuery = "td[class=\"Ta(end) Fw(b) Lh(14px)\"]";    
+    private String cssQuery = "td[class=\"Ta(end) Fw(600) Lh(14px)\"]";
+    private String cssQuery2 = "span[class=\"Trsdu(0.3s) \"]";
+    private String cssQuery3 = "span[data-reactid=\"114\"]";
+    
+    //<td class="Ta(end) Fw(600) Lh(14px)" data-test="EX_DIVIDEND_DATE-value" data-reactid="113"><span data-reactid="114">Nov 07, 2019</span></td>
+    
+    //<span class="Trsdu(0.3s) " data-reactid="44">312.68</span>
     //private String liveCssQuery = "[class=\"Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)\"]";
+    
+    // Class for the live price
     private String liveCssQuery = "[class*=\"Trsdu(0.3s) Fw(\"]";
+    //<span class="Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib) Bgc($lightRed) trendDown1" data-reactid="52">314.18</span>
     private String liveCssQueryChange = "[class=\"Trsdu(0.3s) Fw(500) Pstart(10px) Fz(24px)*\"]";
-                                                //Trsdu(0.3s) Fw(500) Pstart(10px) Fz(24px) C($dataRed)
+                                                
+    public YahooFinanceStockQuoteSummaryScraper() {
+    	
+    }
     
     public YahooFinanceStockQuoteSummary getQuoteSummary(String tickerSymbol) {
         // Instantiating new instance of the Quote Summary Class
@@ -33,11 +55,18 @@ public class YahooFinanceStockQuoteSummaryScraper {
         	logger.info("url = " + url);
             Document doc = Jsoup.connect(url).get();
             
-            quoteSummary.setTickerSymbol(tickerSymbol);
-            quoteSummary.setLivePrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(liveCssQuery).get(0).text()));
-            //quoteSummary.setLivePriceChange(doc.select(liveCssQuery).get(1).text());
+            //System.out.println(doc.toString());
             
-            quoteSummary.setPreviousClosingPrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(0).text()));
+            YahooFinanceStockQuoteSummary.Key key = new YahooFinanceStockQuoteSummary.Key();
+    		key.setTickerSymbol(tickerSymbol);
+    		key.setDateTimeScraped(new Date());
+
+            quoteSummary.setKey(key);
+
+            quoteSummary.setLivePrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(liveCssQuery).get(0).text()));
+            //quoteSummary.setLivePriceChange(doc.select(liveCssQuery).get(1).text());            
+            
+            quoteSummary.setPreviousClosingPrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery2).get(0).text()));            
             quoteSummary.setOpeningPrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(1).text()));
 
             // The bidOffer, and bidQuantity are both in the same field in the HTML table, so they must be parsed in order to be retrieved
@@ -53,8 +82,8 @@ public class YahooFinanceStockQuoteSummaryScraper {
             quoteSummary.setDaysRangeEnd(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(4).text()));
 
             // The same is true for the 52 Week Range
-            quoteSummary.setFiftyWeekRangeStart(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(5).text()));
-            quoteSummary.setFiftyWeekRangeEnd(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(5).text()));
+            quoteSummary.setFiftyTwoWeekRangeStart(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(5).text()));
+            quoteSummary.setFiftyTwoWeekRangeEnd(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(5).text()));
 
             // remove the commas from both the volume and avgVolume variables
             quoteSummary.setVolume(YahooFinanceWebScraperUtils.removeCommasReturnInteger(doc.select(cssQuery).get(6).text()));
@@ -78,13 +107,16 @@ public class YahooFinanceStockQuoteSummaryScraper {
                 quoteSummary.setDividend(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[0]));
                 quoteSummary.setYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
             }
-
-            quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateYYYYMMDD(doc.select(cssQuery).get(14).text()));
-            quoteSummary.setFirstYearEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));
-            quoteSummary.setDateEntered(new Date());
+            System.out.println("HERE");
+            //quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateYYYYMMDD(doc.select(cssQuery3).get(0).text()));
+            System.out.println("HERE 2");
+            quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));
+            //quoteSummary.setDateEntered(new Date());
 
             logger.info("QuoteSummary String: " + quoteSummary.toString());
             logger.info("QuoteSummary HashCode: " + quoteSummary.hashCode());
+                        
+            
         } catch (IOException e) {
             logger.error("An error occurred while trying to retrieve the information from Yahoo Finance: \n" + e);
         }

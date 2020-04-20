@@ -10,7 +10,9 @@ import java.util.Date;
 public class YahooFinanceStockQuoteStatistics {
 
     private String tickerSymbol;
-    private ValuationMeasures valueationMeasures;
+    private DateTime dateTimeScraped;
+    
+	private ValuationMeasures valueationMeasures;
     private FinancialHighlights financialHighlights;
     private TradingInformation tradingInformation;
 	
@@ -26,18 +28,30 @@ public class YahooFinanceStockQuoteStatistics {
 	public void setTickerSymbol(String tickerSymbol) {
 		this.tickerSymbol = tickerSymbol;
 	}
+	
+    public DateTime getDateTimeScraped() {
+		return dateTimeScraped;
+	}
+
+	public void setDateTimeScraped(DateTime dateTimeScraped) {
+		this.dateTimeScraped = dateTimeScraped;
+	}
+	
 	public ValuationMeasures getValueationMeasures() {
 		return valueationMeasures;
 	}
 	public void setValueationMeasures(ValuationMeasures valueationMeasures) {
 		this.valueationMeasures = valueationMeasures;
 	}
-	public FinancialHighlights getFinancialHighlight() {
+	
+	public FinancialHighlights getFinancialHighlights() {
 		return financialHighlights;
 	}
-	public void setFinancialHighlight(FinancialHighlights financialHighlight) {
-		this.financialHighlights = financialHighlight;
+
+	public void setFinancialHighlights(FinancialHighlights financialHighlights) {
+		this.financialHighlights = financialHighlights;
 	}
+
 	public TradingInformation getTradingInformation() {
 		return tradingInformation;
 	}
@@ -46,9 +60,9 @@ public class YahooFinanceStockQuoteStatistics {
 	}
 	@Override
 	public String toString() {
-		return "YahooFinanceStockQuoteStatistics [tickerSymbol=" + tickerSymbol + ", valueationMeasures="
-				+ valueationMeasures + ", financialHighlight=" + financialHighlights + ", tradingInformation="
-				+ tradingInformation + "]";
+		return "YahooFinanceStockQuoteStatistics [tickerSymbol=" + tickerSymbol + ", dateTimeScraped=" + dateTimeScraped
+				+ ", valueationMeasures=" + valueationMeasures + ", financialHighlights=" + financialHighlights
+				+ ", tradingInformation=" + tradingInformation + "]";
 	}
     
     
