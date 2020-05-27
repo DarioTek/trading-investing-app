@@ -52,10 +52,10 @@ public class YahooFinanceStockQuoteSummary {
     private Double daysRangeEnd;
 	
 	@Column(name="fiftytwo_range_start")
-    private Double fiftyTwoWeekRangeStart;
+    private Double fiftyTwoWeekRangeLow;
 	
 	@Column(name="fiftytwo_range_end")
-    private Double fiftyTwoWeekRangeEnd;
+    private Double fiftyTwoWeekRangeHigh;
 	
 	@Column(name="volume")
     private Integer volume;
@@ -264,23 +264,23 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public Double getFiftyTwoWeekRangeStart() {
-		return fiftyTwoWeekRangeStart;
+	public Double getFiftyTwoWeekRangeLow() {
+		return fiftyTwoWeekRangeLow;
 	}
 
 
-	public void setFiftyTwoWeekRangeStart(Double fiftyWeekRangeStart) {
-		this.fiftyTwoWeekRangeStart = fiftyWeekRangeStart;
+	public void setFiftyTwoWeekRangeLow(Double fiftyWeekRangeStart) {
+		this.fiftyTwoWeekRangeLow = fiftyWeekRangeStart;
 	}
 
 
-	public Double getFiftyTwoWeekRangeEnd() {
-		return fiftyTwoWeekRangeEnd;
+	public Double getFiftyTwoWeekRangeHigh() {
+		return fiftyTwoWeekRangeHigh;
 	}
 
 
-	public void setFiftyTwoWeekRangeEnd(Double fiftyWeekRangeEnd) {
-		this.fiftyTwoWeekRangeEnd = fiftyWeekRangeEnd;
+	public void setFiftyTwoWeekRangeHigh(Double fiftyWeekRangeEnd) {
+		this.fiftyTwoWeekRangeHigh = fiftyWeekRangeEnd;
 	}
 
 
@@ -435,11 +435,11 @@ public class YahooFinanceStockQuoteSummary {
 				+ "bidOffer=" + bidOffer + ",\n"
 				+ "bidQuantity=" + bidQuantity + ",\n"
 				+ "askingPrice=" + askingPrice + ",\n"
-				+ "askingQuantity=" + askingQuantity + "\n," 
+				+ "askingQuantity=" + askingQuantity + ",\n" 
 				+ "daysRangeStart=" + daysRangeStart + ",\n" 
 				+ "daysRangeEnd=" + daysRangeEnd + ",\n" 
-				+ "fiftyWeekRangeStart=" + fiftyTwoWeekRangeStart + ",\n"
-				+ "fiftyWeekRangeEnd=" + fiftyTwoWeekRangeEnd + ",\n" 
+				+ "52 Week Range Low = " + fiftyTwoWeekRangeLow + ",\n"
+				+ "52 Week Range High = " + fiftyTwoWeekRangeHigh + ",\n" 
 				+ "volume=" + volume + ",\n"
 				+ "avgVolume=" + avgVolume + ",\n" 
 				+ "marketCap=" + marketCap + ",\n"
@@ -451,7 +451,7 @@ public class YahooFinanceStockQuoteSummary {
 				+ "dividend=" + dividend + ",\n"
 				+ "yield=" + yield + ",\n" 
 				+ "exDividendDate=" + exDividendDate + ",\n"
-				+ "firstYearEstimate="+ oneYearTargetEstimate + "\n]";
+				+ "1 Year Target Estimate = "+ oneYearTargetEstimate + "\n]";
 	}
 
 

@@ -75,8 +75,8 @@ public class YahooFinanceStockQuoteSummaryScraper {
             quoteSummary.setDaysRangeEnd(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(4).text()));
 
             // The same is true for the 52 Week Range
-            quoteSummary.setFiftyTwoWeekRangeStart(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(5).text()));
-            quoteSummary.setFiftyTwoWeekRangeEnd(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(5).text()));
+            quoteSummary.setFiftyTwoWeekRangeLow(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(5).text()));
+            quoteSummary.setFiftyTwoWeekRangeHigh(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(5).text()));
 
             // remove the commas from both the volume and avgVolume variables
             quoteSummary.setVolume(YahooFinanceWebScraperUtils.removeCommasReturnInteger(doc.select(cssQuery).get(6).text()));

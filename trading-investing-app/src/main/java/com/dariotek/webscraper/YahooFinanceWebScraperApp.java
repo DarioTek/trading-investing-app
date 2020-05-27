@@ -20,8 +20,18 @@ public class YahooFinanceWebScraperApp {
     		if (YahooFinanceWebScraperUtils.isYahooUrlValid(stock)) {
     	        logger.info("Start scraping Yahoo Finance for " + stock);    	       
     	        YahooFinanceStockQuoteSummaryScraper getQuoteSummary = new YahooFinanceStockQuoteSummaryScraper();    	        
-    	        YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = getQuoteSummary.getQuoteSummary(stock);    	        
+    	        YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = getQuoteSummary.getQuoteSummary(stock);
+    	        
+    	        Double earningsPotentialValue = yahooFinanceStockQuoteSummary.getOneYearTargetEstimate() - yahooFinanceStockQuoteSummary.getLivePrice();
+    	        Double earningsPotentialPercentage = (earningsPotentialValue / yahooFinanceStockQuoteSummary.getLivePrice()) * 100;    	            	            	        
+    	        
     	        logger.info(yahooFinanceStockQuoteSummary.toString());
+    	        logger.info("EarningsPotentialValue = " + earningsPotentialValue);
+    	        logger.info("EarningsPotentialPercentage = " + earningsPotentialPercentage);
+    	        System.out.println("\n\n");
+    	        
+    	        //TODO: How close is the current value to 52 week low?
+    	        //TODO: How close is the current value to 52 week high?
     		}
     	}
     	
