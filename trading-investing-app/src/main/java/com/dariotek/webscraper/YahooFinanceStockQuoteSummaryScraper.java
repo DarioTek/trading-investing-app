@@ -26,19 +26,12 @@ public class YahooFinanceStockQuoteSummaryScraper {
 
     private Logger logger = LoggerFactory.getLogger(YahooFinanceStockQuoteSummaryScraper.class);
     
-    // Class for the Previous Close and other data points
-    // Sample Value : <td class="Ta(end) Fw(600) Lh(14px)" data-test="OPEN-value" data-reactid="48"><span class="Trsdu(0.3s) " data-reactid="49">311.85</span></td>
-    //private String cssQuery = "td[class=\"Ta(end) Fw(b) Lh(14px)\"]";    
     private String cssQuery = "td[class=\"Ta(end) Fw(600) Lh(14px)\"]";
     private String cssQuery2 = "span[class=\"Trsdu(0.3s) \"]";
     private String cssQuery3 = "span[data-reactid=\"114\"]";
     
-    //<td class="Ta(end) Fw(600) Lh(14px)" data-test="EX_DIVIDEND_DATE-value" data-reactid="113"><span data-reactid="114">Nov 07, 2019</span></td>
     
-    //<span class="Trsdu(0.3s) " data-reactid="44">312.68</span>
-    //private String liveCssQuery = "[class=\"Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib)\"]";
-    
-    // Class for the live price
+    // CSS Class for the live price
     private String liveCssQuery = "[class*=\"Trsdu(0.3s) Fw(\"]";
     //<span class="Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib) Bgc($lightRed) trendDown1" data-reactid="52">314.18</span>
     private String liveCssQueryChange = "[class=\"Trsdu(0.3s) Fw(500) Pstart(10px) Fz(24px)*\"]";
@@ -107,9 +100,7 @@ public class YahooFinanceStockQuoteSummaryScraper {
                 quoteSummary.setDividend(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[0]));
                 quoteSummary.setYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
             }
-            //System.out.println("HERE");
             //quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateYYYYMMDD(doc.select(cssQuery3).get(0).text()));
-            //System.out.println("HERE 2");
             quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));
             //quoteSummary.setDateEntered(new Date());
 

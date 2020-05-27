@@ -425,21 +425,33 @@ public class YahooFinanceStockQuoteSummary {
 
 	@Override
 	public String toString() {
-		return "YahooFinanceStockQuoteSummary ["
-				+ "\nkey=" + key + ",\n"
+		return "YahooFinanceStockQuoteSummary [\n"
+				+ "key=" + key + ",\n"
 				+ "livePrice=" + livePrice + ",\n" 
 				+ "livePriceChange=" + livePriceChange + ",\n" 
 				+ "livePricePercentChange="	+ livePricePercentChange + ",\n" 
-				+ "previousClosingPrice=" + previousClosingPrice + ", openingPrice="
-				+ openingPrice + ", bidOffer=" + bidOffer + ", bidQuantity=" + bidQuantity + ", askingPrice="
-				+ askingPrice + ", askingQuantity=" + askingQuantity + ", daysRangeStart=" + daysRangeStart
-				+ ", daysRangeEnd=" + daysRangeEnd + ", fiftyWeekRangeStart=" + fiftyTwoWeekRangeStart
-				+ ", fiftyWeekRangeEnd=" + fiftyTwoWeekRangeEnd + ", volume=" + volume + ", avgVolume=" + avgVolume
-				+ ", marketCap=" + marketCap + ", beta=" + beta + ", peRatioTtm=" + peRatioTtm + ", epsTtm=" + epsTtm
-				+ ", earningsDateStart=" + earningsDateStart + ", earningsDateEnd=" + earningsDateEnd + ", dividend="
-				+ dividend + ", yield=" + yield + ", exDividendDate=" + exDividendDate + ", firstYearEstimate="
-				+ oneYearTargetEstimate + 
-				"\n]";
+				+ "previousClosingPrice=" + previousClosingPrice + ",\n"
+				+ "openingPrice=" + openingPrice + ",\n" 
+				+ "bidOffer=" + bidOffer + ",\n"
+				+ "bidQuantity=" + bidQuantity + ",\n"
+				+ "askingPrice=" + askingPrice + ",\n"
+				+ "askingQuantity=" + askingQuantity + "\n," 
+				+ "daysRangeStart=" + daysRangeStart + ",\n" 
+				+ "daysRangeEnd=" + daysRangeEnd + ",\n" 
+				+ "fiftyWeekRangeStart=" + fiftyTwoWeekRangeStart + ",\n"
+				+ "fiftyWeekRangeEnd=" + fiftyTwoWeekRangeEnd + ",\n" 
+				+ "volume=" + volume + ",\n"
+				+ "avgVolume=" + avgVolume + ",\n" 
+				+ "marketCap=" + marketCap + ",\n"
+				+ "beta=" + beta + ",\n" 
+				+ "peRatioTtm=" + peRatioTtm + ",\n" 
+				+ "epsTtm=" + epsTtm + ",\n" 
+				+ "earningsDateStart=" + earningsDateStart + ",\n"
+				+ "earningsDateEnd=" + earningsDateEnd + ",\n"
+				+ "dividend=" + dividend + ",\n"
+				+ "yield=" + yield + ",\n" 
+				+ "exDividendDate=" + exDividendDate + ",\n"
+				+ "firstYearEstimate="+ oneYearTargetEstimate + "\n]";
 	}
 
 
