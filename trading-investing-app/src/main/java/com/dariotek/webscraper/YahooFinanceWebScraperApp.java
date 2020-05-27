@@ -41,6 +41,7 @@ public class YahooFinanceWebScraperApp {
     	        
     	        /*
     	         * https://dzone.com/articles/how-to-sort-objects-in-java
+    	         * https://www.geeksforgeeks.org/sorting-a-hashmap-according-to-values/
     	         */
     		}
     	}

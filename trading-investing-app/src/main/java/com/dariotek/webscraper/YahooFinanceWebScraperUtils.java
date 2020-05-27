@@ -8,7 +8,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -235,8 +238,15 @@ public class YahooFinanceWebScraperUtils {
      */
     public static Date stringToDateMMMDDYYYY(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
-            DateTimeFormatter formatter = DateTimeFormat.forPattern("MMM dd, yyyy");
-            return formatter.parseDateTime(dateStr).toDate();
+        	try {
+	        	DateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH);
+	        	Date date = format.parse(dateStr);
+	        	return date;
+        	}catch(Exception e) {
+        		e.printStackTrace();
+        	}
+            //DateTimeFormatter formatter = DateTimeFormat.forPattern("MMM dd, yyyy");
+            //return formatter.parseDateTime(dateStr).toDate();
         }
         return null;
     }
@@ -246,8 +256,16 @@ public class YahooFinanceWebScraperUtils {
      */
     public static Date stringToDateYYYYMMDD(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
-            DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd");
-            return formatter.parseDateTime(dateStr).toDate();
+        	try {
+	        	DateFormat format = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH);
+	        	Date date = format.parse(dateStr);
+	        	return date;
+        	}catch(Exception e) {
+        		e.printStackTrace();
+        	}
+        	
+        	//DateTimeFormatter formatter = DateTimeFormat.forPattern("yyyy-MM-dd");
+            //return formatter.parseDateTime(dateStr).toDate();
         }
         return null;
     }

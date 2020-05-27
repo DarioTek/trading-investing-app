@@ -26,13 +26,21 @@ public class YahooFinanceStockQuoteSummaryScraper {
 
     private Logger logger = LoggerFactory.getLogger(YahooFinanceStockQuoteSummaryScraper.class);
     
+    //CSS pattern to parse
+    private String cssCurrentPrice = "[class*=\"Trsdu(0.3s) Fw(\"]";
+    private String cssPreviousClosePrice = "td[data-test=\"PREV_CLOSE-value\"]";
+    private String cssOpenPrice = "td[data-test=\"PREV_CLOSE-value\"]";
+    private String cssExDividendDate = "td[data-test=\"EX_DIVIDEND_DATE-value\"]";
+    
+    
+    
     private String cssQuery = "td[class=\"Ta(end) Fw(600) Lh(14px)\"]";
     private String cssQuery2 = "span[class=\"Trsdu(0.3s) \"]";
-    private String cssQuery3 = "span[data-reactid=\"114\"]";
+    private String cssQuery3 = "span[data-reactid=\"168\"]";
     
     
     // CSS Class for the live price
-    private String liveCssQuery = "[class*=\"Trsdu(0.3s) Fw(\"]";
+ 
     //<span class="Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib) Bgc($lightRed) trendDown1" data-reactid="52">314.18</span>
     private String liveCssQueryChange = "[class=\"Trsdu(0.3s) Fw(500) Pstart(10px) Fz(24px)*\"]";
                                                 
@@ -56,11 +64,11 @@ public class YahooFinanceStockQuoteSummaryScraper {
 
             quoteSummary.setKey(key);
 
-            quoteSummary.setLivePrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(liveCssQuery).get(0).text()));
+            quoteSummary.setLivePrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssCurrentPrice).get(0).text()));
             //quoteSummary.setLivePriceChange(doc.select(liveCssQuery).get(1).text());            
             
-            quoteSummary.setPreviousClosingPrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery2).get(0).text()));            
-            quoteSummary.setOpeningPrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(1).text()));
+            quoteSummary.setPreviousClosingPrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssPreviousClosePrice).get(0).text()));            
+            quoteSummary.setOpeningPrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssOpenPrice).get(0).text()));
 
             // The bidOffer, and bidQuantity are both in the same field in the HTML table, so they must be parsed in order to be retrieved
             quoteSummary.setBidOffer(YahooFinanceWebScraperUtils.getStockPriceByQuantity(doc.select(cssQuery).get(2).text()));
@@ -71,8 +79,8 @@ public class YahooFinanceStockQuoteSummaryScraper {
             quoteSummary.setAskingQuantity(YahooFinanceWebScraperUtils.getStockQuantityByPrice(doc.select(cssQuery).get(3).text()));
 
             // The daysRangeStart and daysRangeEnd are both in the same field in the HTML table, so they will need to be parsed
-            quoteSummary.setDaysRangeStart(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(4).text()));
-            quoteSummary.setDaysRangeEnd(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(4).text()));
+            quoteSummary.setDaysRangeLowPrice(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(4).text()));
+            quoteSummary.setDaysRangeHighPrice(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(4).text()));
 
             // The same is true for the 52 Week Range
             quoteSummary.setFiftyTwoWeekRangeLow(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(5).text()));
@@ -100,7 +108,7 @@ public class YahooFinanceStockQuoteSummaryScraper {
                 quoteSummary.setDividend(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[0]));
                 quoteSummary.setYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
             }
-            //quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateYYYYMMDD(doc.select(cssQuery3).get(0).text()));
+            quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateYYYYMMDD(doc.select(cssExDividendDate).get(0).text()));
             quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));
             //quoteSummary.setDateEntered(new Date());
 

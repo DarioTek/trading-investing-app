@@ -6,6 +6,8 @@ import com.dariotek.entity.HistoricalStockPrice.Key;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -45,11 +47,11 @@ public class YahooFinanceStockQuoteSummary {
 	@Column(name="asking_quantity")
     private Integer askingQuantity;
 	
-	@Column(name="days_range_start")
-	private Double daysRangeStart;
+	@Column(name="days_range_low_price")
+	private Double daysRangeLowPrice;
 	
-	@Column(name="days_range_end")
-    private Double daysRangeEnd;
+	@Column(name="days_range_high_price")
+    private Double daysRangeHighPrice;
 	
 	@Column(name="fiftytwo_range_start")
     private Double fiftyTwoWeekRangeLow;
@@ -244,23 +246,23 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public Double getDaysRangeStart() {
-		return daysRangeStart;
+	public Double getDaysRangeLowPrice() {
+		return daysRangeLowPrice;
 	}
 
 
-	public void setDaysRangeStart(Double daysRangeStart) {
-		this.daysRangeStart = daysRangeStart;
+	public void setDaysRangeLowPrice(Double daysRangeStart) {
+		this.daysRangeLowPrice = daysRangeStart;
 	}
 
 
-	public Double getDaysRangeEnd() {
-		return daysRangeEnd;
+	public Double getDaysRangeHighPrice() {
+		return daysRangeHighPrice;
 	}
 
 
-	public void setDaysRangeEnd(Double daysRangeEnd) {
-		this.daysRangeEnd = daysRangeEnd;
+	public void setDaysRangeHighPrice(Double daysRangeEnd) {
+		this.daysRangeHighPrice = daysRangeEnd;
 	}
 
 
@@ -384,8 +386,13 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public Date getExDividendDate() {
-		return exDividendDate;
+	public String getExDividendDate() {
+		if (exDividendDate == null) {
+			return "N/A";
+		}else{
+			DateFormat dateFormat = new SimpleDateFormat("mm/dd/yyyy");
+			return dateFormat.format(exDividendDate);
+		}		
 	}
 
 
@@ -436,8 +443,8 @@ public class YahooFinanceStockQuoteSummary {
 				+ "bidQuantity=" + bidQuantity + ",\n"
 				+ "askingPrice=" + askingPrice + ",\n"
 				+ "askingQuantity=" + askingQuantity + ",\n" 
-				+ "daysRangeStart=" + daysRangeStart + ",\n" 
-				+ "daysRangeEnd=" + daysRangeEnd + ",\n" 
+				+ "daysRangeStart=" + daysRangeLowPrice + ",\n" 
+				+ "daysRangeEnd=" + daysRangeHighPrice + ",\n" 
 				+ "52 Week Range Low = " + fiftyTwoWeekRangeLow + ",\n"
 				+ "52 Week Range High = " + fiftyTwoWeekRangeHigh + ",\n" 
 				+ "volume=" + volume + ",\n"
