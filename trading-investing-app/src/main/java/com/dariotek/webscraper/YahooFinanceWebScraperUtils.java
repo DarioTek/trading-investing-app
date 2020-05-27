@@ -39,14 +39,14 @@ public class YahooFinanceWebScraperUtils {
         if (isStringNonApplicable(doubleStr)) {
             return null;
         }
-        return Double.parseDouble(doubleStr);
+        return Double.parseDouble(doubleStr.replace(",", "")); //remove comma on string values before converting String to Double
     }
 
     public static Double getStockPriceByQuantity(String stockByQuantityStr) {
         if (!isStockPriceAndQuantityNull(stockByQuantityStr)) {
             String[] stockByQuantityArray = stockByQuantityStr.split(" x ");
             //logger.info("Stock Price By Quantity: " + stockByQuantityArray[0]);
-            return Double.parseDouble(stockByQuantityArray[0]);
+            return Double.parseDouble(stockByQuantityArray[0].replace(",", "")); //remove comma on string values before converting String to Double
         }
         return null;
     }
@@ -64,7 +64,7 @@ public class YahooFinanceWebScraperUtils {
         if (!isStockPriceAndQuantityNull(stockRangeStr)) {
             String[] stockRangeArray = stockRangeStr.split(" - ");
             //logger.info("Stock Starting Price: " + stockRangeArray[0]);
-            return Double.parseDouble(stockRangeArray[0]);
+            return Double.parseDouble(stockRangeArray[0].replace(",","")); //remove comma on string values before converting String to Double
         }
         return null;
     }
@@ -76,7 +76,7 @@ public class YahooFinanceWebScraperUtils {
     public static Double getStockEndingPrice(String stockRangeStr) {
         String[] stockRangeArray = stockRangeStr.split(" - ");
         //logger.info("Stock Ending Price: " + stockRangeArray[1]);
-        return Double.parseDouble(stockRangeArray[1]);
+        return Double.parseDouble(stockRangeArray[1].replace(",", "")); //remove comma on string values before converting String to Double
     }
 
     public static Integer removeCommasReturnInteger(String commaIntStr) {

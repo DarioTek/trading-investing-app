@@ -11,7 +11,8 @@ public class YahooFinanceWebScraperApp {
     
     public static void main(String[] args) {
 
-    	String[] stockList = {"AAPL","JPM","C","FB","MSFT","MA","DIS","V","TSLA","HD","NFLX","GS"};
+    	String[] stockList = {"FB","AAPL","NFLX","GOOGL","GS","JPM","C","FB","MSFT","DIS","MA","V","TSLA","HD"};
+    	String[] indexList= {"QQQ","IWM","DIA","SPY"}; //TODO: Code currently does not scrape properly for indexes 
     	
     	// Yahoo Finance Summary
     	for (String stock: stockList) {
