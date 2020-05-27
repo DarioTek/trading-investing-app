@@ -107,14 +107,14 @@ public class YahooFinanceStockQuoteSummaryScraper {
                 quoteSummary.setDividend(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[0]));
                 quoteSummary.setYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
             }
-            System.out.println("HERE");
+            //System.out.println("HERE");
             //quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateYYYYMMDD(doc.select(cssQuery3).get(0).text()));
-            System.out.println("HERE 2");
+            //System.out.println("HERE 2");
             quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));
             //quoteSummary.setDateEntered(new Date());
 
-            logger.info("QuoteSummary String: " + quoteSummary.toString());
-            logger.info("QuoteSummary HashCode: " + quoteSummary.hashCode());
+            //logger.info("QuoteSummary String: " + quoteSummary.toString());
+            //logger.info("QuoteSummary HashCode: " + quoteSummary.hashCode());
                         
             
         } catch (IOException e) {

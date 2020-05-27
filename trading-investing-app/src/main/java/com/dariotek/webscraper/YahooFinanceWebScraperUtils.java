@@ -14,6 +14,7 @@ import java.util.regex.Pattern;
 
 /**
  * Created by Seth on 4/1/2017.
+ * Enhanced by DarioTek
  */
 
 public class YahooFinanceWebScraperUtils {
@@ -34,7 +35,7 @@ public class YahooFinanceWebScraperUtils {
     }
 
     public static Double stringToDouble(String doubleStr) {
-        logger.info("Double Str: " + doubleStr);
+        //logger.info("Double Str: " + doubleStr);
         if (isStringNonApplicable(doubleStr)) {
             return null;
         }
@@ -44,7 +45,7 @@ public class YahooFinanceWebScraperUtils {
     public static Double getStockPriceByQuantity(String stockByQuantityStr) {
         if (!isStockPriceAndQuantityNull(stockByQuantityStr)) {
             String[] stockByQuantityArray = stockByQuantityStr.split(" x ");
-            logger.info("Stock Price By Quantity: " + stockByQuantityArray[0]);
+            //logger.info("Stock Price By Quantity: " + stockByQuantityArray[0]);
             return Double.parseDouble(stockByQuantityArray[0]);
         }
         return null;
@@ -53,7 +54,7 @@ public class YahooFinanceWebScraperUtils {
     public static Integer getStockQuantityByPrice(String stockByPriceStr) {
         if (!isStockPriceAndQuantityNull(stockByPriceStr)) {
             String[] stockByQuantityArray = stockByPriceStr.split(" x ");
-            logger.info("Stock Quantity By Price: " + stockByQuantityArray[1]);
+            //logger.info("Stock Quantity By Price: " + stockByQuantityArray[1]);
             return Integer.parseInt(stockByQuantityArray[1]);
         }
         return null;
@@ -62,7 +63,7 @@ public class YahooFinanceWebScraperUtils {
     public static Double getStockStartingPrice(String stockRangeStr) {
         if (!isStockPriceAndQuantityNull(stockRangeStr)) {
             String[] stockRangeArray = stockRangeStr.split(" - ");
-            logger.info("Stock Starting Price: " + stockRangeArray[0]);
+            //logger.info("Stock Starting Price: " + stockRangeArray[0]);
             return Double.parseDouble(stockRangeArray[0]);
         }
         return null;
@@ -74,7 +75,7 @@ public class YahooFinanceWebScraperUtils {
 
     public static Double getStockEndingPrice(String stockRangeStr) {
         String[] stockRangeArray = stockRangeStr.split(" - ");
-        logger.info("Stock Ending Price: " + stockRangeArray[1]);
+        //logger.info("Stock Ending Price: " + stockRangeArray[1]);
         return Double.parseDouble(stockRangeArray[1]);
     }
 
@@ -84,7 +85,7 @@ public class YahooFinanceWebScraperUtils {
     }
 
     public static Double stringToDoubleWithChar(String marketCapStr) {    	
-        logger.info("Double String: " + marketCapStr);
+        //logger.info("Double String: " + marketCapStr);
         
         if (isStringNonApplicable(marketCapStr)) {
         	return null;
@@ -93,8 +94,8 @@ public class YahooFinanceWebScraperUtils {
         Integer startpos = 0;
         Integer endpos = marketCapStr.length() - 1;
         Double number = Double.parseDouble(marketCapStr.substring(startpos, endpos));
-        logger.info("Number Character Removed: " + number);
-        logger.info("number LongValue() = " + number.longValue());
+        //logger.info("Number Character Removed: " + number);
+        //logger.info("number LongValue() = " + number.longValue());
         
         if (marketCapStr.contains("M")) {
             return number.doubleValue() * 1000000;
@@ -118,8 +119,8 @@ public class YahooFinanceWebScraperUtils {
         Integer startpos = 0;
         Integer endpos = marketCapStr.length() - 1;
         Double number = Double.parseDouble(marketCapStr.substring(startpos, endpos));
-        logger.info("Number Character Removed: " + number);
-        logger.info("number LongValue() = " + number.longValue());
+        //logger.info("Number Character Removed: " + number);
+        //logger.info("number LongValue() = " + number.longValue());
         
         if (marketCapStr.contains("M")) {
             return number.longValue() * 1000000;
@@ -142,8 +143,8 @@ public class YahooFinanceWebScraperUtils {
                 Integer endpos = string.length() - 1;
                 Double doubleVar = Double.parseDouble(string.substring(startpos, endpos));
                 BigDecimal number = BigDecimal.valueOf(doubleVar);
-                logger.info("doubleVar = " + doubleVar);
-                logger.info("number = " + number);
+                //logger.info("doubleVar = " + doubleVar);
+                //logger.info("number = " + number);
                 
                 if (string.contains("k")) {
                 	return number.multiply(new BigDecimal(1000));
@@ -175,8 +176,8 @@ public class YahooFinanceWebScraperUtils {
             Integer startpos = 0;
             Integer endpos = string.length() - 1;
             Double number = Double.parseDouble(string.substring(startpos, endpos));
-            logger.info("Number Character Removed: " + number);
-            logger.info("number Double Value() = " + number.doubleValue());
+            //logger.info("Number Character Removed: " + number);
+            //logger.info("number Double Value() = " + number.doubleValue());
             
             if (string.contains("%")) {
             	//logger.info("return Double Value() = " + number.doubleValue() / 100L);
@@ -191,13 +192,13 @@ public class YahooFinanceWebScraperUtils {
     }
 
     public static BigDecimal stringFractionToBigDecimal(String string) {
-        logger.info("Fraction String: " + string);
+        //logger.info("Fraction String: " + string);
         
         if (!isStringNonApplicable(string)) {
         	String[] stringArray = string.split("/");
             
-            logger.info("stringArray[0] : " + stringArray[0]);
-            logger.info("stringArray[1] = " + stringArray[1]);    
+            //logger.info("stringArray[0] : " + stringArray[0]);
+            //logger.info("stringArray[1] = " + stringArray[1]);    
  
             return BigDecimal.valueOf(Integer.parseInt(stringArray[0])).divide(new BigDecimal(Integer.parseInt(stringArray[1])));
 
@@ -208,7 +209,7 @@ public class YahooFinanceWebScraperUtils {
 
 
     public static Double stringPercentToDouble(String string) {
-        logger.info("Percent String: " + string);
+        //logger.info("Percent String: " + string);
         
         if (isStringNonApplicable(string)) {
             return null;
@@ -217,11 +218,11 @@ public class YahooFinanceWebScraperUtils {
         Integer startpos = 0;
         Integer endpos = string.length() - 1;
         Double number = Double.parseDouble(string.substring(startpos, endpos));
-        logger.info("Number Character Removed: " + number);
-        logger.info("number Double Value() = " + number.doubleValue());
+        //logger.info("Number Character Removed: " + number);
+        //logger.info("number Double Value() = " + number.doubleValue());
         
         if (string.contains("%")) {
-        	logger.info("return Double Value() = " + number.doubleValue() / 100L);
+        	//logger.info("return Double Value() = " + number.doubleValue() / 100L);
             return number.doubleValue() / 100L;
         } else {
             return number.doubleValue();
@@ -254,7 +255,7 @@ public class YahooFinanceWebScraperUtils {
     public static Date getEarningsStartDate(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
             String[] dateArray = dateStr.split("-");
-            logger.info("Start Date Str: " + dateArray[0]);
+            //logger.info("Start Date Str: " + dateArray[0]);
             return stringToDateMMMDDYYYY(dateArray[0].trim());
         }
         return null;
@@ -263,7 +264,7 @@ public class YahooFinanceWebScraperUtils {
     public static Date getEarningsEndDate(String dateStr) {
         if (!isStringNonApplicable(dateStr)) {
             String[] dateArray = dateStr.split("-");
-            logger.info("End Date Str: " + dateArray[1]);
+            //logger.info("End Date Str: " + dateArray[1]);
             return stringToDateMMMDDYYYY(dateArray[1].trim());
         }
         return null;
@@ -297,7 +298,7 @@ public class YahooFinanceWebScraperUtils {
     }
 
     public static DateTime sqlDateToDateTime(String dateStr) {
-        logger.info("DateStr: " + dateStr);
+        //logger.info("DateStr: " + dateStr);
         if (dateStr != null) {
             return DateTime.parse(dateStr, DateTimeFormat.forPattern("yyyy-MM-dd")).toDateTime();
         }

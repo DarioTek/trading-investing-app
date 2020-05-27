@@ -425,9 +425,12 @@ public class YahooFinanceStockQuoteSummary {
 
 	@Override
 	public String toString() {
-		return "YahooFinanceStockQuoteSummary [key=" + key  
-				+ ", livePrice=" + livePrice + ", livePriceChange=" + livePriceChange + ", livePricePercentChange="
-				+ livePricePercentChange + ", previousClosingPrice=" + previousClosingPrice + ", openingPrice="
+		return "YahooFinanceStockQuoteSummary ["
+				+ "\nkey=" + key + ",\n"
+				+ "livePrice=" + livePrice + ",\n" 
+				+ "livePriceChange=" + livePriceChange + ",\n" 
+				+ "livePricePercentChange="	+ livePricePercentChange + ",\n" 
+				+ "previousClosingPrice=" + previousClosingPrice + ", openingPrice="
 				+ openingPrice + ", bidOffer=" + bidOffer + ", bidQuantity=" + bidQuantity + ", askingPrice="
 				+ askingPrice + ", askingQuantity=" + askingQuantity + ", daysRangeStart=" + daysRangeStart
 				+ ", daysRangeEnd=" + daysRangeEnd + ", fiftyWeekRangeStart=" + fiftyTwoWeekRangeStart
@@ -435,7 +438,8 @@ public class YahooFinanceStockQuoteSummary {
 				+ ", marketCap=" + marketCap + ", beta=" + beta + ", peRatioTtm=" + peRatioTtm + ", epsTtm=" + epsTtm
 				+ ", earningsDateStart=" + earningsDateStart + ", earningsDateEnd=" + earningsDateEnd + ", dividend="
 				+ dividend + ", yield=" + yield + ", exDividendDate=" + exDividendDate + ", firstYearEstimate="
-				+ oneYearTargetEstimate + "]";
+				+ oneYearTargetEstimate + 
+				"\n]";
 	}
 
 

@@ -16,7 +16,7 @@ public class YahooFinanceWebScraperApp {
     
     public static void main(String[] args) {
 
-    	String[] stockList = {"AAPL", "JPM", "C", "FB", "MSFT", "KO", "DIS", "V","WBA"};
+    	String[] stockList = {"AAPL", "JPM", "C", "FB", "MSFT", "MA", "DIS", "V","TSLA","HD","NFLX","GS"};
     	
     	// Yahoo Finance Summary
     	for (String stock: stockList) {
