@@ -31,6 +31,9 @@ public class YahooFinanceStockQuoteSummaryScraper {
     private String cssPreviousClosePrice = "td[data-test=\"PREV_CLOSE-value\"]";
     private String cssOpenPrice = "td[data-test=\"PREV_CLOSE-value\"]";
     private String cssExDividendDate = "td[data-test=\"EX_DIVIDEND_DATE-value\"]";
+    private String cssEarningsDate = "td[data-test=\"EARNINGS_DATE-value\"]";
+    private String cssFiftyTwoWeekPriceRange = "td[data-test=\"FIFTY_TWO_WK_RANGE-value\"]";
+    
     
     
     
@@ -95,11 +98,13 @@ public class YahooFinanceStockQuoteSummaryScraper {
             quoteSummary.setPeRatioTtm(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(10).text()));
             quoteSummary.setEpsTtm(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(11).text()));
              
-            quoteSummary.setEarningsDateStart(YahooFinanceWebScraperUtils.getEarningsStartDate(doc.select(cssQuery).get(12).text()));
+            quoteSummary.setEarningsDate(YahooFinanceWebScraperUtils.getEarningsStartDate(doc.select(cssEarningsDate).get(0).text()));
             //System.out.println("size = " + doc.select(cssQuery).get(12).childNodeSize());
-            if (doc.select(cssQuery).get(12).childNodeSize() > 1) {
-            	quoteSummary.setEarningsDateEnd(YahooFinanceWebScraperUtils.getEarningsEndDate(doc.select(cssQuery).get(12).text()));
+            /*
+            if (doc.select(cssEarningsDate).get(0).childNodeSize() > 1) {
+            	quoteSummary.setEarningsDateEnd(YahooFinanceWebScraperUtils.getEarningsEndDate(doc.select(cssEarningsDate).get(1).text()));
             }
+            */
             
 
             // Need to return an array of the dividend and yield strings for regular expression needed to be used to extract the values
@@ -108,7 +113,7 @@ public class YahooFinanceStockQuoteSummaryScraper {
                 quoteSummary.setDividend(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[0]));
                 quoteSummary.setYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
             }
-            quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateYYYYMMDD(doc.select(cssExDividendDate).get(0).text()));
+            quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateMMMDDYYYY(doc.select(cssExDividendDate).get(0).text()));
             quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));
             //quoteSummary.setDateEntered(new Date());
 

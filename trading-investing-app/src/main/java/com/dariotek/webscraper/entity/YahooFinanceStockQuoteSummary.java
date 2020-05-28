@@ -77,8 +77,8 @@ public class YahooFinanceStockQuoteSummary {
 	@Column(name="eps_ttm")
     private Double epsTtm;
 	
-	@Column(name="earnings_date_start")
-    private Date earningsDateStart;
+	@Column(name="earnings_date")
+    private Date earningsDate;
 	
 	@Column(name="earnings_date_end")
     private Date earningsDateEnd;
@@ -346,13 +346,13 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public Date getEarningsDateStart() {
-		return earningsDateStart;
+	public Date getEarningsDate() {
+		return earningsDate;
 	}
 
 
-	public void setEarningsDateStart(Date earningsDateStart) {
-		this.earningsDateStart = earningsDateStart;
+	public void setEarningsDate(Date earningsDate) {
+		this.earningsDate = earningsDate;
 	}
 
 
@@ -453,7 +453,7 @@ public class YahooFinanceStockQuoteSummary {
 				+ "beta=" + beta + ",\n" 
 				+ "peRatioTtm=" + peRatioTtm + ",\n" 
 				+ "epsTtm=" + epsTtm + ",\n" 
-				+ "earningsDateStart=" + earningsDateStart + ",\n"
+				+ "earningsDateStart=" + earningsDate + ",\n"
 				+ "earningsDateEnd=" + earningsDateEnd + ",\n"
 				+ "dividend=" + dividend + ",\n"
 				+ "yield=" + yield + ",\n" 
