@@ -26,7 +26,7 @@ public class YahooFinanceStockQuoteSummaryScraper {
 
     private Logger logger = LoggerFactory.getLogger(YahooFinanceStockQuoteSummaryScraper.class);
     
-    //CSS pattern to parse
+    //CSS Selector patterns to parse Yahoo Finance website 
     private String cssCurrentPrice = "[class*=\"Trsdu(0.3s) Fw(\"]";
     private String cssPreviousClosePrice = "td[data-test=\"PREV_CLOSE-value\"]";
     private String cssOpenPrice = "td[data-test=\"PREV_CLOSE-value\"]";
