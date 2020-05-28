@@ -1,4 +1,4 @@
-package com.dariotek.webscraper;
+package com.dariotek.webscraper.yahoofinance;
 
 import org.joda.time.DateTime;
 //import com.yahoofinance.webscrape.beans.QuoteSummary;
@@ -95,7 +95,7 @@ public class YahooFinanceStockQuoteSummaryScraper {
             String[] dividendYieldArray = YahooFinanceWebScraperUtils.getDividendYieldArray(doc.select(cssQuery).get(13).text());
             if (dividendYieldArray != null) {
                 quoteSummary.setDividend(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[0]));
-                quoteSummary.setYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
+                quoteSummary.setDividendYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
             }
             quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateMMMDDYYYY(doc.select(cssExDividendDate).get(0).text()));
             quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));                        

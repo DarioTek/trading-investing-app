@@ -1,4 +1,4 @@
-package com.dariotek.webscraper;
+package com.dariotek.webscraper.yahoofinance;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -9,6 +9,8 @@ import java.util.Locale;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.dariotek.webscraper.entity.DividendYieldComparator;
+import com.dariotek.webscraper.entity.PercentageEarningPotentialComparator;
 import com.dariotek.webscraper.entity.PriceComparator;
 import com.dariotek.webscraper.entity.YahooFinanceStockQuoteSummary;
 
@@ -60,7 +62,9 @@ public class YahooFinanceWebScraperApp {
     	
     	System.out.println("SORTED OBJECTS");
     	//Collections.sort(scrappedObjects); // Sort ArrayList using Stock Ticker using the compareTo() of the Comparable interface
-    	Collections.sort(scrappedObjects, new PriceComparator());
+    	//Collections.sort(scrappedObjects, new PriceComparator());
+    	//Collections.sort(scrappedObjects, new PercentageEarningPotentialComparator());
+    	Collections.sort(scrappedObjects, new DividendYieldComparator());
     	
     	for(int i=0; i <= scrappedObjects.size()-1; i++) {
     		YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = (YahooFinanceStockQuoteSummary)scrappedObjects.get(i);

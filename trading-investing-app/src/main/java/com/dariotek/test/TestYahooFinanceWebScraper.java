@@ -9,10 +9,10 @@ import com.dariotek.dao.YahooFinanceStockQuoteSummaryDAO;
 import com.dariotek.dao.YahooFinanceStockQuoteSummaryDAOImpl;
 import com.dariotek.service.AmeritradeTransactionService;
 import com.dariotek.service.HistoricalStockPriceService;
-import com.dariotek.webscraper.YahooFinanceStockQuoteSummaryScraper;
-import com.dariotek.webscraper.YahooFinanceWebScraperApp;
-import com.dariotek.webscraper.YahooFinanceWebScraperUtils;
 import com.dariotek.webscraper.entity.YahooFinanceStockQuoteSummary;
+import com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper;
+import com.dariotek.webscraper.yahoofinance.YahooFinanceWebScraperApp;
+import com.dariotek.webscraper.yahoofinance.YahooFinanceWebScraperUtils;
 
 public class TestYahooFinanceWebScraper {;
 

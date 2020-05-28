@@ -1,4 +1,4 @@
-package com.dariotek.webscraper;
+package com.dariotek.webscraper.yahoofinance;
 
 import org.apache.commons.validator.routines.UrlValidator;
 import org.joda.time.DateTime;

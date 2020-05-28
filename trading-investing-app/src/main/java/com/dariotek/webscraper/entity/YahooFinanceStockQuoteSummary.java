@@ -333,12 +333,12 @@ public class YahooFinanceStockQuoteSummary implements Comparable{
 	}
 
 
-	public Double getYield() {
-		return dividendYield;
+	public Double getDividendYield() {
+		return dividendYield == null ? new Double(0) : dividendYield;
 	}
 
 
-	public void setYield(Double yield) {
+	public void setDividendYield(Double yield) {
 		this.dividendYield = yield;
 	}
 
@@ -386,45 +386,6 @@ public class YahooFinanceStockQuoteSummary implements Comparable{
 		this.potentialEarningPercent = potentialEarningPercent;
 	}
 
-
-	@Override
-	public String toString() {
-		return "YahooFinanceStockQuoteSummary [\n"
-				+ "Key = " + key + ",\n"
-				+ "Current Price =" + livePrice + ",\n" 
-				+ "Previous Closing Price = " + previousClosingPrice + ",\n"
-				+ "Opening Price = " + openingPrice + ",\n" 
-				+ "Bid Offer Price = " + bidOffer + ",\n"
-				+ "Bid Quantity = " + bidQuantity + ",\n"
-				+ "Asking Price = " + askingPrice + ",\n"
-				+ "Asking Quantity = " + askingQuantity + ",\n" 
-				+ "Days Range Low Price = " + daysRangeLowPrice + ",\n" 
-				+ "Days Range High Price = " + daysRangeHighPrice + ",\n" 
-				+ "52 Week Range Low = " + fiftyTwoWeekRangeLowPrice + ",\n"
-				+ "52 Week Range High = " + fiftyTwoWeekRangeHighPrice + ",\n" 
-				+ "Volume = " + volume + ",\n"
-				+ "Average Volume = " + avgVolume + ",\n" 
-				+ "Market Cap = " + marketCap + ",\n"
-				+ "Beta (%Y Monthly) = " + getBeta() + ",\n"
-				+ "PE Ratio (TTM) = " + getPeRatioTtm() + ",\n"
-				+ "EPS (TTM) = " + getEpsTtm() + ",\n"
-				+ "Earnings Date = " + earningsDate + ",\n"
-				+ "Earnings Date End = " + earningsDateEnd + ",\n"
-				+ "Dividend = " + dividend + ",\n"
-				+ "Dividend Yield = " + dividendYield + ",\n" 
-				+ "Ex-Dividend Date = " + exDividendDate + ",\n"
-				+ "1 Year Target Estimate = "+ oneYearTargetEstimate + "\n]";
-	}
-	
-    /*
-     * https://dzone.com/articles/how-to-sort-objects-in-java
-     */	
-	@Override
-	public int compareTo(Object o) {
-		return this.getTickerSymbol().compareTo(((YahooFinanceStockQuoteSummary) o).getTickerSymbol());
-	}
-
-
 	public Double getBeta() {
 		return beta;
 	}
@@ -454,6 +415,53 @@ public class YahooFinanceStockQuoteSummary implements Comparable{
 		this.tickerSymbol = tickerSymbol;
 	}
 
+
+	@Override
+	public String toString() {
+		return "YahooFinanceStockQuoteSummary [\n"
+				+ "Key = " + key + ",\n"
+				+ "Current Price =" + livePrice + ",\n" 
+				+ "Previous Closing Price = " + previousClosingPrice + ",\n"
+				+ "Opening Price = " + openingPrice + ",\n" 
+				+ "Bid Offer Price = " + bidOffer + ",\n"
+				+ "Bid Quantity = " + bidQuantity + ",\n"
+				+ "Asking Price = " + askingPrice + ",\n"
+				+ "Asking Quantity = " + askingQuantity + ",\n" 
+				+ "Days Range Low Price = " + daysRangeLowPrice + ",\n" 
+				+ "Days Range High Price = " + daysRangeHighPrice + ",\n" 
+				+ "52 Week Range Low = " + fiftyTwoWeekRangeLowPrice + ",\n"
+				+ "52 Week Range High = " + fiftyTwoWeekRangeHighPrice + ",\n" 
+				+ "Volume = " + volume + ",\n"
+				+ "Average Volume = " + avgVolume + ",\n" 
+				+ "Market Cap = " + marketCap + ",\n"
+				+ "Beta (%Y Monthly) = " + getBeta() + ",\n"
+				+ "PE Ratio (TTM) = " + getPeRatioTtm() + ",\n"
+				+ "EPS (TTM) = " + getEpsTtm() + ",\n"
+				+ "Earnings Date = " + earningsDate + ",\n"
+				+ "Earnings Date End = " + earningsDateEnd + ",\n"
+				+ "Dividend = " + dividend + ",\n"
+				+ "Dividend Yield = " + getDividendYield() + ",\n" 
+				+ "Ex-Dividend Date = " + exDividendDate + ",\n"
+				+ "1 Year Target Estimate = " + oneYearTargetEstimate + ",\n"
+				+ "Calculated 1 Year Earnings Value = "+ calculateEarningPotentialValue() + ",\n"
+				+ "Calculated 1 Year Earnings Percentage = " + calculateEarningPotentialPercentage() + "\n]";
+	}
+	
+    /*
+     * https://dzone.com/articles/how-to-sort-objects-in-java
+     */	
+	@Override
+	public int compareTo(Object o) {
+		return this.getTickerSymbol().compareTo(((YahooFinanceStockQuoteSummary) o).getTickerSymbol());
+	}
+
+	public Double calculateEarningPotentialValue() {
+		return getOneYearTargetEstimate() - getLivePrice();
+	}
+
+	public Double calculateEarningPotentialPercentage() {
+		return ((getOneYearTargetEstimate() - getLivePrice()) / getLivePrice()) * 100;
+	}
 
 	/*
 	@Override

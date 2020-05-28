@@ -1,4 +1,4 @@
-package com.dariotek.webscraper;
+package com.dariotek.webscraper.yahoofinance;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 
 import com.dariotek.entity.HistoricalStockPrice;
-import com.dariotek.webscraper.YahooFinanceWebScraperUtils;
+import com.dariotek.webscraper.yahoofinance.YahooFinanceWebScraperUtils;
 
 public class TestApp2 {
 
