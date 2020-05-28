@@ -1,9 +1,5 @@
 package com.dariotek.webscraper.entity;
 
-import org.joda.time.DateTime;
-
-import com.dariotek.entity.HistoricalStockPrice.Key;
-
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.text.DateFormat;
@@ -18,16 +14,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="trading_investing.stock_quote_summary")
-public class YahooFinanceStockQuoteSummary {
+public class YahooFinanceStockQuoteSummary implements Comparable{
 
+	@Column(name="ticker_symbol")
+	private String tickerSymbol;
+	
 	@Column(name="live_price")	
     private Double livePrice;
-	
-	@Column(name="live_price_change")
-    private Double livePriceChange;
-	
-	@Column(name="live_price_change_percentage")
-    private Double livePricePercentChange;
 	
 	@Column(name="previous_closing_price")
     private Double previousClosingPrice;
@@ -53,11 +46,11 @@ public class YahooFinanceStockQuoteSummary {
 	@Column(name="days_range_high_price")
     private Double daysRangeHighPrice;
 	
-	@Column(name="fiftytwo_range_start")
-    private Double fiftyTwoWeekRangeLow;
+	@Column(name="fifty_two_range_low_price")
+    private Double fiftyTwoWeekRangeLowPrice;
 	
-	@Column(name="fiftytwo_range_end")
-    private Double fiftyTwoWeekRangeHigh;
+	@Column(name="fifty_two_range_high_price")
+    private Double fiftyTwoWeekRangeHighPrice;
 	
 	@Column(name="volume")
     private Integer volume;
@@ -68,12 +61,15 @@ public class YahooFinanceStockQuoteSummary {
 	@Column(name="market_cap")
     private BigDecimal marketCap;
 	
+	// Beta (5Y Monthly)
 	@Column(name="beta")
     private Double beta;
 	
+	// PE Ration (TTM)
 	@Column(name="pe_ratio_ttm")
     private Double peRatioTtm;
 	
+	// EPS (TTM)
 	@Column(name="eps_ttm")
     private Double epsTtm;
 	
@@ -86,8 +82,8 @@ public class YahooFinanceStockQuoteSummary {
 	@Column(name="dividend")
     private Double dividend;
 	
-	@Column(name="yield")
-    private Double yield;
+	@Column(name="dividend_yield")
+    private Double dividendYield;
 	
 	@Column(name="ex_dividend_date")
     private Date exDividendDate;
@@ -146,6 +142,8 @@ public class YahooFinanceStockQuoteSummary {
 	@EmbeddedId
 	private Key key;
 	
+	
+	
 	public Key getKey() {
 		return key;
 	}
@@ -164,27 +162,6 @@ public class YahooFinanceStockQuoteSummary {
 	public void setLivePrice(Double livePrice) {
 		this.livePrice = livePrice;
 	}
-
-
-	public Double getLivePriceChange() {
-		return livePriceChange;
-	}
-
-
-	public void setLivePriceChange(Double livePriceChange) {
-		this.livePriceChange = livePriceChange;
-	}
-
-
-	public Double getLivePricePercentChange() {
-		return livePricePercentChange;
-	}
-
-
-	public void setLivePricePercentChange(Double livePricePercentChange) {
-		this.livePricePercentChange = livePricePercentChange;
-	}
-
 
 	public Double getPreviousClosingPrice() {
 		return previousClosingPrice;
@@ -267,22 +244,22 @@ public class YahooFinanceStockQuoteSummary {
 
 
 	public Double getFiftyTwoWeekRangeLow() {
-		return fiftyTwoWeekRangeLow;
+		return fiftyTwoWeekRangeLowPrice;
 	}
 
 
 	public void setFiftyTwoWeekRangeLow(Double fiftyWeekRangeStart) {
-		this.fiftyTwoWeekRangeLow = fiftyWeekRangeStart;
+		this.fiftyTwoWeekRangeLowPrice = fiftyWeekRangeStart;
 	}
 
 
 	public Double getFiftyTwoWeekRangeHigh() {
-		return fiftyTwoWeekRangeHigh;
+		return fiftyTwoWeekRangeHighPrice;
 	}
 
 
 	public void setFiftyTwoWeekRangeHigh(Double fiftyWeekRangeEnd) {
-		this.fiftyTwoWeekRangeHigh = fiftyWeekRangeEnd;
+		this.fiftyTwoWeekRangeHighPrice = fiftyWeekRangeEnd;
 	}
 
 
@@ -316,16 +293,6 @@ public class YahooFinanceStockQuoteSummary {
 	}
 
 
-	public Double getBeta() {
-		return beta;
-	}
-
-
-	public void setBeta(Double beta) {
-		this.beta = beta;
-	}
-
-
 	public Double getPeRatioTtm() {
 		return peRatioTtm;
 	}
@@ -333,16 +300,6 @@ public class YahooFinanceStockQuoteSummary {
 
 	public void setPeRatioTtm(Double peRatioTtm) {
 		this.peRatioTtm = peRatioTtm;
-	}
-
-
-	public Double getEpsTtm() {
-		return epsTtm;
-	}
-
-
-	public void setEpsTtm(Double epsTtm) {
-		this.epsTtm = epsTtm;
 	}
 
 
@@ -377,12 +334,12 @@ public class YahooFinanceStockQuoteSummary {
 
 
 	public Double getYield() {
-		return yield;
+		return dividendYield;
 	}
 
 
 	public void setYield(Double yield) {
-		this.yield = yield;
+		this.dividendYield = yield;
 	}
 
 
@@ -433,32 +390,68 @@ public class YahooFinanceStockQuoteSummary {
 	@Override
 	public String toString() {
 		return "YahooFinanceStockQuoteSummary [\n"
-				+ "key=" + key + ",\n"
-				+ "livePrice=" + livePrice + ",\n" 
-				+ "livePriceChange=" + livePriceChange + ",\n" 
-				+ "livePricePercentChange="	+ livePricePercentChange + ",\n" 
-				+ "previousClosingPrice=" + previousClosingPrice + ",\n"
-				+ "openingPrice=" + openingPrice + ",\n" 
-				+ "bidOffer=" + bidOffer + ",\n"
-				+ "bidQuantity=" + bidQuantity + ",\n"
-				+ "askingPrice=" + askingPrice + ",\n"
-				+ "askingQuantity=" + askingQuantity + ",\n" 
-				+ "daysRangeStart=" + daysRangeLowPrice + ",\n" 
-				+ "daysRangeEnd=" + daysRangeHighPrice + ",\n" 
-				+ "52 Week Range Low = " + fiftyTwoWeekRangeLow + ",\n"
-				+ "52 Week Range High = " + fiftyTwoWeekRangeHigh + ",\n" 
-				+ "volume=" + volume + ",\n"
-				+ "avgVolume=" + avgVolume + ",\n" 
-				+ "marketCap=" + marketCap + ",\n"
-				+ "beta=" + beta + ",\n" 
-				+ "peRatioTtm=" + peRatioTtm + ",\n" 
-				+ "epsTtm=" + epsTtm + ",\n" 
-				+ "earningsDateStart=" + earningsDate + ",\n"
-				+ "earningsDateEnd=" + earningsDateEnd + ",\n"
-				+ "dividend=" + dividend + ",\n"
-				+ "yield=" + yield + ",\n" 
-				+ "exDividendDate=" + exDividendDate + ",\n"
+				+ "Key = " + key + ",\n"
+				+ "Current Price =" + livePrice + ",\n" 
+				+ "Previous Closing Price = " + previousClosingPrice + ",\n"
+				+ "Opening Price = " + openingPrice + ",\n" 
+				+ "Bid Offer Price = " + bidOffer + ",\n"
+				+ "Bid Quantity = " + bidQuantity + ",\n"
+				+ "Asking Price = " + askingPrice + ",\n"
+				+ "Asking Quantity = " + askingQuantity + ",\n" 
+				+ "Days Range Low Price = " + daysRangeLowPrice + ",\n" 
+				+ "Days Range High Price = " + daysRangeHighPrice + ",\n" 
+				+ "52 Week Range Low = " + fiftyTwoWeekRangeLowPrice + ",\n"
+				+ "52 Week Range High = " + fiftyTwoWeekRangeHighPrice + ",\n" 
+				+ "Volume = " + volume + ",\n"
+				+ "Average Volume = " + avgVolume + ",\n" 
+				+ "Market Cap = " + marketCap + ",\n"
+				+ "Beta (%Y Monthly) = " + getBeta() + ",\n"
+				+ "PE Ratio (TTM) = " + getPeRatioTtm() + ",\n"
+				+ "EPS (TTM) = " + getEpsTtm() + ",\n"
+				+ "Earnings Date = " + earningsDate + ",\n"
+				+ "Earnings Date End = " + earningsDateEnd + ",\n"
+				+ "Dividend = " + dividend + ",\n"
+				+ "Dividend Yield = " + dividendYield + ",\n" 
+				+ "Ex-Dividend Date = " + exDividendDate + ",\n"
 				+ "1 Year Target Estimate = "+ oneYearTargetEstimate + "\n]";
+	}
+	
+    /*
+     * https://dzone.com/articles/how-to-sort-objects-in-java
+     */	
+	@Override
+	public int compareTo(Object o) {
+		return this.getTickerSymbol().compareTo(((YahooFinanceStockQuoteSummary) o).getTickerSymbol());
+	}
+
+
+	public Double getBeta() {
+		return beta;
+	}
+
+
+	public void setBeta(Double beta) {
+		this.beta = beta;
+	}
+
+
+	public Double getEpsTtm() {
+		return epsTtm;
+	}
+
+
+	public void setEpsTtm(Double epsTtm) {
+		this.epsTtm = epsTtm;
+	}
+
+
+	public String getTickerSymbol() {
+		return tickerSymbol;
+	}
+
+
+	public void setTickerSymbol(String tickerSymbol) {
+		this.tickerSymbol = tickerSymbol;
 	}
 
 

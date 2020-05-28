@@ -33,26 +33,16 @@ public class YahooFinanceStockQuoteSummaryScraper {
     private String cssExDividendDate = "td[data-test=\"EX_DIVIDEND_DATE-value\"]";
     private String cssEarningsDate = "td[data-test=\"EARNINGS_DATE-value\"]";
     private String cssFiftyTwoWeekPriceRange = "td[data-test=\"FIFTY_TWO_WK_RANGE-value\"]";
-    
-    
-    
-    
-    private String cssQuery = "td[class=\"Ta(end) Fw(600) Lh(14px)\"]";
-    private String cssQuery2 = "span[class=\"Trsdu(0.3s) \"]";
-    private String cssQuery3 = "span[data-reactid=\"168\"]";
-    
-    
-    // CSS Class for the live price
+    private String cssQuery = "td[class=\"Ta(end) Fw(600) Lh(14px)\"]"; //Generic Tag Selector on Yahoo Finance Page
  
-    //<span class="Trsdu(0.3s) Fw(b) Fz(36px) Mb(-4px) D(ib) Bgc($lightRed) trendDown1" data-reactid="52">314.18</span>
-    private String liveCssQueryChange = "[class=\"Trsdu(0.3s) Fw(500) Pstart(10px) Fz(24px)*\"]";
                                                 
     public YahooFinanceStockQuoteSummaryScraper() {
     	
     }
     
     public YahooFinanceStockQuoteSummary getQuoteSummary(String tickerSymbol) {
-        // Instantiating new instance of the Quote Summary Class
+
+    	// Instantiating new instance of the Quote Summary Class
         YahooFinanceStockQuoteSummary quoteSummary = new YahooFinanceStockQuoteSummary();
         try {
         	String url = "https://finance.yahoo.com/quote/" + tickerSymbol;
@@ -66,7 +56,7 @@ public class YahooFinanceStockQuoteSummaryScraper {
     		key.setDateTimeScraped(new Date());
 
             quoteSummary.setKey(key);
-
+            quoteSummary.setTickerSymbol(tickerSymbol);
             quoteSummary.setLivePrice(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssCurrentPrice).get(0).text()));
             //quoteSummary.setLivePriceChange(doc.select(liveCssQuery).get(1).text());            
             
@@ -86,8 +76,8 @@ public class YahooFinanceStockQuoteSummaryScraper {
             quoteSummary.setDaysRangeHighPrice(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(4).text()));
 
             // The same is true for the 52 Week Range
-            quoteSummary.setFiftyTwoWeekRangeLow(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssQuery).get(5).text()));
-            quoteSummary.setFiftyTwoWeekRangeHigh(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssQuery).get(5).text()));
+            quoteSummary.setFiftyTwoWeekRangeLow(YahooFinanceWebScraperUtils.getStockStartingPrice(doc.select(cssFiftyTwoWeekPriceRange).get(0).text()));
+            quoteSummary.setFiftyTwoWeekRangeHigh(YahooFinanceWebScraperUtils.getStockEndingPrice(doc.select(cssFiftyTwoWeekPriceRange).get(0).text()));
 
             // remove the commas from both the volume and avgVolume variables
             quoteSummary.setVolume(YahooFinanceWebScraperUtils.removeCommasReturnInteger(doc.select(cssQuery).get(6).text()));
@@ -95,17 +85,11 @@ public class YahooFinanceStockQuoteSummaryScraper {
 
             quoteSummary.setMarketCap(YahooFinanceWebScraperUtils.stringToBigDecimal(doc.select(cssQuery).get(8).text()));
             quoteSummary.setBeta(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(9).text()));
-            quoteSummary.setPeRatioTtm(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(10).text()));
+            quoteSummary.setPeRatioTtm(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(10).text()));            
             quoteSummary.setEpsTtm(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(11).text()));
-             
-            quoteSummary.setEarningsDate(YahooFinanceWebScraperUtils.getEarningsStartDate(doc.select(cssEarningsDate).get(0).text()));
-            //System.out.println("size = " + doc.select(cssQuery).get(12).childNodeSize());
-            /*
-            if (doc.select(cssEarningsDate).get(0).childNodeSize() > 1) {
-            	quoteSummary.setEarningsDateEnd(YahooFinanceWebScraperUtils.getEarningsEndDate(doc.select(cssEarningsDate).get(1).text()));
-            }
-            */
             
+            quoteSummary.setEarningsDate(YahooFinanceWebScraperUtils.getEarningsStartDate(doc.select(cssEarningsDate).get(0).text()));
+            quoteSummary.setEarningsDateEnd(YahooFinanceWebScraperUtils.getEarningsEndDate(doc.select(cssEarningsDate).get(0).text())); // Gets 2nd Earnings Date
 
             // Need to return an array of the dividend and yield strings for regular expression needed to be used to extract the values
             String[] dividendYieldArray = YahooFinanceWebScraperUtils.getDividendYieldArray(doc.select(cssQuery).get(13).text());
@@ -114,12 +98,7 @@ public class YahooFinanceStockQuoteSummaryScraper {
                 quoteSummary.setYield(YahooFinanceWebScraperUtils.stringToDouble(dividendYieldArray[1]));
             }
             quoteSummary.setExDividendDate(YahooFinanceWebScraperUtils.stringToDateMMMDDYYYY(doc.select(cssExDividendDate).get(0).text()));
-            quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));
-            //quoteSummary.setDateEntered(new Date());
-
-            //logger.info("QuoteSummary String: " + quoteSummary.toString());
-            //logger.info("QuoteSummary HashCode: " + quoteSummary.hashCode());
-                        
+            quoteSummary.setOneYearTargetEstimate(YahooFinanceWebScraperUtils.stringToDouble(doc.select(cssQuery).get(15).text()));                        
             
         } catch (IOException e) {
             logger.error("An error occurred while trying to retrieve the information from Yahoo Finance: \n" + e);

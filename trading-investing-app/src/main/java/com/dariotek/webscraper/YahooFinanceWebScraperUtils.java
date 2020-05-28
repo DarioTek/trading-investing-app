@@ -280,10 +280,12 @@ public class YahooFinanceWebScraperUtils {
     }
 
     public static Date getEarningsEndDate(String dateStr) {
-        if (!isStringNonApplicable(dateStr)) {
+        if (!isStringNonApplicable(dateStr)) {        	
             String[] dateArray = dateStr.split("-");
-            //logger.info("End Date Str: " + dateArray[1]);
-            return stringToDateMMMDDYYYY(dateArray[1].trim());
+            if (dateArray.length > 1) {
+                //logger.info("End Date Str: " + dateArray[1]);
+                return stringToDateMMMDDYYYY(dateArray[1].trim());            	
+            }
         }
         return null;
     }
