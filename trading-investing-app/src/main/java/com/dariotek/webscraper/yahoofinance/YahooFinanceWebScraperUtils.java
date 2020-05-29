@@ -113,7 +113,7 @@ public class YahooFinanceWebScraperUtils {
     
     
     public static Long stringToLong(String marketCapStr) {    	
-        logger.info("Long String: " + marketCapStr);
+        //logger.info("Long String: " + marketCapStr);
         
         if (isStringNonApplicable(marketCapStr)) {
         	return null;
@@ -137,7 +137,7 @@ public class YahooFinanceWebScraperUtils {
     }
 
     public static BigDecimal stringToBigDecimal(String string) {
-        logger.info("Big Decimal String: " + string);
+        //logger.info("Big Decimal String: " + string);
         
         if (!isStringNonApplicable(string)) {
         	
@@ -173,7 +173,7 @@ public class YahooFinanceWebScraperUtils {
     }
     
     public static BigDecimal stringPercentToBigDecimal(String string) {
-        logger.info("Percent String: " + string);
+        //logger.info("Percent String: " + string);
         
         if (!isStringNonApplicable(string)) {
             Integer startpos = 0;

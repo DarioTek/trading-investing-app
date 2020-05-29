@@ -455,12 +455,12 @@ public class YahooFinanceStockQuoteSummary implements Comparable{
 		return this.getTickerSymbol().compareTo(((YahooFinanceStockQuoteSummary) o).getTickerSymbol());
 	}
 
-	public Double calculateEarningPotentialValue() {
-		return getOneYearTargetEstimate() - getLivePrice();
+	public Double calculateEarningPotentialValue() {		
+		return (getOneYearTargetEstimate() != null && getLivePrice() != null) ? getOneYearTargetEstimate() - getLivePrice() : new Double(0);
 	}
 
 	public Double calculateEarningPotentialPercentage() {
-		return ((getOneYearTargetEstimate() - getLivePrice()) / getLivePrice()) * 100;
+		return (getOneYearTargetEstimate() != null && getLivePrice() != null) ? ((getOneYearTargetEstimate() - getLivePrice()) / getLivePrice()) * 100 : new Double(0);
 	}
 
 	/*

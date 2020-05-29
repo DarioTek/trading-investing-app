@@ -14,6 +14,7 @@ import com.dariotek.webscraper.entity.PercentageEarningPotentialComparator;
 import com.dariotek.webscraper.entity.PriceComparator;
 import com.dariotek.webscraper.entity.YahooFinanceStockQuoteSummary;
 import com.dariotek.webscraper.wikipedia.WikipediaSP500CompanyListScraper;
+import com.dariotek.webscraper.wikipedia.WikipediaSP500ComponentStock;
 
 public class YahooFinanceWebScraperApp {
 
@@ -23,9 +24,18 @@ public class YahooFinanceWebScraperApp {
     public static void main(String[] args) {
 
     	WikipediaSP500CompanyListScraper wikipedia = new WikipediaSP500CompanyListScraper();
-    	wikipedia.getWikipediaSP500CompanyList();
+    	List<WikipediaSP500ComponentStock> sp500List = wikipedia.getWikipediaSP500CompanyList();
     	
-    	String[] stockList = {"GS","DIS"};
+    	
+    	List<String> arrayList = new ArrayList();
+    	String[] stockList = new String[sp500List.size()];
+    	for(int i = 0; i < sp500List.size(); i++) {
+    		//System.out.println("symbol " + i + " : " + sp500List.get(i).getSymbol());
+    		arrayList.add(sp500List.get(i).getSymbol());
+    		stockList[i] = sp500List.get(i).getSymbol();
+    	}    	
+    	
+    	
     	//String[] stockList = {"DOW","XOM","IBM","VZ","CVX","PFE","MMM","WBA","CSCO","KO","FB","AAPL","NFLX","GOOGL","GS","JPM","C","FB","MSFT","DIS","MA","V","TSLA","HD","WDAY"};
     	//String[] indexList= {"QQQ","IWM","DIA","SPY"}; //TODO: Code currently does not scrape properly for indexes 
     	
@@ -35,8 +45,8 @@ public class YahooFinanceWebScraperApp {
     	// Yahoo Finance Summary
     	for (String stock: stockList) {
     		
-    		if (YahooFinanceWebScraperUtils.isYahooUrlValid(stock)) {
-    	        logger.info("Start scraping Yahoo Finance for " + stock);    	       
+    		if (stock != null && !stock.contains(".") && YahooFinanceWebScraperUtils.isYahooUrlValid(stock)) {
+    	        //logger.info("Start scraping Yahoo Finance for " + stock);    	       
     	        YahooFinanceStockQuoteSummaryScraper getQuoteSummary = new YahooFinanceStockQuoteSummaryScraper();    	        
     	        YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = getQuoteSummary.getQuoteSummary(stock);
     	        

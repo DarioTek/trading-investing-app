@@ -56,12 +56,26 @@ public class WikipediaSP500CompanyListScraper {
             for (int index = 0; index < trs.size(); index++) {
             	//System.out.println(trs.get(index).select("td").text());
             	Elements tds = trs.get(index).select("td");
-            	WikipediaSP500ComponentStock componentStock = new WikipediaSP500ComponentStock();            	
+            	WikipediaSP500ComponentStock componentStock = new WikipediaSP500ComponentStock();
+            	for (int i = 0; i < tds.size(); i++) {
+            		switch(i) {
+            			case 0: componentStock.setSymbol(tds.get(i).text());
+            					break;
+            			case 1: componentStock.setSecurityName(tds.get(i).text());
+            					break;
+            			case 3: componentStock.setSector(tds.get(i).text());
+            					break;
+            			case 4: componentStock.setIndustry(tds.get(i).text());
+            					break;
+            		}
+            		//System.out.println(i + " - " + tds.get(i).text());
+            	}
+            	/*
             	componentStock.setSymbol(tds.get(0).text());
             	componentStock.setSecurityName(tds.get(1).text());
             	componentStock.setSector(tds.get(3).text());
             	componentStock.setIndustry(tds.get(4).text());
-            	
+            	*/
             	sp500List.add(componentStock);
             	/*
             	for (int i = 0; i < tds.size(); i++) {
