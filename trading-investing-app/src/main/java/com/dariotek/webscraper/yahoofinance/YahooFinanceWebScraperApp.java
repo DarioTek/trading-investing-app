@@ -13,6 +13,7 @@ import com.dariotek.webscraper.entity.DividendYieldComparator;
 import com.dariotek.webscraper.entity.PercentageEarningPotentialComparator;
 import com.dariotek.webscraper.entity.PriceComparator;
 import com.dariotek.webscraper.entity.YahooFinanceStockQuoteSummary;
+import com.dariotek.webscraper.wikipedia.WikipediaSP500CompanyListScraper;
 
 public class YahooFinanceWebScraperApp {
 
@@ -21,9 +22,13 @@ public class YahooFinanceWebScraperApp {
     
     public static void main(String[] args) {
 
-    	//String[] stockList = {"GS","DIS","TSLA","WDAY"};
-    	String[] stockList = {"DOW","XOM","IBM","VZ","CVX","PFE","MMM","WBA","CSCO","KO","FB","AAPL","NFLX","GOOGL","GS","JPM","C","FB","MSFT","DIS","MA","V","TSLA","HD","WDAY"};
+    	WikipediaSP500CompanyListScraper wikipedia = new WikipediaSP500CompanyListScraper();
+    	wikipedia.getWikipediaSP500CompanyList();
+    	
+    	String[] stockList = {"GS","DIS"};
+    	//String[] stockList = {"DOW","XOM","IBM","VZ","CVX","PFE","MMM","WBA","CSCO","KO","FB","AAPL","NFLX","GOOGL","GS","JPM","C","FB","MSFT","DIS","MA","V","TSLA","HD","WDAY"};
     	//String[] indexList= {"QQQ","IWM","DIA","SPY"}; //TODO: Code currently does not scrape properly for indexes 
+    	
     	
     	List<YahooFinanceStockQuoteSummary> scrappedObjects = new ArrayList<>();
     	
