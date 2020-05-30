@@ -37,28 +37,41 @@ public class YahooFinanceWebScraperApp {
     	
     	List<YahooFinanceStockQuoteSummary> scrappedObjects = new ArrayList<>();
     	
+    	//long startTimeToScrapeYahooFinance = System.nanoTime();
+    	long startTimeToScrapeYahooFinance = System.currentTimeMillis();
     	// Yahoo Finance Summary
-    	for (String stock: stockList) {
-    		
+    	for (String stock: stockList) {    		
     		if (stock != null && !stock.contains(".") && YahooFinanceWebScraperUtils.isYahooUrlValid(stock)) {
-    	        YahooFinanceStockQuoteSummaryScraper getQuoteSummary = new YahooFinanceStockQuoteSummaryScraper();    	        
-    	        YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = getQuoteSummary.getQuoteSummary(stock);
-    	        scrappedObjects.add(yahooFinanceStockQuoteSummary);    	        
+    			try {
+	    	        YahooFinanceStockQuoteSummaryScraper getQuoteSummary = new YahooFinanceStockQuoteSummaryScraper();    	        
+	    	        YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = getQuoteSummary.getQuoteSummary(stock);
+	    	        scrappedObjects.add(yahooFinanceStockQuoteSummary);
+    			}catch(Exception e) {
+    				e.printStackTrace();
+    			}
     		}
     	}
+    	//long endTimeToScrapeYahooFinance = System.nanoTime();
+    	//logger.info((endTimeToScrapeYahooFinance - startTimeToScrapeYahooFinance)/1000000 + " milliseconds to scrape " + stockList.length + " stock information from Yahoo Finance.");
+    	long endTimeToScrapeYahooFinance = System.currentTimeMillis();
     	
     	/*
     	 * SORT THE LIST BASED ON SPECIFIC COMPARATORS
     	 */
+    	long startTimeToSort = System.currentTimeMillis();
     	//Collections.sort(scrappedObjects); // Sort ArrayList using Stock Ticker using the compareTo() of the Comparable interface
-    	//Collections.sort(scrappedObjects, new PriceComparator());
-    	Collections.sort(scrappedObjects, new PercentageEarningPotentialComparator());
+    	Collections.sort(scrappedObjects, new PriceComparator());
+    	//Collections.sort(scrappedObjects, new PercentageEarningPotentialComparator());
     	//Collections.sort(scrappedObjects, new DividendYieldComparator());
+    	long endTimeToSort = System.currentTimeMillis();
     	
     	for(int i=0; i <= scrappedObjects.size()-1; i++) {
     		YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = (YahooFinanceStockQuoteSummary)scrappedObjects.get(i);
     		logger.info(yahooFinanceStockQuoteSummary.toString());
     	}
+    	
+    	logger.info((endTimeToScrapeYahooFinance - startTimeToScrapeYahooFinance) + " milliseconds to scrape " + scrappedObjects.size() + " stock information from Yahoo Finance.");
+    	logger.info((endTimeToSort - startTimeToSort) + " milliseconds to sort.");
     	
     }
 }

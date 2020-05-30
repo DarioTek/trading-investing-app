@@ -154,8 +154,8 @@ public class YahooFinanceStockQuoteSummary implements Comparable{
 	}
 
 
-	public Double getLivePrice() {
-		return livePrice;
+	public Double getLivePrice() {		
+		return livePrice != null ? livePrice : new Double(0);
 	}
 
 
