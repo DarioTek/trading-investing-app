@@ -8,7 +8,8 @@ public class TestJMySQLDatabaseConnectivity {
 	public static void main(String[] args) {
 		
 		String jdbcUrl = "jdbc:mysql://localhost:3306/trading_investing?useSSL=false";
-		String user = "root";
+		//String user = "root";
+		String user = "dariotek";
 		String password = "password";
 		try {
 			System.out.println("Connecting to database: " + jdbcUrl);
