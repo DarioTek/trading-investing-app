@@ -3,7 +3,7 @@ package com.dariotek.jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class TestJDBC {
+public class TestJMySQLDatabaseConnectivity {
 
 	public static void main(String[] args) {
 		
