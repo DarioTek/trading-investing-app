@@ -347,7 +347,7 @@ public class YahooFinanceStockQuoteSummary implements Comparable{
 		if (exDividendDate == null) {
 			return "N/A";
 		}else{
-			DateFormat dateFormat = new SimpleDateFormat("mm/dd/yyyy");
+			DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 			return dateFormat.format(exDividendDate);
 		}		
 	}
