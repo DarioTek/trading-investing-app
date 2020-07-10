@@ -28,6 +28,8 @@ public class TestOracleDatabaseConnectivity {
                 //System.out.println(rs.getInt("1"));
             	System.out.println(count++ + "," + rs.getString("SYMBOL") + "," + rs.getDate("RECORD_DATE") + "," + rs.getDouble("OPEN_PRICE") + "," + rs.getDouble("CLOSE_PRICE") + "," + rs.getDouble("HIGH_PRICE") + "," + rs.getDouble("LOW_PRICE") + "," + rs.getDouble("ADJUSTED_CLOSE_PRICE") + "," + rs.getLong("VOLUME"));
             	
+            
+            
             con.close();
         }catch(Exception e){ System.out.println(e);}
         finally {
