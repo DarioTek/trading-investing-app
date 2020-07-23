@@ -49,7 +49,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.11</version>
+			<version>8.0.16</version><!-- Fixed vulnerability in version 8.0.11 by upgrading to 8.0.16 -->
 		</dependency>
 
 		<!-- Compatible with JDK8, JDK9 and JDK11 -->
