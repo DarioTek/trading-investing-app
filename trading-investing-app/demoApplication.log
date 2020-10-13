@@ -1,0 +1,1635 @@
+2020-09-16 15:13:08,900 INFO  com.dariotek.webscraper.ameritrade.AmeritradeScraper  - url = https://www.tdameritrade.com/home.page
+2020-09-16 15:13:09,845 DEBUG com.dariotek.webscraper.ameritrade.AmeritradeScraper  - <!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <title>Online Stock Trading, Investing, Online Brokerage | TD Ameritrade</title> <!--fixed-layout--> <!--ls:begin[stylesheet]--> 
+  <link href="/iwov-resources/fixed-layout/three-row-layout.css" type="text/css" rel="stylesheet"> <!--ls:end[stylesheet]--> <!--ls:begin[meta-keywords]--> 
+  <meta name="keywords" content="Investment Guidance, Investment Services"> <!--ls:end[meta-keywords]--> <!--ls:begin[meta-description]--> 
+  <meta name="description" content="Explore TD Ameritrade, the best online broker for online stock trading, long-term investing, and retirement planning. "> <!--ls:end[meta-description]--> <!--ls:begin[custom-meta-data]--> 
+  <meta name="google-site-verification" content="ikY4NEtd3KvQnNuuiieeWTfTja3anKjbOrjWQhno2NA"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0"> <!--ls:end[custom-meta-data]--> <!--ls:begin[meta-vpath]--> 
+  <meta name="vpath" content=""> <!--ls:end[meta-vpath]--> <!--ls:begin[meta-page-locale-name]--> 
+  <meta name="page-locale-name" content="English - United States"> <!--ls:end[meta-page-locale-name]--> <!--ls:begin[script]--> 
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/responsive/js/tealium/tealium_head.js"></script> <!--ls:end[script]--> <!--ls:begin[favicon]--> 
+  <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon"> <!--ls:end[favicon]--> <!--ls:begin[stylesheet]--> 
+  <link type="text/css" href="/retail-en_us/resources/css/responsive/new-css-concat.css" rel="stylesheet"> <!--ls:end[stylesheet]--> <!--ls:begin[stylesheet]--> 
+  <link type="text/css" href="/retail-en_us/resources/css/responsive/main.css" rel="stylesheet"> <!--ls:end[stylesheet]--> <!--ls:begin[stylesheet]--> 
+  <link type="text/css" href="/retail-en_us/resources/css/responsive/tda-custom-responsive.css" rel="stylesheet"> <!--ls:end[stylesheet]--> <!--ls:begin[script]--> 
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/responsive/js/new-js-concat.js"></script> <!--ls:end[script]--> <!--ls:begin[script]-->
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/jquery-2.1.4.min.js"></script> <!--ls:end[script]--> <!--ls:begin[script]-->
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/responsive/js/dependencies.js"></script> <!--ls:end[script]--> <!--ls:begin[script]-->
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/responsive/js/app.js"></script> <!--ls:end[script]--> <!--ls:begin[script]-->
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/release/libs/pm_fp.js"></script> <!--ls:end[script]--> <!--ls:begin[script]-->
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/responsive/js/tda-core.js"></script> <!--ls:end[script]--> <!--ls:begin[script]-->
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/responsive/custom_tda_js/custom_tda_utils.js"></script> <!--ls:end[script]--> <!--ls:begin[script]-->
+  <script type="text/javascript" src="/retail-en_us/resources/javascript/responsive/custom_tda_js/custom_site_analytics.js"></script> <!--ls:end[script]--> <!--ls:begin[head-injection]--><!--ls:end[head-injection]--><!--ls:begin[tracker-injection]--><!--ls:end[tracker-injection]--><!--ls:begin[script]--><!--ls:end[script]-->
+ </head> 
+ <body class="latest"> <!--[if lt IE 9]>
+  	<div class="browser-warning-wrapper">
+    	<div class="browser-warning">
+      	<span>To get the best possible experience using our website, we recommend you <a href="http://windows.microsoft.com/en-us/internet-explorer/which-version-am-i-using" target="_blank">update your browser</a>.<button class="browser-warning-close" type="button"></button></span>
+    	</div>
+  	</div>
+  	<![endif]--> 
+  <div class="body-wrapper"> <!--ls:begin[body]-->
+   <div class="ls-canvas" id="ls-canvas"> 
+    <div class="ls-row" id="ls-row-1"> 
+     <div class="ls-fxr" id="ls-gen2987031-ls-fxr"> 
+      <div class="ls-area" id="ls-row-1-area-1"> 
+       <div class="ls-area-body" id="ls-gen2987032-ls-area-body"> 
+        <div class="ls-cmp-wrap ls-1st" id="w1455831086150"> 
+         <div class="iw_component" id="1455831086150">
+          <div> 
+           <header class="main-header"> 
+            <nav class="main-header-supernav"> 
+             <ul class="main-header-supernav-items"> 
+              <li class="main-header-supernav-item"> <a target="_parent" href="/pricing.page?" title="Pricing">Pricing</a> </li> 
+              <li class="main-header-supernav-item"> <a target="_parent" href="/account-types.page?" title="Account Types">Account Types</a> </li> 
+              <li class="main-header-supernav-item"> <a target="_parent" href="/funding-and-transfers.page?" title="Funding &amp; Transfers">Funding &amp; Transfers</a> </li> 
+              <li class="main-header-supernav-item emphasized"> <a target="_parent" href="/o.cgi?a=WEB&amp;p=https%3A%2F%2Fwwws.tdameritrade.com%2Fcgi-bin%2Fapps%2FAccountApplication%3Fentity%3D103" title="Open New Account">Open New Account</a> </li> 
+             </ul> 
+            </nav> 
+            <div class="main-header-nav-container"> 
+             <div class="main-header-mobile-new-account-cta"> <a title="Open New Account" href="https://www.tdameritrade.com/o.cgi?a=WEB&amp;p=https%3A%2F%2Fwwws.tdameritrade.com%2Fcgi-bin%2Fapps%2FAccountApplication%3Fentity%3D103">Open New Account</a> 
+             </div> 
+             <div class="main-header-mobile-login-cta"> <a href="https://secure.tdameritrade.com/auth" class="main-header-mobile-login-overlay-toggle" title="Log In">Log In</a> 
+             </div> 
+             <div class="main-header-mobile-search"> 
+              <form action="/retail-en_us/search/results.page?submit=true&amp;componentID=1343397719900" method="post"> 
+               <input id="header-search-mobile" class="main-header-search-input js-floating-label-form" type="text"><span class="main-header-search-icon"></span><label for="header-search-mobile" class="main-header-search-label">Search</label><button title="Search" class="main-header-search-submit" type="submit"></button> 
+              </form> 
+             </div> 
+             <div class="main-header-search"> 
+              <form action="/retail-en_us/search/results.page?submit=true&amp;componentID=1343397719900" id="search" method="post" name="search"> 
+               <input type="text" name="iwPreActions" class="main-header-search-input js-floating-label-form" id="header-search-desktop"><span class="main-header-search-icon"></span><label for="header-search-desktop" class="main-header-search-label">Keywords or Stocks</label><button title="Search" class="main-header-search-submit" type="submit"></button> 
+              </form> 
+             </div> 
+             <div for="top-nav-login-section" class="main-header-login-container"> 
+              <div class="main-header-login"> 
+               <form autocomplete="off" target="_top" name="form-login" method="post" id="form-login" enctype="application/x-www-form-urlencoded" action="https://invest.ameritrade.com/grid/p/login"> 
+                <input value="" type="hidden" name="DV_DATA">
+                <input type="hidden" name="fp_browser">
+                <input type="hidden" name="fp_screen">
+                <input type="hidden" name="fp_software">
+                <input type="hidden" name="fp_timezone">
+                <input type="hidden" name="fp_language">
+                <input type="hidden" name="fp_java">
+                <input type="hidden" name="fp_cookie">
+                <input type="hidden" name="flashVersion">
+                <input value="" type="hidden" name="AgentID">
+                <input value="submit" type="hidden" name="mAction">
+                <input id="loginAction_invokedFrom" value="" name="invokedFrom" type="hidden">
+                <input id="loginAction_symbolList" value="" name="symbolList" type="hidden">
+                <input id="loginAction_source" value="" name="source" type="hidden">
+                <input id="languagePref" value="" name="languagePref" type="hidden"> 
+                <div class="main-header-login-fields"> <label for="userid" class="main-desktop-login-label-userid ">User ID</label>
+                 <input name="tbUsername" id="userid" class="main-header-login-username js-floating-label-form" type="text" placeholder=""><label for="password" class="main-desktop-login-label-password">Password</label>
+                 <input name="tbPassword" id="password" class="main-header-login-password js-floating-label-form" type="password"><button target="_self" id="" class="main-header-login-submit main-header-login-label btn btn-green-solid" type="submit" value="Log in" title="Log in" href="https://invest.ameritrade.com/grid/p/login">Log In</button> 
+                </div> <a id="logon-help" class="main-header-login-help" href="/logon-help.page?" title="Need Login Help?">Need Login Help?</a> 
+               </form> 
+              </div> 
+             </div> 
+             <div for="primary-nav-logo" class="main-header-logo-container"> <a title="TD Ameritrade" target="_parent" href="/home.page?"><img class="main-header-logo-image svg" src="/retail-en_us/resources/images/td_ameritradelogo.svg" alt="TD Ameritrade"></a> 
+              <div class="main-header-mobile-nav-toggle-container"> <button title="Toggle navigation" class="main-header-mobile-nav-toggle" type="button"><span class="main-header-mobile-menu-label">Menu</span><span class="main-header-mobile-close-label">Close</span></button> 
+              </div> 
+             </div> 
+             <nav class="main-header-nav"> 
+              <div class="main-header-nav-scroll-container"> 
+               <ul class="main-header-nav-items"> 
+                <li class="main-header-nav-item selected mobile-only"> <a title="Home" href="/home.page?"> Home</a> </li> 
+                <li class="main-header-nav-item expandable"> <a target="_parent" href="/why-td-ameritrade.page?" title="Why TD Ameritrade?">Why TD Ameritrade?</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/why-td-ameritrade.page?" title="Why TD Ameritrade?">Why TD Ameritrade? Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/why-td-ameritrade/contact-us.page?" title="Contact Us">Contact Us</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/why-td-ameritrade/contact-us.page?" title="Contact Us">Contact Us Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/why-td-ameritrade/contact-us/top-faqs.page?" title="Top FAQs">Top FAQs</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/why-td-ameritrade/contact-us/form-library.page?" title="Form Library">Form Library</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/why-td-ameritrade/free-stock-trading.page?" title="Commission-Free Trading">Commission-Free Trading</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/why-td-ameritrade/our-people-investment-finance-professionals.page?" title="Our People">Our People</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/why-td-ameritrade/accolades.page?" title="Accolades">Accolades</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/why-td-ameritrade/compare.page?" title="Compare TD&amp;nbsp;Ameritrade">Compare TD&nbsp;Ameritrade</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/why-td-ameritrade/digital-innovation.page?" title="Digital Innovation">Digital Innovation</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable"> <a target="_parent" href="/tools-and-platforms.page?" title="Tools &amp; Platforms">Tools &amp; Platforms</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/tools-and-platforms.page?" title="Tools &amp; Platforms">Tools &amp; Platforms Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/tools-and-platforms/trader-offering.page?" title="Trader Offering">Trader Offering</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/tools-and-platforms/web-platform/features.page?" title="Investing Web Platforms">Investing Web Platforms</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/tools-and-platforms/thinkorswim.page?" title="thinkorswim Trading Platforms">thinkorswim Trading Platforms</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/tools-and-platforms/thinkorswim.page?" title="thinkorswim Trading Platforms">thinkorswim Trading Platforms Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/tools-and-platforms/thinkorswim/desktop.page?" title="thinkorswim Desktop">thinkorswim Desktop</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/tools-and-platforms/thinkorswim/web.page?" title="thinkorswim Web">thinkorswim Web</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/tools-and-platforms/thinkorswim/mobile-app.page?" title="thinkorswim Mobile">thinkorswim Mobile</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/tools-and-platforms/mobile-trading.page?" title="Mobile Trading Apps">Mobile Trading Apps</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/tools-and-platforms/mobile-trading.page?" title="Mobile Trading Apps">Mobile Trading Apps Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/tools-and-platforms/mobile-trading/td-ameritrade-mobile.page?" title="TD Ameritrade Mobile">TD Ameritrade Mobile</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/tools-and-platforms/compare-platforms.page?" title="Compare Platforms">Compare Platforms</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/tools-and-platforms/after-hours-trading.page?" title="24/5 Trading">24/5 Trading</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/tools-and-platforms/order-execution.page?" title="Order Execution">Order Execution</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable"> <a target="_parent" href="/investment-products.page?" title="Investment Products">Investment Products</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products.page?" title="Investment Products">Investment Products Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-products/trade-stocks.page?" title="Stocks">Stocks</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/trade-stocks.page?" title="Stocks">Stocks Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/trade-stocks/aapl-tsla-apple-tesla-stock-splits-2020.page?" title="Stock Splits">Stock Splits</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-products/options-trading.page?" title="Options">Options</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/options-trading.page?" title="Options">Options Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/options-trading/tradewise.page?" title="TradeWise">TradeWise</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/etfs.page?" title="ETFs">ETFs</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/mutual-funds.page?" title="Mutual Funds">Mutual Funds</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-products/futures-trading.page?" title="Futures">Futures</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/futures-trading.page?" title="Futures">Futures Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/futures-trading/bitcoin-futures.page?" title="Bitcoin">Bitcoin</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/forex-trading.page?" title="Forex">Forex</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-products/margin-trading.page?" title="Margin Trading">Margin Trading</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/margin-trading.page?" title="Margin Trading">Margin Trading Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/margin-trading/portfolio-margin.page?" title="Portfolio Margin">Portfolio Margin</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/cryptocurrency-trading.page?" title="Cryptocurrency Trading">Cryptocurrency Trading</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/managed-portfolios.page?" title="Managed Portfolios">Managed Portfolios</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-products/cash-solutions.page?" title="Cash Solutions">Cash Solutions</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/cash-solutions.page?" title="Cash Solutions">Cash Solutions Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/cash-solutions/cash-services.page?" title="Cash Services">Cash Services</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-products/bonds-and-cds.page?" title="Bonds &amp; Fixed Income">Bonds &amp; Fixed Income</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/bonds-and-cds.page?" title="Bonds &amp; Fixed Income">Bonds &amp; Fixed Income Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/bonds-and-cds/new-issues.page?" title="New Issues">New Issues</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/annuities.page?" title="Annuities">Annuities</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-products/IPOs.page?" title="IPOs">IPOs</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/IPOs.page?" title="IPOs">IPOs Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-products/IPOs/DPOs.page?" title="DPOs">DPOs</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/dividend-reinvestment.page?" title="Dividend Reinvestment">Dividend Reinvestment</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-products/collateral-lending-program.page?" title="Collateral Lending Program">Collateral Lending Program</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable"> <a target="_parent" href="/investment-guidance.page?" title="Guidance">Guidance</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-guidance.page?" title="Guidance">Guidance Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/investment-guidance/investment-management-services.page?" title="Investment Management Services">Investment Management Services</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-guidance/investment-management-services.page?" title="Investment Management Services">Investment Management Services Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-guidance/investment-management-services/essential-portfolios.page?" title="Essential Portfolios">Essential Portfolios</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-guidance/investment-management-services/selective-portfolios.page?" title="Selective Portfolios">Selective Portfolios</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/investment-guidance/investment-management-services/personalized-portfolios.page?" title="Personalized Portfolios">Personalized Portfolios</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-guidance/setting-financial-goals.page?" title="Goal Planning">Goal Planning</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-guidance/advisor-referral.page?" title="Independent Advisor Referral">Independent Advisor Referral</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-guidance/investment-philosophy.page?" title="Investment Philosophy">Investment Philosophy</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable"> <a target="_parent" href="/retirement-planning.page?" title="Retirement">Retirement</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/retirement-planning.page?" title="Retirement">Retirement Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/retirement-planning/retirement-suite.page?" title="Retirement Offering">Retirement Offering</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/retirement-planning/rollover-ira.page?" title="Rollover IRA">Rollover IRA</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/retirement-planning/ira-guide.page?" title="IRA Guide">IRA Guide</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide.page?" title="IRA Guide">IRA Guide Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide/roth-ira.page?" title="Roth IRA">Roth IRA</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide/traditional-ira.page?" title="Traditional IRA">Traditional IRA</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide/roth-vs-traditional-ira.page?" title="Roth vs. Traditional IRA">Roth vs. Traditional IRA</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide/401k-rollover-to-ira.page?" title="401k Rollover to IRA">401k Rollover to IRA</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide/roth-ira-conversions.page?" title="Roth IRA Conversions">Roth IRA Conversions</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide/ira-contribution-rules.page?" title="IRA Contribution Rules">IRA Contribution Rules</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/ira-guide/ira-distribution-rules.page?" title="IRA Distribution Rules">IRA Distribution Rules</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/retirement-planning/small-business.page?" title="Small Business">Small Business</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/small-business.page?" title="Small Business">Small Business Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/small-business/individual-401k.page?" title="Solo 401k">Solo 401k</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/small-business/sep.page?" title="SEP IRA">SEP IRA</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/small-business/simple-ira.page?" title="SIMPLE IRA">SIMPLE IRA</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/small-business/profit-sharing.page?" title="Profit-Sharing">Profit-Sharing</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/small-business/small-business-retirement-contribution-calculator.page?" title="Contribution and Eligibility Calculator">Contribution and Eligibility Calculator</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/retirement-planning/retirement-income-solutions.page?" title="Retirement Income Solutions">Retirement Income Solutions</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/retirement-planning/retirement-resources.page?" title="Retirement Resources">Retirement Resources</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/retirement-resources.page?" title="Retirement Resources">Retirement Resources Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/retirement-planning/retirement-resources/401k-fee-analysis.page?" title="401k Fee Analyzer">401k Fee Analyzer</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/retirement-planning/secure-act-2019-and-retirement-changes.page?" title="The SECURE Act Resource Center">The SECURE Act Resource Center</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/retirement-planning/what-is-the-cares-act-retirement.page?" title="CARES Act FAQs">CARES Act FAQs</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable"> <a target="_parent" href="/education.page?" title="Education">Education</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education.page?" title="Education">Education Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/investment-classes.page?" title="Immersive Curriculum ">Immersive Curriculum </a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/investment-finance-articles.page?" title="Articles">Articles</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/investment-videos.page?" title="Videos">Videos</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/trader-education-webcasts.page?" title="Webcasts">Webcasts</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/td-ameritrade-network.page?" title="TD Ameritrade Network ">TD Ameritrade Network </a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/investment-seminars.page?" title="In-Person Events ">In-Person Events </a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/education/talking-green-investing-podcast.page?" title="Talking Green Podcast">Talking Green Podcast</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/talking-green-investing-podcast.page?" title="Talking Green Podcast">Talking Green Podcast Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/talking-green-investing-podcast/financial-decisions.page?" title="Episode 01 Transcript">Episode 01 Transcript</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/talking-green-investing-podcast/money-habits.page?" title="Episode 02 Transcript">Episode 02 Transcript</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/talking-green-investing-podcast/investment-research.page?" title="Episode 03 Transcript">Episode 03 Transcript</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/talking-green-investing-podcast/financial-discipline.page?" title="Episode 04 Transcript">Episode 04 Transcript</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/talking-green-investing-podcast/personal-finance-management.page?" title="Episode 05 Transcript">Episode 05 Transcript</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/talking-green-investing-podcast/financial-stress.page?" title="Episode 06 Transcript">Episode 06 Transcript</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/personal-finance.page?" title="Personal Finance">Personal Finance</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/new-to-investing.page?" title="New to Investing">New to Investing</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/education/planning-for-retirement.page?" title="Planning for Retirement">Planning for Retirement</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/planning-for-retirement.page?" title="Planning for Retirement">Planning for Retirement Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/planning-for-retirement/getting-started.page?" title="Getting Started">Getting Started</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/planning-for-retirement/preparing-for-retirement.page?" title="Preparing for Retirement ">Preparing for Retirement </a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/planning-for-retirement/beginning-retirement.page?" title="Beginning Retirement  ">Beginning Retirement </a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/saving-for-college.page?" title="Investing for College">Investing for College</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/education/account-types-and-investment-products/investment-products.page?" title="Account Types &amp; Investment Products">Account Types &amp; Investment Products</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/investment-products.page?" title="Account Types &amp; Investment Products">Account Types &amp; Investment Products Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/529plans.page?" title="529 Plans">529 Plans</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/bonds-and-cds.page?" title="Bonds &amp; CDs">Bonds &amp; CDs</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/etfs.page?" title="ETFs">ETFs</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/forex-currency-trading.page?" title="Forex">Forex</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/futures-trading.page?" title="Futures">Futures</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/iras.page?" title="IRAs">IRAs</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/mutual-funds.page?" title="Mutual Funds">Mutual Funds</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/how-to-trade-options.page?" title="Options">Options</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/account-types-and-investment-products/stocks.page?" title="Stocks">Stocks</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="/education/taxes.page?" title="Taxes">Taxes</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/taxes.page?" title="Taxes">Taxes Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/taxes/taxes-resources.page?" title="Tax Resources">Tax Resources</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/taxes/taxes-cost-basis.page?" title="Cost Basis">Cost Basis</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/education/taxes/what-is-a-tax-lot.page?" title="Understanding Tax Lots">Understanding Tax Lots</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/education/inherited-accounts.page?" title="Inherited Accounts">Inherited Accounts</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable"> <a target="_parent" href="/investment-research.page?" title="Research">Research</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/investment-research.page?" title="Research">Research Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/Research/Markets/Overview" title="Markets">Markets</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/Research/Markets/Overview" title="Markets">Markets Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/markets/news/news.asp" title="News">News</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/markets/indices/indices.asp" title="Indices">Indices</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/markets/sectors/sectors.asp" title="Sectors &amp; Industries">Sectors &amp; Industries</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/markets/calendar/calendar.asp" title="Calendar">Calendar</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/markets/reports/reports.asp" title="Reports">Reports</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/summary" title="Stock Profile">Stock Profile</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/summary" title="Stock Profile">Stock Profile Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/news/search" title="News">News</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/social" title="Social Signals">Social Signals</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/charts" title="Charts">Charts</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/earnings" title="Earnings">Earnings</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/fundamentals" title="Fundamentals">Fundamentals</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/valuation" title="Valuation">Valuation</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/calendar" title="Calendar">Calendar</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/industryposition" title="Industry Position">Industry Position</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/research/stocks/secfilings" title="SEC Filings">SEC Filings</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/research/options-strategy.page?" title="Options Research">Options Research</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/overview/overview.asp" title="Mutual Funds">Mutual Funds</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/overview/overview.asp" title="Mutual Funds">Mutual Funds Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/premierlist/premierlist.asp" title="Premier List">Premier List</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/fundfamilies/fundfamilies.asp" title="Fund Families">Fund Families</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/categories/categories.asp" title="Fund Categories">Fund Categories</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/profile/profile.asp" title="Fund Profile">Fund Profile</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/compare/compare.asp" title="Compare Funds">Compare Funds</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/mutualfunds/commentary/commentary.asp" title="Commentary">Commentary</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/overview/overview.asp" title="ETFs">ETFs</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/overview/overview.asp" title="ETFs">ETFs Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/categories/categories.asp" title="Fund Categories">Fund Categories</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/profile/profile.asp" title="Fund Profile">Fund Profile</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/compare/compare.asp" title="Compare Funds">Compare Funds</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/commentary/commentary.asp" title="Commentary">Commentary</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/reports/index.asp?fromSectionLeftNav=true" title="Analyst Reports">Analyst Reports</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/etfs/commissionfree/commissionfree.asp?fromSectionLeftNav=true" title="Commission-Free ETFs">Commission-Free ETFs</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="http://valubond.tdameritrade.com/wsi/data/company/tdat/PublicOverview.asp" title="Bonds &amp; CDs">Bonds &amp; CDs</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="http://valubond.tdameritrade.com/wsi/data/company/tdat/PublicOverview.asp" title="Bonds &amp; CDs">Bonds &amp; CDs Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/research/bonds-and-cds/cd-center.page?" title="CD Center">CD Center</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="/research/bonds-and-cds/bond-wizard.page?" title="Bond Wizard">Bond Wizard</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/fixedincome/bondTicker.asp" title="Market Commentary">Market Commentary</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary expandable"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/screener/overview/overview.asp" title="Screeners">Screeners</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/screener/overview/overview.asp" title="Screeners">Screeners Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/screener/stocks/overview.asp" title="Stock Screener">Stock Screener</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/screener/options/overview.asp" title="Options Screener">Options Screener</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/screener/mutualfunds/overview.asp" title="Mutual Funds Screener">Mutual Funds Screener</a> </li> 
+                    <li class="main-header-nav-item-tertiary"> <a target="_parent" href="https://research.tdameritrade.com/grid/public/screener/etfs/overview.asp" title="ETF Screener">ETF Screener</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/research/ideas.page?" title="Ideas">Ideas</a> </li> 
+                  <li class="main-header-nav-item-secondary"> <a target="_parent" href="/research/imx.page?" title="Investor Movement Index (IMX)">Investor Movement Index (IMX)</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable mobile-only"> <a target="_parent" href="/pricing.page?" title="Pricing">Pricing</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/pricing.page?" title="Pricing">Pricing Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/pricing/brokerage-fees.page?" title="Brokerage Fees">Brokerage Fees</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/pricing/margin-and-interest-rates.page?" title="Margin &amp; Interest Rates">Margin &amp; Interest Rates</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable mobile-only"> <a target="_parent" href="/account-types.page?" title="Account Types">Account Types</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/account-types.page?" title="Account Types">Account Types Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/account-types/standard.page?" title="Standard">Standard</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/account-types/retirement.page?" title="Retirement">Retirement</a> </li> 
+                  <li class="main-header-nav-item-secondary expandable mobile-only"> <a target="_parent" href="/account-types/education.page?" title="Education">Education</a> 
+                   <ul class="main-header-nav-items-tertiary"> 
+                    <li class="main-header-nav-item-tertiary mobile-only"> <a target="_parent" href="/account-types/education.page?" title="Education">Education Overview</a> </li> 
+                    <li class="main-header-nav-item-tertiary mobile-only"> <a target="_parent" href="/account-types/education/529-plans.page?" title="TD Ameritrade 529 Plans">TD Ameritrade 529 Plans</a> </li> 
+                    <li class="main-header-nav-item-tertiary mobile-only"> <a target="_parent" href="/account-types/education/529-plans/investment-choices.page?" title="Investment Choices">Investment Choices</a> </li> 
+                   </ul> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/account-types/specialty.page?" title="Specialty">Specialty</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/account-types/managed-portfolios.page?" title="Managed Portfolios">Managed Portfolios</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/account-types/faqs-opening.page?" title="FAQs: Opening">FAQs: Opening</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item expandable mobile-only"> <a target="_parent" href="/funding-and-transfers.page?" title="Funding &amp; Transfers">Funding &amp; Transfers</a> 
+                 <ul class="main-header-nav-items-secondary"> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/funding-and-transfers.page?" title="Funding &amp; Transfers">Funding &amp; Transfers Overview</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/funding-and-transfers/faqs-funding.page?" title="FAQs: Funding">FAQs: Funding</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/funding-and-transfers/faqs-transfers-and-rollovers.page?" title="FAQs: Transfers &amp; Rollovers">FAQs: Transfers &amp; Rollovers</a> </li> 
+                  <li class="main-header-nav-item-secondary mobile-only"> <a target="_parent" href="/mobile-check-deposit.page?" title="Mobile Check Deposit">Mobile Check Deposit</a> </li> 
+                 </ul> </li> 
+                <li class="main-header-nav-item mobile-only"> <a href="/branches.page" target="_self" title="Find a Branch">Find a Branch</a> </li> 
+               </ul> 
+              </div> 
+             </nav> 
+            </div> 
+            <div class="alert-message"> 
+             <div class="alert-message-container green"> <span class="alert-message-icon"></span> 
+              <div class="alert-message-copy">
+               <p><span class="emergency-message-copy"><span>Market activity has led to longer than expected phone wait times. <strong><a href="https://www.tdameritrade.com/why-td-ameritrade/contact-us/top-faqs.page">Visit our Top FAQs page</a> for ways you can self-service.</strong>&nbsp; </span></span></p>
+              </div> <span class="alert-message-close"></span> 
+             </div> 
+            </div> 
+           </header> 
+          </div>
+          <script type="text/javascript">
+
+        var title = 'retail-en_us';
+		var docval="";
+		if(title == "retail-en_us"){
+		docval=document.getElementById("languagePref").value="en_US";
+		}else
+		docval=document.getElementById("languagePref").value=title;
+
+</script> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="ls-row-clr"></div> 
+     </div> 
+    </div> 
+    <div class="ls-row tpl-home content-wrapper-home" id="ls-row-2"> 
+     <div class="ls-fxr" id="ls-gen2987033-ls-fxr"> 
+      <div class="ls-area" id="ls-row-2-area-1"> 
+       <div class="ls-area-body" id="ls-gen2987034-ls-area-body"> 
+        <div class="ls-cmp-wrap ls-1st" id="w1585553692501"> 
+         <div class="iw_component" id="1585553692501">
+          <div>
+           <style text="css">
+        .main-header .alert-message .alert-message-container {
+            display: none !important;
+        }
+        .emergency-banner.content-container {
+            display: inline-block;
+            padding: 2em;
+            margin: 20px 0 40px 0;
+            width: 100%;
+        }
+        .emergency-banner.content-container.split-alignment {
+            display: flex;
+        }
+        .emergency-banner.content-container .emergency-banner-content  {
+            display: inline-block;
+            font-family: TDASansDisplay, arial, helvetica, sans-serif;
+            font-weight: 400;
+            width: 100%;
+        }
+        .emergency-banner.content-container.split-alignment .emergency-banner-content.left-align {
+            display: flex;
+            padding-right: 2rem;
+            padding-left: 0;
+            vertical-align: top;
+            width: 60%;
+        }
+        .emergency-banner.content-container.split-alignment .emergency-banner-content.right-align {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 8%;
+            padding-right: 2rem;
+            vertical-align: top;
+            width: 30%;
+        }
+        .emergency-banner.content-container .emergency-banner-content a {
+            text-decoration: underline;
+        }
+        .emergency-banner.content-container .emergency-banner-content a:hover {
+            text-decoration: none;
+        }
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-primary-header,
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-secondary-header {
+            margin-bottom: 20px;
+        }
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-primary-header.headline-bold,
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-secondary-header.headline-bold {
+            font-weight: 500;
+        }
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-primary-subheader ul,
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-secondary-subheader ul {
+            list-style-type: disc;
+            padding-left: 1.5em;
+            padding-right: 0;
+        }
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-primary-subheader p,
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-primary-subheader li  {
+            font-size: 18px;
+            line-height: 26px;
+            margin: 0;
+        }
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-secondary-subheader p,
+        .emergency-banner.content-container .emergency-banner-content .emergency-banner-secondary-subheader li {
+            font-size: 18px;
+            line-height: 26px;
+            margin: 0;
+        }
+        /* ebanner copy color config options */
+        .emergency-banner.content-container .emergency-banner-content .copy-white {
+            color: #fff !important;
+        }
+        .emergency-banner.content-container .emergency-banner-content .copy-black {
+            color: #000 !important;
+        }
+        .emergency-banner.content-container .emergency-banner-content .copy-utility-green {
+            color: #087900 !important;
+        }
+        .emergency-banner.content-container .emergency-banner-content .copy-core-green {
+            color: #40a829 !important;
+        }
+        .emergency-banner.content-container .emergency-banner-content .copy-sky-blue {
+            color: #b2d7ed !important;
+        }
+        .emergency-banner.content-container .emergency-banner-content .copy-daisy {
+            color: #fdf3cb !important;
+        }
+        .emergency-banner.content-container .emergency-banner-content .copy-dark-grey {
+            color: #666 !important;
+        }
+        /* ebanner primary/secondary header size config options */
+        .emergency-banner.content-container .emergency-banner-content .ebanner-heading-large {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .emergency-banner.content-container .emergency-banner-content .ebanner-heading-medium {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .emergency-banner.content-container .emergency-banner-content .ebanner-heading-small {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        /* ebanner background color config options */
+        .emergency-banner.white-background-black-text {
+            background-color: #fff;
+            color: #000;
+        }
+        .emergency-banner.white-background-green-text {
+            background-color: #fff;
+            color: #087900;
+        }
+        .emergency-banner.pine-background {
+            background-color: #38635a;
+            color: #fff;
+        }
+        .emergency-banner.dark-green-background {
+            background-color: #183028;
+            color: #fff;
+        }
+        .emergency-banner.utility-green-background {
+            background-color: #087900;
+            color: #fff;
+        }
+        .emergency-banner.navy-background {
+            background-color: #2a5673;
+            color: #fff;
+        }
+        .emergency-banner.off-white-background {
+            background-color: #f5f1eb;
+            color: #000;
+        }
+        .emergency-banner.cool-grey-eight-background {
+            background-color: #666;
+            color: #fff;
+        }
+        @media(max-width: 1024px){
+            .emergency-banner.content-container .emergency-banner-content {
+                margin-bottom: 30px;
+            }
+            .emergency-banner.content-container.split-alignment .emergency-banner-content.left-align {
+                margin-bottom: 30px;
+                width: 60%;
+            }
+            .emergency-banner.content-container.split-alignment .emergency-banner-content.right-align {
+                width: 38%;
+            }
+            .emergency-banner.content-container.split-alignment .emergency-banner-content.right-align {
+                margin-left: 0;
+            }
+        }
+        @media(max-width: 768px) {
+            .emergency-banner.content-container .emergency-banner-content {
+                margin-bottom: 30px;
+            }
+            .emergency-banner.content-container.split-alignment {
+                display: inline-block;
+            }
+            .emergency-banner.content-container.split-alignment .emergency-banner-content.left-align {
+                display: inline-block;
+                width: 100%;
+            }
+            .emergency-banner.content-container.split-alignment .emergency-banner-content.right-align {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    </style> 
+           <div class="emergency-banner content-container pine-background split-alignment"> 
+            <div class="emergency-banner-content left-align"> 
+             <div> 
+              <h2 class="copy-daisy emergency-banner-primary-header ebanner-heading-large headline-bold">Supporting your investing needs – no matter what</h2> 
+              <div class="emergency-banner-primary-subheader"> 
+               <p class="copy-white">We've put together some helpful resources to make it quick and easy to self-service on our website and mobile apps. If you need to reach us by phone, please understand your wait may be longer than normal due to increased market activity.</p> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="emergency-banner-content right-align"> 
+             <div> 
+              <h3 class="emergency-banner-secondary-header ebanner-heading-medium headline-bold">Helpful resources</h3> 
+              <div class="emergency-banner-secondary-subheader"> 
+               <ul> 
+                <li><a href="/why-td-ameritrade/contact-us/top-faqs.page">Answers to your top questions</a></li> 
+                <li><a href="https://tickertape.tdameritrade.com/market-news/daily-market-update" target="_blank">Today's insights on the market</a></li> 
+                <li><a href="/investment-products/trade-stocks/aapl-tsla-apple-tesla-stock-splits-2020.page">Details on the Apple and Tesla stock splits</a></li> 
+               </ul> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1482199177908"> 
+         <div class="iw_component" id="1482199177908">
+          <div>
+           <div class="split-primary-banner"> 
+            <div class="module-container"> 
+             <style media="screen" type="text/css">
+        .hero-image-module-three-content-title.white {
+            font-family: TDASansDisplay, Arial, Helvetica, sans-serif;
+            font-size: 44px;
+            line-height: 42px;
+        }
+
+        p.hero-image-module-three-content-copy {
+            font-size: 1.1875em;
+            line-height: 1.4;
+        }
+
+        .hero-image-module-three-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-image-module-three-table.fs-backgrounds:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            content: ' ';
+            z-index: 1;
+        }
+
+        .visible-xs {
+            display: none !important;
+        }
+
+        @media(max-width: 767px) {
+            .hero-image-module-three-cell.aligned-top.aligned-left {
+                text-align: center !important;
+            }
+
+            .hero-image-module-three-content-title.white,
+            p.hero-image-module-three-content-copy {
+                text-align: left !important;
+            }
+        }
+
+        @media(min-width: 767px) {
+            .hero-image-module-three-content-title {
+                color: #000 !important;
+            }
+
+            .hero-image-module-three-content {
+                margin: 0;
+                text-align: center;
+            }
+
+            .hero-image-module-three-content-title.white {
+                font-family: TDASansDisplay, Arial, Helvetica, sans-serif;
+                font-size: 3.375em !important;
+                line-height: 52px;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 595px;
+            }
+
+            .hero-image-module-three-content-title.white br {
+                display: none;
+            }
+
+            .visible-xs {
+                display: inline !important;
+            }
+        }
+
+        @media(min-width: 1025px) {
+            .hero-image-module-three-content {
+                min-height: 0;
+                text-align: left;
+            }
+
+            .hero-image-module-three-container {
+                height: auto;
+                margin-top: 0 !important;
+                min-height: 490px;
+            }
+
+            .hero-image-module-three-content-title.white {
+                margin-left: 0;
+                position: static;
+                left: 0px;
+                top: 0px;
+                margin-bottom: 30px;
+            }
+
+            .hero-image-module-three-content-title.white br {
+                display: inline;
+            }
+
+            .hero-image-module-three-table.fs-backgrounds:after {
+                display: none;
+            }
+
+            .hero-image-module-desktop-image-wrapper.fs-backgrounds:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.4+0,0+100 */
+
+                background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+                /* FF3.6-15 */
+
+                background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+                /* Chrome10-25,Safari5.1-6 */
+
+                background: linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%);
+                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+                content: ' ';
+                z-index: 1;
+            }
+
+            .hero-image-module-three-cta-container a {
+                margin-bottom: 0;
+            }
+
+            p.hero-image-module-three-content-copy {
+                margin-bottom: 73px;
+            }
+
+            .hero-image-module-three-cta-container {
+                padding-top: 0px;
+            }
+
+            .hero-image-module-three-cta-container {
+                margin-bottom: 80px;
+            }
+        }
+
+
+        @media(min-width: 1025px) {
+            .hero-image-module-desktop-image-wrapper.fs-backgrounds:after {
+                background: none !important;
+            }
+        }
+
+        @media(max-width: 1024px) {
+
+            .hero-image-module-three-content-title,
+            .hero-image-module-three-content-copy {
+                color: #ffffff !important;
+            }
+
+            .hero-image-module-three-table.fs-backgrounds:after {
+                background: none;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+        }
+    </style> 
+             <div class="ls-row hero-image-module-three-wrapper"> 
+              <div class="hero-image-module-three-container"> 
+               <div aria-label="Woman on a computer using thinkorswim trading platform" class="hero-image-module-desktop-image-wrapper fs-backgrounds" style="display: block; background-image: url(/retail-en_us/resources/images/new-home/features/smart-investors-desk.jpg)"> 
+               </div> 
+               <div aria-label="woman on a computer using the thinkorswim platform" class="hero-image-module-three-table fs-backgrounds" style="background-image: url(/retail-en_us/resources/images/new-home/features/smart-investors-mobile.jpg);"> 
+                <div class="hero-image-module-three-cell aligned-middle aligned-left"> 
+                 <div class="hero-image-module-three-content"> 
+                  <h1 class="hero-image-module-three-content-title">The online brokerage <br class="visible-xs">that makes you a <br class="visible-xs">smarter investor </h1> 
+                  <p class="hero-image-module-three-content-copy black ">Our knowledgeable professionals and industry <br class="visible-xs">leading tools are united to do one thing: make <br class="visible-xs">you a smarter, more confident investor. </p> 
+                  <div class="hero-image-module-three-cta-container "> <a class="btn btn-green-solid" href="https://www.tdameritrade.com/o.cgi?a=WEB&amp;p=https%3A%2F%2Finvest.tdameritrade.com%2Fgrid%2Fm%2Fola%3Fentity%3D103" style="margin-bottom: 10px;" title="Open new account">Open new account</a> 
+                   <style text="”css”">
+a.btn.btn-green.custom-color-config {
+           background-color: #fff;
+}
+a.btn.btn-green.custom-color-config:hover {
+          background-color: #40a829;
+            color: #fff;
+}
+</style> <a class=" btn btn-green custom-color-config" href="/why-td-ameritrade.page" title="Learn more">Learn more</a> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <style>
+    @media (min-width: 1025px) and (max-width: 1085px) {
+        .visible-xs {
+            display: none !important;
+        }
+    }
+</style> 
+           </div>
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1482199177909"> 
+         <div class="iw_component" id="1482199177909">
+          <div> 
+           <div class="module-container alternating-content-copy-below"> 
+            <div class="split-primary-feature-promo module-right"> 
+             <div class="split-primary-feature-promo-container"> 
+              <div class="split-primary-feature-promo-image" style="background:none;"> 
+               <div class="split-primary-feature-promo-img-container" style="background-image:url(/retail-en_us/resources/images/new-home/sub-features/trader-stockbrokers-2020.jpg);" alt="llustrated #1 ribbon and text listing out award categories"></div> 
+              </div> 
+              <div class="split-primary-feature-promo-copy"> 
+               <h3 class="split-primary-feature-promo-text-heading tda-off-black headline-small">Why would you trade anywhere else?</h3> 
+               <p>Stay on top of the market with our award-winning trader experience.</p> <a class="split-primary-feature-promo-cta btn btn-green-solid " title="Learn more" href="/tools-and-platforms/trader-offering.page?" target="_self">Learn more</a> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1468288626940"> 
+         <div class="iw_component" id="1468288626940">
+          <div> 
+           <div class="module-container alternating-content-copy-below"> 
+            <div class="split-primary-feature-promo module-left"> 
+             <div class="split-primary-feature-promo-container"> 
+              <div class="split-primary-feature-promo-image" style="background:none;"> 
+               <div class="split-primary-feature-promo-img-container" style="background-image:url(/retail-en_us/resources/images/new-home/sub-features/tools-platforms.jpg);" alt="Group of devices showcasing trading tools and platforms"></div> 
+              </div> 
+              <div class="split-primary-feature-promo-copy"> 
+               <h3 class="split-primary-feature-promo-text-heading tda-off-black headline-small">Take on the market with our powerful platforms</h3> 
+               <p>Trade without trade-offs. Our desktop, web, and mobile platforms are designed for performance and built for all levels of investors.</p> <a class="split-primary-feature-promo-cta btn btn-green-solid " title="Compare now" href="/tools-and-platforms.page?" target="_self">Compare now</a> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1448983809246"> 
+         <div class="iw_component" id="1448983809246">
+          <div> 
+           <div class="module-container alternating-content-copy-below"> 
+            <div class="split-primary-feature-promo module-right"> 
+             <div class="split-primary-feature-promo-container"> 
+              <div class="split-primary-feature-promo-image" style="background:none;"> 
+               <div class="split-primary-feature-promo-img-container" style="background-image:url(/retail-en_us/resources/images/new-home/sub-features/education.jpg);" alt="Computer on desk showing personalized education"></div> 
+              </div> 
+              <div class="split-primary-feature-promo-copy"> 
+               <h3 class="split-primary-feature-promo-text-heading tda-off-black headline-small">Personalized education just for you</h3> 
+               <p>There's no ROI on TMI. That's why we created a&nbsp;learning experience that customizes to give you exactly the information you need, and none of the information you don't.</p> <a class="split-primary-feature-promo-cta btn btn-green-solid " title="Learn more" href="/education.page?" target="_self">Learn more</a> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1575416482389"> 
+         <div class="iw_component" id="1575416482389">
+          <div>
+           <style text="css">
+    .hp-list-reasons .list-reasons-img-container {
+         max-width: 180px;
+    }
+    .list-reasons .hp-list-reasons .list-reasons-item .list-reasons-text p.list-reasons-header {
+        margin: 30px 0 24px 0;
+    }
+    @media(max-width: 767px) {
+        .hp-list-reasons .list-reasons-text {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            text-align: center;
+            width: 100%;
+        }
+        .hp-list-reasons .list-reasons-img-container {
+            max-width: none;
+            text-align: center;
+            width: 100%;
+        }
+        .hp-list-reasons .list-reasons-item-link img {
+            min-width: 180px;
+            max-width: 180px;
+        }
+    }
+</style> 
+           <div class="list-reasons"> 
+            <h2 class="list-reasons-heading">Why Choose TD Ameritrade?</h2> 
+            <div class="hp-td-reasons-container hp-list-reasons"> 
+             <figure class="list-reasons-item list-reasons-col"> <a href="/investment-products.page?" title="Products" class="list-reasons-item-link" target="_parent"> <span class="list-reasons-img-container"> <img class="list-reasons-item-link" alt="Shopping Bags" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/Shopping_bags_off_white.svg" src="/retail-en_us/resources/images/icon-library/new-brand-expression/Shopping_bags_off_white.svg"> </span> 
+               <figurecaption class="list-reasons-text"> 
+                <p class="list-reasons-header">Products</p> 
+                <p>Wide selection of investment choices</p> 
+               </figurecaption> </a> 
+             </figure> 
+             <figure class="list-reasons-item list-reasons-col"> <a href="/education.page?" title="Education" class="list-reasons-item-link" target="_parent"> <span class="list-reasons-img-container"> <img class="list-reasons-item-link" alt="Graduation Cap" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/Graduation_cap_off_white.svg" src="/retail-en_us/resources/images/icon-library/new-brand-expression/Graduation_cap_off_white.svg"> </span> 
+               <figurecaption class="list-reasons-text"> 
+                <p class="list-reasons-header">Education</p> 
+                <p>Interactive courses and webcasts</p> 
+               </figurecaption> </a> 
+             </figure> 
+             <figure class="list-reasons-item list-reasons-col"> <a href="/tools-and-platforms.page?" title="Tools" class="list-reasons-item-link" target="_parent"> <span class="list-reasons-img-container"><img class="list-reasons-item-link" alt="Desktop and mobile trading platforms" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/Three_devices_off_white.svg" src="/retail-en_us/resources/images/icon-library/new-brand-expression/Three_devices_off_white.svg"> </span> 
+               <figurecaption class="list-reasons-text"> 
+                <p class="list-reasons-header">Tools</p> 
+                <p>Free, powerful trading platforms</p> 
+               </figurecaption> </a> 
+             </figure> 
+             <figure class="list-reasons-item list-reasons-col"> <a href="/pricing.page?" title="Pricing" class="list-reasons-item-link" target="_parent"> <span class="list-reasons-img-container"> <img class="list-reasons-item-link" alt="Price tag" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/Tag_with_price_off_white.svg" src="/retail-en_us/resources/images/icon-library/new-brand-expression/Tag_with_price_off_white.svg"> </span> 
+               <figurecaption class="list-reasons-text"> 
+                <p class="list-reasons-header">Pricing</p> 
+                <p>Commission-free online trading<sup>†</sup></p> 
+               </figurecaption> </a> 
+             </figure> 
+             <figure class="list-reasons-item list-reasons-col"> <a href="/investment-research.page?" title="Research" class="list-reasons-item-link" target="_parent"> <span class="list-reasons-img-container"> <img class="list-reasons-item-link" alt="Magnifying glass" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/Magnifying_glass_off_white.svg" src="/retail-en_us/resources/images/icon-library/new-brand-expression/Magnifying_glass_off_white.svg"> </span> 
+               <figurecaption class="list-reasons-text"> 
+                <p class="list-reasons-header">Research</p> 
+                <p>Objective, third-party research</p> 
+               </figurecaption> </a> 
+             </figure> 
+             <figure class="list-reasons-item list-reasons-col"> <a href="/why-td-ameritrade/accolades.page" title="Accolades" class="list-reasons-item-link" target="_parent"> <span class="list-reasons-img-container"> <img class="list-reasons-item-link" alt="Dollars" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/Ribbon_off%20white.svg" src="/retail-en_us/resources/images/icon-library/new-brand-expression/Ribbon_off%20white.svg"> </span> 
+               <figurecaption class="list-reasons-text"> 
+                <p class="list-reasons-header">Accolades</p> 
+                <p>#1 Overall Broker<br>Stockbrokers.com</p> 
+               </figurecaption> </a> 
+             </figure> 
+             <figure class="list-reasons-item list-reasons-col"> <a href="/why-td-ameritrade/contact-us.page?" title="Support" class="list-reasons-item-link" target="_parent"> <span class="list-reasons-img-container"> <img class="list-reasons-item-link" alt="Service headset" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/Headset_off_white.svg" src="/retail-en_us/resources/images/icon-library/new-brand-expression/Headset_off_white.svg"> </span> 
+               <figurecaption class="list-reasons-text"> 
+                <p class="list-reasons-header">Support</p> 
+                <p>Dependable, professional service</p> 
+               </figurecaption> </a> 
+             </figure> 
+            </div> 
+            <div class="list-reasons-links"> <a href="https://www.tdameritrade.com/o.cgi?a=WEB&amp;p=https%3A%2F%2Finvest.tdameritrade.com%2Fgrid%2Fm%2Fola%3Fentity%3D103" title="Open new account" class="btn btn-green-solid list-reasons-cta" target="_parent">Open new account</a> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1575416493332"> 
+         <div class="iw_component" id="1575416493332">
+          <div>
+           <div class="alert-message-container green" id="action_insert_15765164152511223"> <span class="alert-message-icon"></span> 
+            <div class="alert-message-copy">
+             <p><span class="emergency-message-copy"></span></p> 
+             <p>A definitive agreement has been reached for Charles Schwab to acquire TD Ameritrade. <span><a href="https://www.amtd.com/news-and-stories/press-releases/press-release-details/2019/acquisition-information-center/default.aspx" target="_blank">Read more</a></span></p>
+            </div> 
+           </div>
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="ls-row-clr"></div> 
+     </div> 
+    </div> 
+    <div class="ls-row" id="ls-row-3"> 
+     <div class="ls-fxr" id="ls-gen2987035-ls-fxr"> 
+      <div class="ls-area" id="ls-row-3-area-1"> 
+       <div class="ls-area-body" id="ls-gen2987036-ls-area-body"> 
+        <div class="ls-cmp-wrap ls-1st" id="w1458833459505"> 
+         <div class="iw_component" id="1458833459505">
+          <div class="finra-text-container">
+           <p class="finra-text">Check the background of TD Ameritrade on <a href="http://brokercheck.finra.org/Firm/Summary/7870" target="_blank" class="text-link link-green">FINRA's BrokerCheck</a></p> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1460497574881"> 
+         <div class="iw_component" id="1460497574881">
+          <div> 
+           <input id="pageType" type="hidden" value="marketing">
+           <input id="alternatePageType" type="hidden" value=""> 
+           <div id="siteCatalyst"> 
+            <input type="hidden" id="sc_pageName" name="pageName" value="mkt:homepage"> 
+           </div> 
+           <noscript> 
+            <img alt="" border="0" width="1" height="1" src="https://tdameritrade-mktg.112.2O7.net/b/ss/tdameritrade-mktg/1/H.22.1--NS/0">
+           </noscript><!--/DO NOT REMOVE/-->
+          </div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1461360465464"> 
+         <div class="iw_component" id="1461360465464">
+          <div></div> 
+         </div> 
+        </div> 
+        <div class="ls-cmp-wrap" id="w1493426563010"> 
+         <div class="iw_component" id="1493426563010">
+          <div> 
+           <link rel="stylesheet" href="/retail-en_us/resources/javascript/responsive/js/jwplayer/skins/tda.css" type="text/css"> 
+           <footer class="stock-footer stock-footer-open"> 
+            <div class="stock-footer-container"> <span class="stock-footer-collaspe"></span><span class="stock-footer-expand"></span> 
+             <div class="stock-footer-stock-time-container"> 
+              <aside class="stock-footer-date-time"> <span class="stock-footer-date">00/00/00</span><span class="stock-footer-time">2:48PM BT</span> 
+              </aside> 
+              <ul class="stock-footer-stocks"> 
+               <li class="stock-footer-stocks-item"> <span class="stock-name">DOW</span><span class="stock-standing"></span><span class="stock-change"><span class="change-value"></span> (<span class="change-percentage"></span>) </span> </li> 
+               <li class="stock-footer-stocks-item"> <span class="stock-name">NASDAQ</span><span class="stock-standing"></span><span class="stock-change"><span class="change-value"></span> (<span class="change-percentage"></span>) </span> </li> 
+               <li class="stock-footer-stocks-item"> <span class="stock-name">S&amp;P 500</span><span class="stock-standing"></span><span class="stock-change"><span class="change-value"></span> (<span class="change-percentage"></span>) </span> </li> 
+              </ul> 
+             </div> 
+             <aside class="stock-footer-cta-container"> 
+              <p class="stock-footer-offer"> <a target="_self" class="stock-footer-offer-link" href="/.page?" title=""></a> </p> 
+              <div class="stock-footer-cta-wrapper"> <a class="stock-footer-cta btn-green-solid" href="https://www.tdameritrade.com/o.cgi?a=WEB&amp;p=https%3A%2F%2Fwwws.tdameritrade.com%2Fcgi-bin%2Fapps%2FAccountApplication%3Fentity%3D103" title="Open New Account">Open New Account</a> 
+              </div> 
+             </aside> 
+            </div> 
+           </footer> 
+           <script>
+
+collapsedStickyFooter();
+ 
+</script> 
+           <footer class="main-footer"> 
+            <div class="main-footer-container"> 
+             <div class="main-footer-columns main-footer-head"> 
+              <div class="main-footer-head-columns"> <a title="TD Ameritrade" href="/home.page?"><img class="main-footer-logo-image svg src-defer" alt="TD Ameritrade" src-defer="/retail-en_us/resources/images/td_ameritradelogo.svg" src="/retail-en_us/resources/images/td_ameritradelogo.svg"></a> 
+              </div> 
+              <div class="main-footer-head-columns">
+               <p class="main-footer-logo-text"><strong>Where&nbsp;Smart&nbsp;Investors Get&nbsp;Smarter&nbsp;<sup class="main-footer-logo-text-subscript">SM</sup></strong></p>
+              </div> 
+              <div class="main-footer-head-columns">
+               <p class="main-footer-contact-num">Call Us <strong>800-454-9272</strong></p>
+               <ul class="main-footer-social-items"> 
+                <li class="main-footer-social-item"> <a target="_blank" class="main-footer-social-link twitter-footer" href="http://twitter.com/tdameritrade" title="twitter-footer"></a> </li> 
+                <li class="main-footer-social-item"> <a target="_blank" class="main-footer-social-link facebook-footer" href="https://www.facebook.com/pages/TD-Ameritrade/323110354399964" title="facebook-footer"></a> </li> 
+                <li class="main-footer-social-item"> <a target="_blank" class="main-footer-social-link youtube-footer" href="http://www.youtube.com/tdameritrade" title="youtube-footer"></a> </li> 
+               </ul> 
+              </div> 
+             </div> 
+             <div class="main-footer-column-container"> 
+              <div class="main-footer-columns main-footer-nav"> 
+               <figure class="main-footer-sub-logo"> <span class="main-footer-sub-logo-container"><img class="main-footer-sub-logo-img src-defer" alt="Medal Logo" src-defer="/retail-en_us/resources/images/icon-library/new-brand-expression/accolades-footer-icon-small.png" src="/retail-en_us/resources/images/icon-library/new-brand-expression/accolades-footer-icon-small.png"><span class="main-footer-sub-logo-copy"> <h3 class="main-footer-sub-logo-heading">#1 Overall Broker </h3> <img src-defer="/retail-en_us/resources/images/footer/sb-logo-180x40.png" class="main-footer-sub-logo-sub-img src-defer" alt="StockBroker Logo" src="/retail-en_us/resources/images/footer/sb-logo-180x40.png"></span></span> 
+               </figure> 
+               <aside class="main-footer-nav-item-container"> 
+                <nav class="main-footer-nav-item"> 
+                 <h4 class="main-footer-nav-list-title">Quick Links</h4> 
+                 <ul class="kiplinger-footer-links-list"> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="https://invest.ameritrade.com/grid/p/login" target="_parent" title="Client Log-In">Client Log-In</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="https://www.tdameritrade.com/o.cgi?a=WEB&amp;p=https%3A%2F%2Fwwws.tdameritrade.com%2Fcgi-bin%2Fapps%2FAccountApplication%3Fentity%3D103" target="_parent" title="Open New Account">Open New Account</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/why-td-ameritrade.page?" target="_parent" title="Why TD Ameritrade?">Why TD Ameritrade?</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/pricing.page?" target="_parent" title="Pricing">Pricing</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/account-types.page?" target="_parent" title="Account Types">Account Types</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/about-us.page?" target="_parent" title="About Us">About Us</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="https://tickertape.tdameritrade.com/" target="_blank" title="The Ticker Tape">The Ticker Tape</a> </li> 
+                 </ul> 
+                </nav> 
+                <nav class="main-footer-nav-item"> 
+                 <h4 class="main-footer-nav-list-title">Invest</h4> 
+                 <ul class="kiplinger-footer-links-list"> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/investment-guidance.page?" target="_parent" title="Investment Guidance">Investment Guidance</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/retirement-planning.page?" target="_parent" title="Retirement Planning">Retirement Planning</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/retirement-planning/rollover-ira.page?" target="_parent" title="Rollover IRA">Rollover IRA</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/retirement-planning/ira-guide.page?" target="_parent" title="IRA Guide">IRA Guide</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/retirement-planning/tools-and-calculators/best-ira-selection-tool.page?" target="_parent" title="IRA Selection Tool">IRA Selection Tool</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/investment-guidance/investment-management-services.page?" target="_parent" title="Managed Accounts">Managed Accounts</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/investment-guidance/setting-financial-goals.page?" target="_parent" title="Goal Planning">Goal Planning</a> </li> 
+                 </ul> 
+                </nav> 
+                <nav class="main-footer-nav-item"> 
+                 <h4 class="main-footer-nav-list-title">Trade</h4> 
+                 <ul class="kiplinger-footer-links-list"> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/tools-and-platforms.page?" target="_parent" title="Tools &amp; Platforms">Tools &amp; Platforms</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/tools-and-platforms/thinkorswim.page?" target="_parent" title="thinkorswim">thinkorswim</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/tools-and-platforms/web-platform/features.page?" target="_parent" title="Web Platform">Web Platform</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/tools-and-platforms/mobile-trading.page?" target="_parent" title="Mobile Trading">Mobile Trading</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/investment-products/options-trading.page?" target="_parent" title="Options">Options</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/investment-products/futures-trading.page?" target="_parent" title="Futures">Futures</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/tools-and-platforms/trader-offering.page?" target="_parent" title="For Active Traders">For Active Traders</a> </li> 
+                 </ul> 
+                </nav> 
+                <nav class="main-footer-nav-item"> 
+                 <h4 class="main-footer-nav-list-title">Service</h4> 
+                 <ul class="kiplinger-footer-links-list"> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/why-td-ameritrade/contact-us.page?" target="_parent" title="Contact Us">Contact Us</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/branches.page?" target="_parent" title="Find a Branch">Find a Branch</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/funding-and-transfers.page?" target="_parent" title="Funding &amp; Transfers">Funding &amp; Transfers</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/account-types/faqs-opening.page?" target="_parent" title="FAQs">FAQs</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link" href="/why-td-ameritrade/contact-us/form-library.page?" target="_parent" title="Form Library">Form Library</a> </li> 
+                  <li class="inside-footer-list-item"> <a title="Feedback" href="javascript:void(0);" onclick="feedbackLink()" class="main-footer-nav-link"><span class="text">Feedback</span><img alt="Click to provide feedback" class="rotating-sign src-defer" src-defer="/retail-en_us/resources/images/feedback-black-icon.gif" src="/retail-en_us/resources/images/feedback-black-icon.gif" width="9" height="9"></a> </li> 
+                 </ul> 
+                </nav> 
+                <nav class="main-footer-nav-item"> 
+                 <h4 class="main-footer-nav-list-title">Language</h4> 
+                 <ul class="kiplinger-footer-links-list"> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link language-selector" href="/home.page" target="_parent" title="English" data-lang="en_US">English</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link language-selector" href="/zh_CN/home.page" target="_parent" title="??" data-lang="zh_CN">??</a> </li> 
+                  <li class="inside-footer-list-item"> <a class="main-footer-nav-link language-selector" href="/zh_TW/home.page" target="_parent" title="??" data-lang="zh_TW">??</a> </li> 
+                 </ul> 
+                </nav> 
+               </aside> 
+              </div> 
+              <div class="main-footer-columns main-footer-sub-nav"> 
+               <aside class="main-footer-sub-nav-items"> <a target="_blank" class="main-footer-sub-nav-item " href="https://careers.tdameritrade.com" title="Careers">Careers</a><a target="_blank" class="main-footer-sub-nav-item " href="http://www.amtd.com/newsroom/default.aspx" title="Newsroom">Newsroom</a><a target="_parent" class="main-footer-sub-nav-item " href="/site-map.page?" title="Site Map">Site Map</a><a target="_parent" class="main-footer-sub-nav-item " href="/minimum-requirements" title="Minimum Requirements">Minimum Requirements</a><a target="_parent" class="main-footer-sub-nav-item " href="/accessibility.page?" title="Accessibility">Accessibility</a> 
+               </aside> 
+               <aside class="main-footer-sub-nav-items"> <a target="_parent" class="main-footer-sub-nav-item " href="/privacy-policies.page?" title="Privacy">Privacy</a><a target="_parent" class="main-footer-sub-nav-item " href="/security.page?" title="Security">Security</a><a target="_parent" class="main-footer-sub-nav-item " href="/financial-statement#financial-statement " title="Financial Statement">Financial Statement</a><a target="_parent" class="main-footer-sub-nav-item " href="/regulation-best-interest-and-form-crs.page?" title="Reg BI &amp; Form CRS">Reg BI &amp; Form CRS</a><a target="_parent" class="main-footer-sub-nav-item " href="/disclosure.page?" title="Disclosures">Disclosures</a><a target="_parent" class="main-footer-sub-nav-item " href="/incentive-compensation.page?" title="Incentive Compensation">Incentive Compensation</a><a target="_blank" class="main-footer-sub-nav-item " href="http://www.tdainstitutional.com/" title="TD Ameritrade Institutional">TD Ameritrade Institutional</a><a target="_blank" class="main-footer-sub-nav-item " href="https://www.tdameritrade.com/workplace" title="Workplace &amp; Employer Solutions">Workplace &amp; Employer Solutions</a><a target="_blank" class="main-footer-sub-nav-item " href="http://www.amtd.com/" title="TD Ameritrade Holding Corp.">TD Ameritrade Holding Corp.</a> 
+               </aside> 
+              </div> 
+              <div class="main-footer-columns main-footer-copy">
+               <p><a href="#" target="_blank" name="_bapw-link"><img id="_bapw-icon" style="border: 0 !important; display: inline !important; vertical-align: middle !important; padding-right: 5px !important;" alt=""><span style="vertical-align: middle !important;">AdChoices</span></a></p>
+               <p><strong>Carefully consider the investment objectives, risks, charges and expenses of any investment company before investing. A prospectus contains this and other important information. Contact us at 800-669-3900 for a copy. Read carefully before investing.</strong></p> 
+               <p>Reviewed against 14 other online brokers, TD Ameritrade was named #1 Overall Broker in the StockBrokers.com 2020 Online Broker Review (2 years in a row). We rated #1 in several categories, including "Customer Service" (4 years in a row), "Platforms &amp; Tools" (9 years in a row), "Education" (8 years in a row), and "Beginners" (8 years in a row). We also received several industry awards, "Trader App" (TD Ameritrade Mobile Trader, 4 years in a row), "Trader Community" (5 years in a row) and "Desktop Platform" (thinkorswim®) (8 years in a row). We were also rated Best in Class (within the top 5) for "Offering of Investments" (6 years in a row), "Research" (9 years in a row), "Mobile Trading" (8 years in a row), "Ease of Use" (4 years in a row), "Active Trading" (10 years in a row), and "Options Trading" (10 years in a row). <a class="--newtab-- " href="http://www.stockbrokers.com/annual-broker-review" target="_blank">Read the full article</a>.</p> 
+               <p>ETFs can entail risks similar to direct stock ownership, including market, sector, or industry risks. Some ETFs may involve international risk, currency risk, commodity risk, and interest rate risk. Trading prices may not reflect the net asset value of the underlying securities. Commission fees typically apply.</p> 
+               <p>Market volatility, volume, and system availability may delay account access and trade executions.</p> 
+               <p><sup>†</sup>Applies to U.S. exchange-listed stocks, ETFs, and options. A $0.65 per contract fee applies for options trades, with no exercise or assignment fees.</p> 
+               <p>A rollover is not your only alternative when dealing with old retirement plans. <a href="https://www.tdameritrade.com/retirement-planning/ira-guide/401k-rollover-to-ira.page">Learn more</a> about rollover alternatives.</p> 
+               <p>Taxes related to TD Ameritrade offers are your responsibility. All Promotional items and cash received during the calendar year will be included on your consolidated Form 1099. Please consult a legal or tax advisor for the most recent changes to the U.S. tax code and for rollover eligibility rules.</p> 
+               <p>This is not an offer or solicitation in any jurisdiction where we are not authorized to do business or where such offer or solicitation would be contrary to the local laws and regulations of that jurisdiction, including, but not limited to persons residing in Australia, Canada, Hong Kong, Japan, Saudi Arabia, Singapore, UK, and the countries of the European Union.</p> 
+               <p>Brokerage services provided by TD&nbsp;Ameritrade, Inc., member&nbsp;<a href="http://www.finra.org/">FINRA</a>/ <a href="http://www.sipc.org/">SIPC</a>. TD&nbsp;Ameritrade is a trademark jointly owned by TD&nbsp;Ameritrade IP Company, Inc. and The Toronto-Dominion Bank. © 2020 TD&nbsp;Ameritrade.</p> 
+               <p>&nbsp;</p>
+              </div> 
+             </div> 
+            </div> 
+            <script src="/retail-en_us/resources/javascript/responsive/js/tealium/tealium_body.js" type="text/javascript"></script> 
+           </footer> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="ls-row-clr"></div> 
+     </div> 
+    </div> 
+   </div><!--ls:end[body]--><!--ls:begin[page_track]--><!--ls:end[page_track]-->
+  </div>  
+ </body>
+</html>
+2020-10-09 10:40:50,287 INFO  com.dariotek.webscraper.wikipedia.WikipediaSP500CompanyListScraper  - url = https://en.wikipedia.org/wiki/List_of_S%26P_500_companies
+2020-10-09 10:40:52,520 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MMM
+2020-10-09 10:40:53,477 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ABT
+2020-10-09 10:40:54,100 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ABBV
+2020-10-09 10:40:54,649 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ABMD
+2020-10-09 10:40:55,366 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ACN
+2020-10-09 10:40:55,935 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ATVI
+2020-10-09 10:40:56,529 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ADBE
+2020-10-09 10:40:57,203 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AMD
+2020-10-09 10:40:57,861 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AAP
+2020-10-09 10:40:58,420 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AES
+2020-10-09 10:40:59,158 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AFL
+2020-10-09 10:40:59,708 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/A
+2020-10-09 10:41:00,318 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/APD
+2020-10-09 10:41:00,877 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AKAM
+2020-10-09 10:41:01,459 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ALK
+2020-10-09 10:41:02,081 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ALB
+2020-10-09 10:41:02,631 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ARE
+2020-10-09 10:41:03,550 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ALXN
+2020-10-09 10:41:04,192 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ALGN
+2020-10-09 10:41:04,784 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ALLE
+2020-10-09 10:41:05,358 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LNT
+2020-10-09 10:41:05,952 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ALL
+2020-10-09 10:41:06,536 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GOOGL
+2020-10-09 10:41:07,138 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GOOG
+2020-10-09 10:41:07,718 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MO
+2020-10-09 10:41:08,283 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AMZN
+2020-10-09 10:41:08,883 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AMCR
+2020-10-09 10:41:09,506 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AEE
+2020-10-09 10:41:10,113 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AAL
+2020-10-09 10:41:10,756 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AEP
+2020-10-09 10:41:11,284 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AXP
+2020-10-09 10:41:11,914 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AIG
+2020-10-09 10:41:12,383 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AMT
+2020-10-09 10:41:13,133 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AWK
+2020-10-09 10:41:13,779 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AMP
+2020-10-09 10:41:14,452 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ABC
+2020-10-09 10:41:15,187 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AME
+2020-10-09 10:41:15,800 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AMGN
+2020-10-09 10:41:16,515 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/APH
+2020-10-09 10:41:17,052 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ADI
+2020-10-09 10:41:17,582 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ANSS
+2020-10-09 10:41:18,151 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ANTM
+2020-10-09 10:41:18,714 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AON
+2020-10-09 10:41:19,355 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AOS
+2020-10-09 10:41:19,887 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/APA
+2020-10-09 10:41:20,711 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AIV
+2020-10-09 10:41:21,450 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AAPL
+2020-10-09 10:41:22,365 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AMAT
+2020-10-09 10:41:23,009 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/APTV
+2020-10-09 10:41:23,690 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ADM
+2020-10-09 10:41:24,271 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ANET
+2020-10-09 10:41:24,930 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AJG
+2020-10-09 10:41:25,616 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AIZ
+2020-10-09 10:41:26,138 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/T
+2020-10-09 10:41:26,981 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ATO
+2020-10-09 10:41:27,586 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ADSK
+2020-10-09 10:41:28,190 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ADP
+2020-10-09 10:41:28,808 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AZO
+2020-10-09 10:41:29,624 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AVB
+2020-10-09 10:41:30,183 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AVY
+2020-10-09 10:41:30,835 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BKR
+2020-10-09 10:41:31,524 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BLL
+2020-10-09 10:41:32,088 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BAC
+2020-10-09 10:41:32,647 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BK
+2020-10-09 10:41:33,251 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BAX
+2020-10-09 10:41:33,812 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BDX
+2020-10-09 10:41:34,414 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BBY
+2020-10-09 10:41:35,309 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BIO
+2020-10-09 10:41:35,907 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BIIB
+2020-10-09 10:41:36,532 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BLK
+2020-10-09 10:41:37,032 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BA
+2020-10-09 10:41:37,671 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BKNG
+2020-10-09 10:41:38,305 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BWA
+2020-10-09 10:41:38,962 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BXP
+2020-10-09 10:41:39,609 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BSX
+2020-10-09 10:41:40,254 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BMY
+2020-10-09 10:41:40,861 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/AVGO
+2020-10-09 10:41:41,609 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BR
+2020-10-09 10:41:42,201 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CHRW
+2020-10-09 10:41:42,743 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/COG
+2020-10-09 10:41:43,393 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CDNS
+2020-10-09 10:41:43,987 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CPB
+2020-10-09 10:41:44,596 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/COF
+2020-10-09 10:41:45,150 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CAH
+2020-10-09 10:41:45,814 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KMX
+2020-10-09 10:41:46,708 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CCL
+2020-10-09 10:41:47,338 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CARR
+2020-10-09 10:41:47,939 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CTLT
+2020-10-09 10:41:48,485 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CAT
+2020-10-09 10:41:49,092 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CBOE
+2020-10-09 10:41:49,676 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CBRE
+2020-10-09 10:41:50,353 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CDW
+2020-10-09 10:41:50,934 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CE
+2020-10-09 10:41:51,658 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CNC
+2020-10-09 10:41:52,275 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CNP
+2020-10-09 10:41:52,895 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CERN
+2020-10-09 10:41:53,473 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CF
+2020-10-09 10:41:54,058 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SCHW
+2020-10-09 10:41:54,759 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CHTR
+2020-10-09 10:41:55,314 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CVX
+2020-10-09 10:41:55,914 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CMG
+2020-10-09 10:41:56,578 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CB
+2020-10-09 10:41:57,201 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CHD
+2020-10-09 10:41:57,935 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CI
+2020-10-09 10:41:58,615 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CINF
+2020-10-09 10:41:59,187 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CTAS
+2020-10-09 10:41:59,755 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CSCO
+2020-10-09 10:42:00,338 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/C
+2020-10-09 10:42:01,036 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CFG
+2020-10-09 10:42:01,574 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CTXS
+2020-10-09 10:42:02,151 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CLX
+2020-10-09 10:42:02,741 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CME
+2020-10-09 10:42:03,412 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CMS
+2020-10-09 10:42:04,104 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KO
+2020-10-09 10:42:04,988 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CTSH
+2020-10-09 10:42:05,566 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CL
+2020-10-09 10:42:06,143 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CMCSA
+2020-10-09 10:42:06,711 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CMA
+2020-10-09 10:42:07,302 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CAG
+2020-10-09 10:42:07,894 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CXO
+2020-10-09 10:42:08,448 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/COP
+2020-10-09 10:42:09,103 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ED
+2020-10-09 10:42:09,632 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/STZ
+2020-10-09 10:42:10,254 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/COO
+2020-10-09 10:42:10,830 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CPRT
+2020-10-09 10:42:11,360 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GLW
+2020-10-09 10:42:12,071 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CTVA
+2020-10-09 10:42:12,629 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/COST
+2020-10-09 10:42:13,215 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CCI
+2020-10-09 10:42:13,718 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CSX
+2020-10-09 10:42:14,279 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CMI
+2020-10-09 10:42:14,800 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CVS
+2020-10-09 10:42:15,414 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DHI
+2020-10-09 10:42:16,013 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DHR
+2020-10-09 10:42:16,729 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DRI
+2020-10-09 10:42:17,371 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DVA
+2020-10-09 10:42:17,944 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DE
+2020-10-09 10:42:18,513 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DAL
+2020-10-09 10:42:19,105 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/XRAY
+2020-10-09 10:42:19,693 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DVN
+2020-10-09 10:42:20,292 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DXCM
+2020-10-09 10:42:20,892 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FANG
+2020-10-09 10:42:21,456 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DLR
+2020-10-09 10:42:22,004 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DFS
+2020-10-09 10:42:22,736 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DISCA
+2020-10-09 10:42:23,349 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DISCK
+2020-10-09 10:42:23,957 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DISH
+2020-10-09 10:42:24,618 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DG
+2020-10-09 10:42:25,231 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DLTR
+2020-10-09 10:42:26,000 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/D
+2020-10-09 10:42:26,619 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DPZ
+2020-10-09 10:42:27,298 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DOV
+2020-10-09 10:42:27,798 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DOW
+2020-10-09 10:42:28,493 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DTE
+2020-10-09 10:42:29,054 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DUK
+2020-10-09 10:42:29,612 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DRE
+2020-10-09 10:42:30,187 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DD
+2020-10-09 10:42:30,763 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DXC
+2020-10-09 10:42:31,331 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ETFC
+2020-10-09 10:42:31,975 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EMN
+2020-10-09 10:42:32,618 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ETN
+2020-10-09 10:42:33,199 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EBAY
+2020-10-09 10:42:33,825 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ECL
+2020-10-09 10:42:34,421 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EIX
+2020-10-09 10:42:34,981 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EW
+2020-10-09 10:42:35,597 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EA
+2020-10-09 10:42:36,592 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EMR
+2020-10-09 10:42:37,522 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ETR
+2020-10-09 10:42:38,113 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EOG
+2020-10-09 10:42:38,698 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EFX
+2020-10-09 10:42:39,361 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EQIX
+2020-10-09 10:42:40,174 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EQR
+2020-10-09 10:42:40,739 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ESS
+2020-10-09 10:42:41,273 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EL
+2020-10-09 10:42:41,920 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ETSY
+2020-10-09 10:42:42,483 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EVRG
+2020-10-09 10:42:43,062 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ES
+2020-10-09 10:42:43,648 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RE
+2020-10-09 10:42:44,201 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EXC
+2020-10-09 10:42:44,811 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EXPE
+2020-10-09 10:42:45,392 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EXPD
+2020-10-09 10:42:47,052 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/EXR
+2020-10-09 10:42:48,312 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/XOM
+2020-10-09 10:42:49,376 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FFIV
+2020-10-09 10:42:50,612 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FB
+2020-10-09 10:42:51,816 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FAST
+2020-10-09 10:42:52,841 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FRT
+2020-10-09 10:42:53,864 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FDX
+2020-10-09 10:42:54,825 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FIS
+2020-10-09 10:42:55,844 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FITB
+2020-10-09 10:42:57,007 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FE
+2020-10-09 10:42:58,009 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FRC
+2020-10-09 10:42:59,135 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FISV
+2020-10-09 10:43:00,372 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FLT
+2020-10-09 10:43:01,556 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FLIR
+2020-10-09 10:43:02,652 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FLS
+2020-10-09 10:43:03,875 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FMC
+2020-10-09 10:43:04,873 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/F
+2020-10-09 10:43:06,330 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FTNT
+2020-10-09 10:43:07,477 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FTV
+2020-10-09 10:43:08,512 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FBHS
+2020-10-09 10:43:09,940 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FOXA
+2020-10-09 10:43:11,031 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FOX
+2020-10-09 10:43:12,201 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/BEN
+2020-10-09 10:43:13,172 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FCX
+2020-10-09 10:43:14,257 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GPS
+2020-10-09 10:43:15,291 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GRMN
+2020-10-09 10:43:16,413 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IT
+2020-10-09 10:43:17,439 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GD
+2020-10-09 10:43:18,993 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GE
+2020-10-09 10:43:20,180 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GIS
+2020-10-09 10:43:21,193 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GM
+2020-10-09 10:43:22,267 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GPC
+2020-10-09 10:43:23,156 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GILD
+2020-10-09 10:43:24,207 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GL
+2020-10-09 10:43:25,264 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GPN
+2020-10-09 10:43:26,389 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GS
+2020-10-09 10:43:27,476 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/GWW
+2020-10-09 10:43:28,451 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HAL
+2020-10-09 10:43:29,471 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HBI
+2020-10-09 10:43:30,814 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HIG
+2020-10-09 10:43:31,795 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HAS
+2020-10-09 10:43:32,919 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HCA
+2020-10-09 10:43:34,054 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PEAK
+2020-10-09 10:43:35,179 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HSIC
+2020-10-09 10:43:36,341 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HSY
+2020-10-09 10:43:37,328 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HES
+2020-10-09 10:43:38,598 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HPE
+2020-10-09 10:43:39,780 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HLT
+2020-10-09 10:43:40,947 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HFC
+2020-10-09 10:43:41,993 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HOLX
+2020-10-09 10:43:43,265 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HD
+2020-10-09 10:43:44,262 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HON
+2020-10-09 10:43:45,393 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HRL
+2020-10-09 10:43:46,351 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HST
+2020-10-09 10:43:47,572 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HWM
+2020-10-09 10:43:48,676 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HPQ
+2020-10-09 10:43:49,967 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HUM
+2020-10-09 10:43:51,159 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HBAN
+2020-10-09 10:43:52,195 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/HII
+2020-10-09 10:43:53,179 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IEX
+2020-10-09 10:43:54,364 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IDXX
+2020-10-09 10:43:55,467 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/INFO
+2020-10-09 10:43:56,641 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ITW
+2020-10-09 10:43:57,673 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ILMN
+2020-10-09 10:43:58,833 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/INCY
+2020-10-09 10:44:00,145 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IR
+2020-10-09 10:44:01,248 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/INTC
+2020-10-09 10:44:02,316 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ICE
+2020-10-09 10:44:03,818 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IBM
+2020-10-09 10:44:04,908 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IP
+2020-10-09 10:44:06,165 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IPG
+2020-10-09 10:44:07,276 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IFF
+2020-10-09 10:44:08,298 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/INTU
+2020-10-09 10:44:09,478 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ISRG
+2020-10-09 10:44:10,718 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IVZ
+2020-10-09 10:44:11,989 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IPGP
+2020-10-09 10:44:13,064 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IQV
+2020-10-09 10:44:14,240 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/IRM
+2020-10-09 10:44:15,216 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/JKHY
+2020-10-09 10:44:16,281 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/J
+2020-10-09 10:44:17,247 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/JBHT
+2020-10-09 10:44:18,534 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SJM
+2020-10-09 10:44:19,827 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/JNJ
+2020-10-09 10:44:20,821 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/JCI
+2020-10-09 10:44:21,958 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/JPM
+2020-10-09 10:44:23,132 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/JNPR
+2020-10-09 10:44:24,193 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KSU
+2020-10-09 10:44:25,333 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/K
+2020-10-09 10:44:26,286 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KEY
+2020-10-09 10:44:27,276 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KEYS
+2020-10-09 10:44:28,456 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KMB
+2020-10-09 10:44:29,302 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KIM
+2020-10-09 10:44:30,368 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KMI
+2020-10-09 10:44:31,407 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KLAC
+2020-10-09 10:44:32,470 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KHC
+2020-10-09 10:44:33,545 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/KR
+2020-10-09 10:44:34,790 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LB
+2020-10-09 10:44:35,741 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LHX
+2020-10-09 10:44:37,084 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LH
+2020-10-09 10:44:38,297 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LRCX
+2020-10-09 10:44:39,790 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LW
+2020-10-09 10:44:40,959 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LVS
+2020-10-09 10:44:42,097 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LEG
+2020-10-09 10:44:43,433 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LDOS
+2020-10-09 10:44:44,618 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LEN
+2020-10-09 10:44:45,819 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LLY
+2020-10-09 10:44:46,676 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LNC
+2020-10-09 10:44:47,659 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LIN
+2020-10-09 10:44:48,755 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LYV
+2020-10-09 10:44:50,022 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LKQ
+2020-10-09 10:44:51,072 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LMT
+2020-10-09 10:44:52,482 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/L
+2020-10-09 10:44:53,563 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LOW
+2020-10-09 10:44:54,590 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LUMN
+2020-10-09 10:44:55,608 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LYB
+2020-10-09 10:44:56,986 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MTB
+2020-10-09 10:44:58,027 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MRO
+2020-10-09 10:44:58,956 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MPC
+2020-10-09 10:45:00,053 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MKTX
+2020-10-09 10:45:01,034 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MAR
+2020-10-09 10:45:02,214 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MMC
+2020-10-09 10:45:03,597 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MLM
+2020-10-09 10:45:04,876 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MAS
+2020-10-09 10:45:06,118 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MA
+2020-10-09 10:45:07,027 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MKC
+2020-10-09 10:45:08,597 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MXIM
+2020-10-09 10:45:09,673 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MCD
+2020-10-09 10:45:10,887 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MCK
+2020-10-09 10:45:11,948 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MDT
+2020-10-09 10:45:13,011 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MRK
+2020-10-09 10:45:13,839 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MET
+2020-10-09 10:45:15,545 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MTD
+2020-10-09 10:45:16,646 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MGM
+2020-10-09 10:45:17,801 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MCHP
+2020-10-09 10:45:18,931 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MU
+2020-10-09 10:45:19,972 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MSFT
+2020-10-09 10:45:20,967 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MAA
+2020-10-09 10:45:21,978 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MHK
+2020-10-09 10:45:23,173 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TAP
+2020-10-09 10:45:24,098 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MDLZ
+2020-10-09 10:45:25,252 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MNST
+2020-10-09 10:45:26,350 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MCO
+2020-10-09 10:45:27,493 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MS
+2020-10-09 10:45:28,637 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MOS
+2020-10-09 10:45:30,113 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MSI
+2020-10-09 10:45:31,265 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MSCI
+2020-10-09 10:45:32,490 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/MYL
+2020-10-09 10:45:33,756 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NDAQ
+2020-10-09 10:45:34,860 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NOV
+2020-10-09 10:45:36,181 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NTAP
+2020-10-09 10:45:37,407 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NFLX
+2020-10-09 10:45:38,964 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NWL
+2020-10-09 10:45:40,011 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NEM
+2020-10-09 10:45:41,146 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NWSA
+2020-10-09 10:45:42,175 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NWS
+2020-10-09 10:45:43,222 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NEE
+2020-10-09 10:45:44,181 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NLSN
+2020-10-09 10:45:45,477 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NKE
+2020-10-09 10:45:46,927 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NI
+2020-10-09 10:45:48,127 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NBL
+2020-10-09 10:45:49,161 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NSC
+2020-10-09 10:45:50,569 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NTRS
+2020-10-09 10:45:51,583 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NOC
+2020-10-09 10:45:52,664 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NLOK
+2020-10-09 10:45:53,740 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NCLH
+2020-10-09 10:45:54,577 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NRG
+2020-10-09 10:45:55,727 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NUE
+2020-10-09 10:45:56,803 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NVDA
+2020-10-09 10:45:57,948 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NVR
+2020-10-09 10:45:59,166 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ORLY
+2020-10-09 10:46:00,474 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/OXY
+2020-10-09 10:46:01,620 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ODFL
+2020-10-09 10:46:02,694 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/OMC
+2020-10-09 10:46:03,882 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/OKE
+2020-10-09 10:46:05,372 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ORCL
+2020-10-09 10:46:06,290 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/OTIS
+2020-10-09 10:46:07,486 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PCAR
+2020-10-09 10:46:08,685 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PKG
+2020-10-09 10:46:09,821 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PH
+2020-10-09 10:46:11,157 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PAYX
+2020-10-09 10:46:12,256 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PAYC
+2020-10-09 10:46:13,299 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PYPL
+2020-10-09 10:46:14,484 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PNR
+2020-10-09 10:46:15,624 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PBCT
+2020-10-09 10:46:16,731 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PEP
+2020-10-09 10:46:17,926 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PKI
+2020-10-09 10:46:19,148 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PRGO
+2020-10-09 10:46:20,286 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PFE
+2020-10-09 10:46:21,406 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PM
+2020-10-09 10:46:22,527 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PSX
+2020-10-09 10:46:23,784 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PNW
+2020-10-09 10:46:24,870 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PXD
+2020-10-09 10:46:26,209 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PNC
+2020-10-09 10:46:27,395 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PPG
+2020-10-09 10:46:28,540 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PPL
+2020-10-09 10:46:29,669 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PFG
+2020-10-09 10:46:30,839 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PG
+2020-10-09 10:46:31,824 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PGR
+2020-10-09 10:46:32,868 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PLD
+2020-10-09 10:46:33,817 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PRU
+2020-10-09 10:46:34,777 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PEG
+2020-10-09 10:46:35,749 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PSA
+2020-10-09 10:46:37,197 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PHM
+2020-10-09 10:46:38,448 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PVH
+2020-10-09 10:46:39,665 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/QRVO
+2020-10-09 10:46:40,860 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/PWR
+2020-10-09 10:46:42,043 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/QCOM
+2020-10-09 10:46:43,080 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DGX
+2020-10-09 10:46:44,519 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RL
+2020-10-09 10:46:45,794 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RJF
+2020-10-09 10:46:46,799 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RTX
+2020-10-09 10:46:48,483 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/O
+2020-10-09 10:46:49,607 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/REG
+2020-10-09 10:46:50,691 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/REGN
+2020-10-09 10:46:51,911 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RF
+2020-10-09 10:46:53,080 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RSG
+2020-10-09 10:46:54,207 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RMD
+2020-10-09 10:46:55,104 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RHI
+2020-10-09 10:46:56,090 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ROK
+2020-10-09 10:46:57,285 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ROL
+2020-10-09 10:46:58,188 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ROP
+2020-10-09 10:46:59,240 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ROST
+2020-10-09 10:47:00,466 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/RCL
+2020-10-09 10:47:01,326 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SPGI
+2020-10-09 10:47:02,306 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/CRM
+2020-10-09 10:47:03,257 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SBAC
+2020-10-09 10:47:04,227 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SLB
+2020-10-09 10:47:05,246 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/STX
+2020-10-09 10:47:06,315 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SEE
+2020-10-09 10:47:07,853 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SRE
+2020-10-09 10:47:08,708 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/NOW
+2020-10-09 10:47:10,193 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SHW
+2020-10-09 10:47:11,319 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SPG
+2020-10-09 10:47:12,234 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SWKS
+2020-10-09 10:47:13,164 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SLG
+2020-10-09 10:47:14,607 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SNA
+2020-10-09 10:47:15,749 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SO
+2020-10-09 10:47:16,801 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/LUV
+2020-10-09 10:47:17,627 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SWK
+2020-10-09 10:47:18,917 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SBUX
+2020-10-09 10:47:20,467 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/STT
+2020-10-09 10:47:21,876 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/STE
+2020-10-09 10:47:22,885 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SYK
+2020-10-09 10:47:24,027 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SIVB
+2020-10-09 10:47:25,014 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SYF
+2020-10-09 10:47:26,109 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SNPS
+2020-10-09 10:47:27,062 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/SYY
+2020-10-09 10:47:27,826 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TMUS
+2020-10-09 10:47:28,882 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TROW
+2020-10-09 10:47:30,264 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TTWO
+2020-10-09 10:47:31,345 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TPR
+2020-10-09 10:47:32,612 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TGT
+2020-10-09 10:47:33,714 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TEL
+2020-10-09 10:47:34,788 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/FTI
+2020-10-09 10:47:35,755 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TDY
+2020-10-09 10:47:36,691 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TFX
+2020-10-09 10:47:37,799 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TER
+2020-10-09 10:47:38,835 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TXN
+2020-10-09 10:47:39,904 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TXT
+2020-10-09 10:47:40,956 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TMO
+2020-10-09 10:47:41,890 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TIF
+2020-10-09 10:47:43,169 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TJX
+2020-10-09 10:47:44,330 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TSCO
+2020-10-09 10:47:45,390 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TT
+2020-10-09 10:47:46,539 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TDG
+2020-10-09 10:47:47,805 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TRV
+2020-10-09 10:47:49,130 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TFC
+2020-10-09 10:47:50,176 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TWTR
+2020-10-09 10:47:51,351 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TYL
+2020-10-09 10:47:52,382 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/TSN
+2020-10-09 10:47:53,404 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UDR
+2020-10-09 10:47:54,346 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ULTA
+2020-10-09 10:47:55,945 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/USB
+2020-10-09 10:47:56,910 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UAA
+2020-10-09 10:47:58,107 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UA
+2020-10-09 10:47:59,280 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UNP
+2020-10-09 10:48:00,461 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UAL
+2020-10-09 10:48:01,505 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UNH
+2020-10-09 10:48:02,707 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UPS
+2020-10-09 10:48:03,768 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/URI
+2020-10-09 10:48:04,881 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UHS
+2020-10-09 10:48:05,885 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/UNM
+2020-10-09 10:48:06,956 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VFC
+2020-10-09 10:48:08,162 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VLO
+2020-10-09 10:48:09,372 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VAR
+2020-10-09 10:48:10,633 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VTR
+2020-10-09 10:48:11,619 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VRSN
+2020-10-09 10:48:12,943 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VRSK
+2020-10-09 10:48:14,072 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VZ
+2020-10-09 10:48:15,567 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VRTX
+2020-10-09 10:48:17,022 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VIAC
+2020-10-09 10:48:18,317 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/V
+2020-10-09 10:48:19,491 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VNO
+2020-10-09 10:48:20,709 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/VMC
+2020-10-09 10:48:22,112 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WRB
+2020-10-09 10:48:23,256 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WAB
+2020-10-09 10:48:24,387 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WMT
+2020-10-09 10:48:25,730 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WBA
+2020-10-09 10:48:27,034 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/DIS
+2020-10-09 10:48:28,043 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WM
+2020-10-09 10:48:29,230 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WAT
+2020-10-09 10:48:30,541 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WEC
+2020-10-09 10:48:31,770 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WFC
+2020-10-09 10:48:32,624 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WELL
+2020-10-09 10:48:33,589 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WST
+2020-10-09 10:48:34,742 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WDC
+2020-10-09 10:48:35,938 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WU
+2020-10-09 10:48:37,034 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WRK
+2020-10-09 10:48:37,936 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WY
+2020-10-09 10:48:39,206 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WHR
+2020-10-09 10:48:40,204 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WMB
+2020-10-09 10:48:41,296 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WLTW
+2020-10-09 10:48:42,458 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/WYNN
+2020-10-09 10:48:43,995 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/XEL
+2020-10-09 10:48:45,164 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/XRX
+2020-10-09 10:48:46,238 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/XLNX
+2020-10-09 10:48:47,374 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/XYL
+2020-10-09 10:48:48,463 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/YUM
+2020-10-09 10:48:49,662 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ZBRA
+2020-10-09 10:48:50,657 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ZBH
+2020-10-09 10:48:51,927 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ZION
+2020-10-09 10:48:53,124 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceStockQuoteSummaryScraper  - url = https://finance.yahoo.com/quote/ZTS
+2020-10-09 10:48:54,246 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceWebScraperApp  - 482673 milliseconds to scrape 503 stock information from Yahoo Finance.
+2020-10-09 10:48:54,246 INFO  com.dariotek.webscraper.yahoofinance.YahooFinanceWebScraperApp  - 36 milliseconds to sort.

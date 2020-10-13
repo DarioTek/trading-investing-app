@@ -51,7 +51,8 @@ public class YahooFinanceWebScraperApp {
 		Connection conn = null;
         try { 
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            String dbURL = "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME=XEPDB1)))";
+            //String dbURL = "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SERVICE_NAME=XEPDB1)))";
+            String dbURL = "jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521))(CONNECT_DATA=(SERVER = DEDICATED)(SID=xe)))";
             System.out.println("jdbcurl=" + dbURL);
             String strUserID = "trading_investing";
             String strPassword = "oracle";
@@ -71,14 +72,14 @@ public class YahooFinanceWebScraperApp {
     	    	        YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = getQuoteSummary.getQuoteSummary(stock);
     	    	        
     	                Statement st = conn.createStatement();
-    	                System.out.println("BEFORE");
+    	                //System.out.println("BEFORE");
     	                String exDividendDate = yahooFinanceStockQuoteSummary.getExDividendDate() != "N/A" ? "TO_DATE('" + yahooFinanceStockQuoteSummary.getExDividendDate() + "','MM/DD/YYYY')" : "null";
-    	                System.out.println("BEFORE EARNINGS DATE END");
+    	                //System.out.println("BEFORE EARNINGS DATE END");
     	                
     	                String earningsDate = yahooFinanceStockQuoteSummary.getEarningsDate() != null ? "TO_DATE('" + dateFormat2.format(yahooFinanceStockQuoteSummary.getEarningsDate()) + "','MM/DD/YYYY')" : "null";
     	                
     	                String earningsDateEnd = yahooFinanceStockQuoteSummary.getEarningsDateEnd() != null ? "TO_DATE('" + dateFormat2.format(yahooFinanceStockQuoteSummary.getEarningsDateEnd()) + "','MM/DD/YYYY')" : "null";
-    	                System.out.println("BEFORE INSERT");
+    	                //System.out.println("BEFORE INSERT");
     	                String insertStatement = "INSERT INTO YAHOO_FINANCE_QUOTE_SUMMARY VALUES (TO_DATE('"+ recordDate + "','MM/DD/YYYY HH:MI:SS'), "
     	    	                		+ "'" + yahooFinanceStockQuoteSummary.getTickerSymbol() + "', "
     	    	                		+ yahooFinanceStockQuoteSummary.getLivePrice() + ", "
@@ -105,7 +106,7 @@ public class YahooFinanceWebScraperApp {
     	    	    	                + exDividendDate + ", "
     	    	    	                + yahooFinanceStockQuoteSummary.getOneYearTargetEstimate() + ")";
     	                
-    	                System.out.println("insertStatement = " + insertStatement);
+    	                //System.out.println("insertStatement = " + insertStatement);
     	                st.executeUpdate(insertStatement);
     	                st.close(); // Closes Statement Connection
     	                		    	    	        
@@ -136,10 +137,12 @@ public class YahooFinanceWebScraperApp {
     	//Collections.sort(scrappedObjects, new DividendYieldComparator());
     	long endTimeToSort = System.currentTimeMillis();
     	
+    	/*
     	for(int i=0; i <= scrappedObjects.size()-1; i++) {
     		YahooFinanceStockQuoteSummary yahooFinanceStockQuoteSummary = (YahooFinanceStockQuoteSummary)scrappedObjects.get(i);
     		logger.info(yahooFinanceStockQuoteSummary.toString());
     	}
+    	*/
     	
     	logger.info((endTimeToScrapeYahooFinance - startTimeToScrapeYahooFinance) + " milliseconds to scrape " + scrappedObjects.size() + " stock information from Yahoo Finance.");
     	logger.info((endTimeToSort - startTimeToSort) + " milliseconds to sort.");
